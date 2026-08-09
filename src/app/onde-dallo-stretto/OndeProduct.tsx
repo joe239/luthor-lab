@@ -29,6 +29,7 @@ export default function OndeProduct({ locale }: { locale: OndeLocale }) {
               <p className="lab-kicker">{t.kicker}</p>
               <h1>Onde dallo Stretto</h1>
               <p className="lab-hero-lede">{t.lede}</p>
+              {t.subhead ? <p className="onde-subhead">{t.subhead}</p> : null}
               <div className="onde-dial" aria-hidden="true">
                 <div className="onde-dial-scale">
                   <span className="onde-dial-needle" />
@@ -55,6 +56,13 @@ export default function OndeProduct({ locale }: { locale: OndeLocale }) {
         <section className="lab-section lab-section--pad-top">
           <div className="lab-wrap">
             <p className="lab-product-lead">{t.lead}</p>
+            {t.features.length > 0 ? (
+              <ul className="onde-features">
+                {t.features.map((feature) => (
+                  <li key={feature}>{feature}</li>
+                ))}
+              </ul>
+            ) : null}
           </div>
         </section>
 

@@ -1,7 +1,7 @@
 /* Five language versions of the product page. These are not translations of
    one text: Italian carries the original "radio from home" positioning for
-   people from Messina living away; the other languages present the app as a
-   window on Italy, with the angle adapted to each audience. */
+   people from Messina living away; the other languages present the app as
+   live Italian radio for the car. */
 
 export type OndeLocale = "it" | "en" | "ja" | "fr" | "de";
 
@@ -24,7 +24,9 @@ export type OndeStrings = {
   metaDescription: string;
   kicker: string;
   lede: string;
+  subhead: string;
   lead: string;
+  features: string[];
   shotsLabel: string;
   storeLabel: string;
   soonApple: string;
@@ -44,7 +46,9 @@ export const ONDE_STRINGS: Record<OndeLocale, OndeStrings> = {
       "Onde dallo Stretto è una radio italiana che funziona come una vera autoradio. Per gli italiani lontani da casa: radio nazionali e voci locali, sulla banda FM con Messina e lo Stretto come riferimento. Un prodotto LUTHOR Lab.",
     kicker: "LUTHOR Lab",
     lede: "Una radio italiana che funziona come una vera autoradio.",
+    subhead: "",
     lead: "Giri la manopola sulla banda FM, ti fermi su una frequenza e ascolti. Pensata per gli italiani che vivono lontano da casa: le grandi radio nazionali e le voci locali, sulla banda FM come la ricorderesti guidando in Italia — con Messina e lo Stretto come riferimento.",
+    features: [],
     shotsLabel: "Schermate dell'app",
     storeLabel: "Scarica l'app",
     soonApple: "In arrivo su",
@@ -70,12 +74,18 @@ export const ONDE_STRINGS: Record<OndeLocale, OndeStrings> = {
     ],
   },
   en: {
-    metaTitle: "Onde dallo Stretto — live Italian radio, made for the car",
+    metaTitle: "Onde dallo Stretto — live Italian radio, in your car",
     metaDescription:
-      "Onde dallo Stretto plays live Italian radio the way a car radio does: turn through the FM dial and pick up the stations of Messina, Sicily — real Italian voices and real Italian music. A LUTHOR Lab product.",
+      "Onde dallo Stretto brings real Italian radio to your dashboard: the music, the voices, the warmth of Italy — live and unfiltered. Turn the dial across a real FM band, stop on a frequency, and listen. A LUTHOR Lab product.",
     kicker: "LUTHOR Lab",
-    lede: "Live Italian radio, made for the car.",
-    lead: "Turn through the FM dial, stop on a frequency, and listen. The stations are the ones you would pick up driving around Messina, Sicily — real Italian voices and real Italian music, live. An authentic slice of Italy, not a playlist.",
+    lede: "Live Italian radio, in your car.",
+    subhead: "Turn the dial. Italy comes through.",
+    lead: "Onde dallo Stretto brings real Italian radio to your dashboard: the music, the voices, the warmth of Italy — live and unfiltered. Turn the dial across a real FM band, stop on a frequency, and listen. No playlists, no algorithms: just radio as it is playing in Italy, right now.",
+    features: [
+      "A real FM band: turn, tune, listen",
+      "Made for the car: CarPlay, steering-wheel controls, six presets",
+      "Free. No ads, no account.",
+    ],
     shotsLabel: "App screenshots",
     storeLabel: "Get the app",
     soonApple: "Coming soon to the",
@@ -101,12 +111,18 @@ export const ONDE_STRINGS: Record<OndeLocale, OndeStrings> = {
     ],
   },
   ja: {
-    metaTitle: "Onde dallo Stretto — イタリアの生放送ラジオ",
+    metaTitle: "Onde dallo Stretto — イタリアのラジオを、そのまま車の中へ",
     metaDescription:
-      "Onde dallo Stretto は、イタリアのラジオをカーラジオのように聴くアプリ。FMダイヤルを回すと、シチリア・メッシーナの街を走りながら受信できる放送がそのまま流れる。LUTHOR Lab のプロダクト。",
+      "Onde dallo Stretto は、イタリアのラジオをライブのまま届けます。音楽も、声も、街の空気も、放送そのまま。本物のFMバンドをダイヤルで回り、周波数に止まって、耳を傾ける——いまイタリアで流れているラジオです。LUTHOR Lab のプロダクト。",
     kicker: "LUTHOR Lab",
-    lede: "イタリアの生放送ラジオを、カーラジオのように。",
-    lead: "FMダイヤルを回し、周波数を合わせて、耳を傾ける。聞こえてくるのは、シチリア・メッシーナの街を車で走りながら受信できる放送そのもの。編集も演出もない、イタリアの声とイタリアの音楽が、そのまま届く。",
+    lede: "イタリアのラジオを、そのまま車の中へ。",
+    subhead: "ダイヤルを回せば、そこはイタリア。",
+    lead: "Onde dallo Stretto は、イタリアのラジオをライブのまま届けます。音楽も、声も、街の空気も、放送そのまま。本物のFMバンドをダイヤルで回り、周波数に止まって、耳を傾ける——プレイリストでも、アルゴリズムでもない、いまイタリアで流れているラジオです。",
+    features: [
+      "本物のFMバンド——回して、合わせて、聴く",
+      "車のために:CarPlay、ステアリング操作、6つのプリセット",
+      "無料。広告なし、登録なし。",
+    ],
     shotsLabel: "アプリの画面",
     storeLabel: "アプリを入手",
     soonApple: "近日公開",
@@ -132,12 +148,18 @@ export const ONDE_STRINGS: Record<OndeLocale, OndeStrings> = {
     ],
   },
   fr: {
-    metaTitle: "Onde dallo Stretto — la vraie radio italienne",
+    metaTitle: "Onde dallo Stretto — la radio italienne en direct, dans votre voiture",
     metaDescription:
-      "Onde dallo Stretto fait écouter la radio italienne comme un autoradio : on tourne la molette FM et on capte les stations de Messine, en Sicile — des voix italiennes et de la musique italienne, en direct. Un produit LUTHOR Lab.",
+      "Onde dallo Stretto fait entrer la vraie radio italienne dans votre voiture : la musique, les voix, l'art de vivre italien — en direct et sans filtre. Tournez sur une vraie bande FM, arrêtez-vous sur une fréquence et écoutez. Un produit LUTHOR Lab.",
     kicker: "LUTHOR Lab",
-    lede: "La vraie radio italienne, pas une playlist.",
-    lead: "Tournez la molette sur la bande FM, arrêtez-vous sur une fréquence, écoutez. Les stations sont celles que l'on capte en conduisant dans Messine, en Sicile — des voix italiennes et de la musique italienne, en direct. La radio comme là-bas, pensée pour la voiture.",
+    lede: "La radio italienne en direct, dans votre voiture.",
+    subhead: "Tournez la molette. L'Italie est là.",
+    lead: "Onde dallo Stretto fait entrer la vraie radio italienne dans votre voiture : la musique, les voix, l'art de vivre italien — en direct et sans filtre. Tournez sur une vraie bande FM, arrêtez-vous sur une fréquence et écoutez. Pas de playlists, pas d'algorithmes : la radio telle qu'elle se vit en Italie, à l'instant même.",
+    features: [
+      "Une vraie bande FM : tourner, régler, écouter",
+      "Pensée pour la voiture : CarPlay, commandes au volant, six présélections",
+      "Gratuite. Sans publicité, sans compte.",
+    ],
     shotsLabel: "Captures d'écran de l'app",
     storeLabel: "Télécharger l'app",
     soonApple: "Bientôt sur l'",
@@ -163,12 +185,18 @@ export const ONDE_STRINGS: Record<OndeLocale, OndeStrings> = {
     ],
   },
   de: {
-    metaTitle: "Onde dallo Stretto — italienisches Radio, live",
+    metaTitle: "Onde dallo Stretto — Italienisches Radio, live in deinem Auto",
     metaDescription:
-      "Onde dallo Stretto spielt italienisches Radio wie ein Autoradio: am FM-Regler drehen und die Sender von Messina auf Sizilien empfangen — italienische Stimmen und italienische Musik, live und unverändert. Ein Produkt von LUTHOR Lab.",
+      "Onde dallo Stretto bringt echtes italienisches Radio in dein Auto: die Musik, die Stimmen, das Lebensgefühl Italiens — live und ungefiltert. Dreh über ein echtes FM-Band, bleib auf einer Frequenz stehen und hör zu. Ein Produkt von LUTHOR Lab.",
     kicker: "LUTHOR Lab",
-    lede: "Italienisches Radio, live — wie im Auto in Sizilien.",
-    lead: "Am FM-Regler drehen, auf einer Frequenz anhalten, zuhören. Die Sender sind die, die man beim Fahren durch Messina auf Sizilien empfängt — italienische Stimmen und italienische Musik, live und unverändert, so wie sie in Italien wirklich läuft. Gemacht fürs Auto.",
+    lede: "Italienisches Radio, live in deinem Auto.",
+    subhead: "Dreh am Rad — und Italien ist da.",
+    lead: "Onde dallo Stretto bringt echtes italienisches Radio in dein Auto: die Musik, die Stimmen, das Lebensgefühl Italiens — live und ungefiltert. Dreh über ein echtes FM-Band, bleib auf einer Frequenz stehen und hör zu. Keine Playlists, keine Algorithmen: nur Radio, wie es in diesem Moment in Italien läuft.",
+    features: [
+      "Ein echtes FM-Band: drehen, abstimmen, hören",
+      "Fürs Auto gemacht: CarPlay, Lenkradtasten, sechs Presets",
+      "Kostenlos. Ohne Werbung, ohne Konto.",
+    ],
     shotsLabel: "App-Screenshots",
     storeLabel: "App laden",
     soonApple: "Bald im",

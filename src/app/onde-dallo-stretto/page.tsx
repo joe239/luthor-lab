@@ -5,9 +5,9 @@ import { LabNav } from "@/components/lab/LabChrome";
 import { ONDE_LANG_STORAGE_KEY, ONDE_LOCALES } from "./content";
 
 export const metadata: Metadata = {
-  title: "Onde dallo Stretto — live Italian radio, made for the car",
+  title: "Onde dallo Stretto — live Italian radio, in your car",
   description:
-    "Onde dallo Stretto plays live Italian radio the way a car radio does: turn through the FM dial and pick up the stations of Messina, Sicily — real Italian voices and real Italian music. A LUTHOR Lab product.",
+    "Onde dallo Stretto brings real Italian radio to your dashboard: the music, the voices, the warmth of Italy — live and unfiltered. Turn the dial across a real FM band, stop on a frequency, and listen. A LUTHOR Lab product.",
   alternates: {
     canonical: "https://luthorlab.com/onde-dallo-stretto",
   },

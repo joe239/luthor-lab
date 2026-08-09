@@ -823,6 +823,33 @@ a.lab-store-btn:hover {
   color: var(--onde-dim);
 }
 
+.onde-subhead {
+  margin: 14px 0 0;
+  font-size: 17px;
+  line-height: 1.55;
+  color: var(--onde-offwhite);
+  max-width: 42ch;
+}
+
+.onde-features {
+  margin: 28px 0 0;
+  padding: 0;
+  list-style: none;
+  max-width: 62ch;
+  color: rgba(235, 232, 222, 0.72);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.onde-features li + li {
+  margin-top: 10px;
+}
+
+.onde-features li::before {
+  content: "— ";
+  color: var(--onde-amber);
+}
+
 /* Language dropdown — top right of the product page. */
 
 .onde-langs {
