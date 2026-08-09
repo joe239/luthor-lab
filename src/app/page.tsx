@@ -147,6 +147,28 @@ export default function LabPage() {
                   </a>
                 </div>
               </article>
+
+              <article className="lab-card lab-reveal lab-reveal--d3">
+                <span className="lab-status lab-status--soon">Coming soon</span>
+                <h3 className="lab-card-name">Onde dallo Stretto</h3>
+                <p>
+                  An Italian radio app that works like a real car radio — you
+                  turn through the FM dial and pick up the stations you would
+                  receive driving around Messina. For people from Messina
+                  living away from home.
+                </p>
+                <div className="lab-card-actions">
+                  <Link href="/onde-dallo-stretto" className="lab-card-open">
+                    View product →
+                  </Link>
+                  <a
+                    href={`mailto:${LAB_CONTACT_EMAIL}?subject=Onde%20dallo%20Stretto`}
+                    className="lab-card-alt"
+                  >
+                    Ask about it
+                  </a>
+                </div>
+              </article>
             </div>
           </div>
         </section>

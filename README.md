@@ -6,14 +6,16 @@ static HTML — no auth, no database, no API routes, no environment variables.
 
 ## Routes
 
-| This site          | Source page on luthoradvisory.com |
-| ------------------ | --------------------------------- |
-| `/`                | `/lab`                            |
-| `/riskpro`         | `/lab/riskpro`                    |
-| `/riskpro/privacy` | `/lab/riskpro/privacy`            |
+| This site             | Source page on luthoradvisory.com |
+| --------------------- | --------------------------------- |
+| `/`                   | `/lab`                            |
+| `/riskpro`            | `/lab/riskpro`                    |
+| `/riskpro/privacy`    | `/lab/riskpro/privacy`            |
+| `/onde-dallo-stretto` | — (Lab-only, self-canonical)      |
 
-Every page carries a canonical link tag pointing to the corresponding
-`luthoradvisory.com` URL.
+Pages replicated from the main site carry a canonical link tag pointing to
+the corresponding `luthoradvisory.com` URL. `/onde-dallo-stretto` exists only
+here and is canonical to `https://luthorlab.com/onde-dallo-stretto`.
 
 ## Development
 

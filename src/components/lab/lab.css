@@ -523,6 +523,13 @@ a.lab-store-btn:hover {
   letter-spacing: -0.01em;
 }
 
+/* Not-yet-available store badge — same pill, non-clickable, dimmed. */
+
+.lab-store-btn--soon {
+  opacity: 0.6;
+  cursor: default;
+}
+
 
 /* —— Join the Lab band (from .landing-wave) —— */
 
@@ -703,6 +710,58 @@ a.lab-store-btn:hover {
 
 .lab-footer-note a:hover {
   color: var(--ink-soft);
+}
+
+/* —— Onde dallo Stretto — dark radio bands ——
+   Colors read from the app source (RadioUIConstants): background
+   rgb(0.075, 0.078, 0.082), preset surface rgb(0.095, 0.098, 0.103),
+   amber rgb(1.0, 0.61, 0.12), off-white rgb(0.92, 0.91, 0.87). */
+
+.lab-root {
+  --onde-dark: #131415;
+  --onde-surface: #18191a;
+  --onde-amber: #ff9c1f;
+  --onde-offwhite: #ebe8de;
+}
+
+.lab-hero--onde {
+  background: var(--onde-dark);
+}
+
+.lab-hero--onde .lab-kicker {
+  color: var(--onde-amber);
+}
+
+.lab-hero--onde h1 {
+  color: var(--onde-offwhite);
+}
+
+.lab-hero--onde .lab-hero-accent {
+  color: var(--onde-amber);
+}
+
+.lab-hero--onde .lab-hero-lede {
+  color: rgba(235, 232, 222, 0.72);
+}
+
+.lab-section--onde {
+  background: var(--onde-dark);
+  padding-top: 72px;
+}
+
+.lab-section--onde .lab-shots {
+  margin-top: 0;
+}
+
+.lab-section--onde .lab-shot {
+  background: var(--onde-surface);
+  border-color: rgba(235, 232, 222, 0.16);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+}
+
+.lab-section--onde .lab-shot-placeholder {
+  color: rgba(235, 232, 222, 0.45);
+  border-color: rgba(235, 232, 222, 0.2);
 }
 
 /* —— Responsive —— */

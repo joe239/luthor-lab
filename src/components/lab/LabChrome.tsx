@@ -15,10 +15,6 @@ export function LabNav() {
         <Link href="/" className="lab-logo-mark" aria-label="LUTHOR Lab home">
           L<span className="lab-logo-word">Lab</span>
         </Link>
-        <span className="lab-nav-spacer" />
-        <a href="https://luthoradvisory.com/" className="lab-nav-link">
-          Luthor for banks
-        </a>
       </div>
     </nav>
   );
@@ -32,7 +28,6 @@ export function LabFooter({ note }: { note?: ReactNode }) {
           L
         </Link>
         <p className="lab-footer-links">
-          <a href="https://luthoradvisory.com/">Luthor</a> ·{" "}
           <Link href="/">Lab</Link> ·{" "}
           <a href={`mailto:${LAB_CONTACT_EMAIL}`}>{LAB_CONTACT_EMAIL}</a> · ©
           2026 Luthor Advisory · Luxembourg
@@ -80,17 +75,46 @@ export function AppStoreBadge({
       </a>
     );
   }
-  return <span className="lab-store-soon">Coming soon to the App Store</span>;
+  return (
+    <span className="lab-store-btn lab-store-btn--soon">
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img className="lab-store-btn-icon" src="/lab/store-apple.png" alt="" />
+      <span className="lab-store-btn-text">
+        <small>Coming soon to the</small>
+        <strong>App Store</strong>
+      </span>
+    </span>
+  );
 }
 
-export function GooglePlayBadge({ storeUrl }: { storeUrl: string }) {
+export function GooglePlayBadge({
+  storeUrl = null,
+}: {
+  storeUrl?: string | null;
+}) {
+  if (storeUrl) {
+    return (
+      <a
+        className="lab-store-btn"
+        href={storeUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          className="lab-store-btn-icon"
+          src="/lab/store-googleplay.png"
+          alt=""
+        />
+        <span className="lab-store-btn-text">
+          <small>Get it on</small>
+          <strong>Google Play</strong>
+        </span>
+      </a>
+    );
+  }
   return (
-    <a
-      className="lab-store-btn"
-      href={storeUrl}
-      target="_blank"
-      rel="noopener noreferrer"
-    >
+    <span className="lab-store-btn lab-store-btn--soon">
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         className="lab-store-btn-icon"
@@ -98,9 +122,9 @@ export function GooglePlayBadge({ storeUrl }: { storeUrl: string }) {
         alt=""
       />
       <span className="lab-store-btn-text">
-        <small>Get it on</small>
+        <small>Coming soon on</small>
         <strong>Google Play</strong>
       </span>
-    </a>
+    </span>
   );
 }
