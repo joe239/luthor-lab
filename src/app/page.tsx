@@ -48,7 +48,31 @@ export default function LabPage() {
           </div>
         </header>
 
-        <section className="lab-section" aria-label="Lab products">
+        <section
+          className="lab-section lab-section--cream"
+          aria-label="The Lab"
+        >
+          <div className="lab-wrap">
+            <p className="lab-kicker lab-reveal">The Lab</p>
+            <h2 className="lab-section-title lab-reveal lab-reveal--d1">
+              LUTHOR Lab
+            </h2>
+            <p className="lab-hero-lede lab-reveal lab-reveal--d2">
+              LUTHOR Lab is a one-person software laboratory: useful
+              applications built with AI, shipped and used in the real world.
+            </p>
+            <p className="lab-hero-lede lab-reveal lab-reveal--d3">
+              The method: the founder keeps the architecture, the domain
+              judgement and the testing; AI coding agents are the
+              implementation layer. Ship it, use it daily, fix what annoys.
+            </p>
+          </div>
+        </section>
+
+        <section
+          className="lab-section lab-section--pad-top"
+          aria-label="Lab products"
+        >
           <div className="lab-wrap">
             <p className="lab-kicker lab-reveal">What&apos;s on the bench</p>
             <h2 className="lab-section-title lab-reveal lab-reveal--d1">
@@ -131,6 +155,35 @@ export default function LabPage() {
                 </div>
               </article>
             </div>
+          </div>
+        </section>
+
+        <section
+          id="behind-the-lab"
+          className="lab-section lab-section--cream"
+          aria-label="Behind the Lab"
+        >
+          <div className="lab-wrap">
+            <p className="lab-kicker lab-reveal">Behind the Lab</p>
+            <h2 className="lab-section-title lab-reveal lab-reveal--d1">
+              Giovanni Cusmano
+            </h2>
+            <p className="lab-hero-lede lab-reveal lab-reveal--d2">
+              Giovanni Cusmano — market risk and IRRBB in Luxembourg banking.
+              FRM, MSc Bocconi. Luxembourg City. Fifteen years in risk
+              management, the last five as the sole risk officer of a Class 1
+              third-country branch under CRD6 — which means the whole
+              perimeter sits on one desk: IRRBB, liquidity stress testing,
+              ICAAP and ILAAP, the Recovery Plan, model design and
+              validation, and the governance around all of it.
+            </p>
+            <p className="lab-hero-lede lab-reveal lab-reveal--d3">
+              Risk Management — Agricultural Bank of China, Luxembourg Branch.
+              June 2021 to present. Leading ICLAAP and Recovery Plan. Building
+              and validating risk models against regulatory and Group
+              requirements. Market and liquidity risk monitoring and
+              reporting.
+            </p>
           </div>
         </section>
 

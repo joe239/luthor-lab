@@ -16,9 +16,6 @@ export function LabNav() {
           L<span className="lab-logo-word">Lab</span>
         </Link>
         <span className="lab-nav-spacer" />
-        <Link href="/about" className="lab-nav-link">
-          About
-        </Link>
       </div>
     </nav>
   );
