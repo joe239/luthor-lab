@@ -707,7 +707,16 @@ a.lab-store-btn:hover {
   justify-content: space-between;
   gap: 20px;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
+}
+
+.lab-footer-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+  min-width: 0;
+  flex: 1 1 16rem;
 }
 
 .lab-footer-logo {
@@ -731,11 +740,11 @@ a.lab-store-btn:hover {
 }
 
 .lab-footer-note {
-  margin-top: 18px;
+  margin-top: 0;
   font-size: 12.5px;
   color: #a29a89;
   line-height: 1.7;
-  max-width: 80ch;
+  max-width: 56ch;
 }
 
 .lab-footer-note a {
@@ -814,35 +823,79 @@ a.lab-store-btn:hover {
   color: var(--onde-dim);
 }
 
-/* Language switcher — top of the product page, mono like the dial. */
+/* Language dropdown — top right of the product page. */
 
 .onde-langs {
+  position: relative;
   display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  gap: 8px 16px;
+  justify-content: flex-end;
   padding: 22px 0 0;
   font-family: "JetBrains Mono", monospace;
   font-size: 11px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
+  z-index: 20;
+}
+
+.onde-lang-trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: var(--onde-amber);
+  font: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+  cursor: pointer;
+}
+
+.onde-lang-trigger:hover {
+  color: var(--onde-offwhite);
+}
+
+.onde-lang-caret {
+  font-size: 9px;
+  line-height: 1;
+  opacity: 0.8;
+}
+
+.onde-lang-menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  margin: 0;
+  padding: 8px 0;
+  list-style: none;
+  min-width: 11rem;
+  background: var(--onde-surface);
+  border: 1px solid var(--onde-line);
+  border-radius: 8px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45);
+}
+
+.onde-lang-menu li {
+  margin: 0;
 }
 
 .onde-lang {
+  display: block;
+  padding: 8px 14px;
   color: var(--onde-dim);
   text-decoration: none;
-  border-bottom: 1px solid transparent;
-  transition: color 0.15s ease, border-color 0.15s ease;
+  border: none;
+  transition: color 0.15s ease, background 0.15s ease;
 }
 
 a.onde-lang:hover {
   color: var(--onde-offwhite);
-  border-bottom-color: rgba(235, 232, 222, 0.35);
+  background: rgba(255, 156, 31, 0.08);
 }
 
 .onde-lang--active {
   color: var(--onde-amber);
-  border-bottom-color: var(--onde-amber);
 }
 
 .onde-lang-gate,

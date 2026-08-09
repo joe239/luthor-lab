@@ -25,20 +25,22 @@ export function LabFooter({ note }: { note?: ReactNode }) {
   return (
     <footer className="lab-footer">
       <div className="lab-wrap lab-footer-top">
-        <Link href="/" className="lab-footer-logo" aria-label="LUTHOR Lab home">
-          L
-        </Link>
+        <div className="lab-footer-brand">
+          <Link
+            href="/"
+            className="lab-footer-logo"
+            aria-label="LUTHOR Lab home"
+          >
+            L
+          </Link>
+          {note ? <p className="lab-footer-note">{note}</p> : null}
+        </div>
         <p className="lab-footer-links">
           <Link href="/">Lab</Link> ·{" "}
           <a href={`mailto:${LAB_CONTACT_EMAIL}`}>{LAB_CONTACT_EMAIL}</a> · ©
           2026 LUTHOR Lab · Luxembourg
         </p>
       </div>
-      {note ? (
-        <div className="lab-wrap">
-          <p className="lab-footer-note">{note}</p>
-        </div>
-      ) : null}
     </footer>
   );
 }
