@@ -28,6 +28,7 @@ const STRINGS = {
     storeHint: "not in the stores yet — coming soon",
     noteBefore: "Onde dallo Stretto is a LUTHOR Lab product. Support:",
     privacyLabel: "Privacy Policy",
+    iconAlt: "Onde dallo Stretto app icon",
     shots: [
       {
         src: "/lab/onde-shot-dial.jpg",
@@ -54,6 +55,7 @@ const STRINGS = {
     storeHint: "non è ancora negli store — in arrivo",
     noteBefore: "Onde dallo Stretto è un prodotto LUTHOR Lab. Supporto:",
     privacyLabel: "Informativa privacy",
+    iconAlt: "Icona dell'app Onde dallo Stretto",
     shots: [
       {
         src: "/lab/onde-shot-dial.jpg",
@@ -94,23 +96,31 @@ export default function OndeContent() {
 
       <main className="lab-main">
         <header className="lab-hero">
-          <div className="lab-wrap">
-            <p className="lab-kicker">{t.kicker}</p>
-            <h1>Onde dallo Stretto</h1>
-            <p className="lab-hero-lede">{t.lede}</p>
-            <div className="onde-dial" aria-hidden="true">
-              <div className="onde-dial-scale">
-                <span className="onde-dial-needle" />
-              </div>
-              <div className="onde-dial-numbers">
-                <span>87</span>
-                <span>92</span>
-                <span>96</span>
-                <span>100</span>
-                <span>104</span>
-                <span>108</span>
+          <div className="lab-wrap onde-hero-wrap">
+            <div className="onde-hero-copy">
+              <p className="lab-kicker">{t.kicker}</p>
+              <h1>Onde dallo Stretto</h1>
+              <p className="lab-hero-lede">{t.lede}</p>
+              <div className="onde-dial" aria-hidden="true">
+                <div className="onde-dial-scale">
+                  <span className="onde-dial-needle" />
+                </div>
+                <div className="onde-dial-numbers">
+                  <span>87</span>
+                  <span>92</span>
+                  <span>96</span>
+                  <span>100</span>
+                  <span>104</span>
+                  <span>108</span>
+                </div>
               </div>
             </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              className="onde-app-icon"
+              src="/lab/onde-icon.png"
+              alt={t.iconAlt}
+            />
           </div>
         </header>
 

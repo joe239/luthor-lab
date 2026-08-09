@@ -778,6 +778,36 @@ a.lab-store-btn:hover {
   color: var(--onde-dim);
 }
 
+/* Hero layout — copy on the left, app icon top right. */
+
+.onde-hero-wrap {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 28px;
+}
+
+.onde-hero-copy {
+  min-width: 0;
+}
+
+.onde-app-icon {
+  flex: none;
+  width: 112px;
+  height: 112px;
+  border-radius: 26px;
+  border: 1px solid var(--onde-line);
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 640px) {
+  .onde-app-icon {
+    width: 72px;
+    height: 72px;
+    border-radius: 17px;
+  }
+}
+
 /* Decorative FM dial, drawn like the app's tuner scale. */
 
 .onde-dial {
