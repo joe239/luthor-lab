@@ -55,14 +55,17 @@ export default function OndeDalloStrettoPrivacyPage() {
             </p>
             <p>
               At launch, the app downloads its station list from a static
-              file. This request carries no personal data and no identifiers.
+              file. The file contains no personal data and no identifiers,
+              but the request reaches the hosting provider, which may record
+              the IP address in its technical logs, as with any web request.
             </p>
 
             <h2>Terms of Use</h2>
             <p>
-              Onde dallo Stretto is a directory. It links to the public,
-              official streams of the radio stations it lists. The app does
-              not host, store, re-broadcast, or modify any audio content.
+              Onde dallo Stretto is a directory. It links to the publicly
+              accessible streams published by the broadcasters of the radio
+              stations it lists. The app does not host, store, re-broadcast,
+              or modify any audio content.
             </p>
             <p>
               All content, station names, and trademarks belong to their
@@ -77,7 +80,7 @@ export default function OndeDalloStrettoPrivacyPage() {
               If you represent a broadcaster and wish your station to be
               removed from the list, contact us at{" "}
               <a href="mailto:info@luthorlab.com">info@luthorlab.com</a>:
-              removal will be carried out promptly.
+              removal will be carried out within five working days.
             </p>
             <p>
               Stream availability depends entirely on the broadcasters&apos;
