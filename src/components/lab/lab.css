@@ -669,6 +669,31 @@ a.lab-store-btn:hover {
   text-underline-offset: 0.15em;
 }
 
+/* —— About page — compact experience list —— */
+
+.lab-xp {
+  margin-top: 24px;
+}
+
+.lab-prose .lab-xp-role {
+  margin-top: 0;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.lab-prose .lab-xp-dates {
+  margin-top: 2px;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 10.5px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #8a8478;
+}
+
+.lab-prose .lab-xp p:last-child {
+  margin-top: 6px;
+}
+
 /* —— Footer (from .landing-footer) —— */
 
 .lab-footer {

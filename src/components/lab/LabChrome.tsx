@@ -15,6 +15,10 @@ export function LabNav() {
         <Link href="/" className="lab-logo-mark" aria-label="LUTHOR Lab home">
           L<span className="lab-logo-word">Lab</span>
         </Link>
+        <span className="lab-nav-spacer" />
+        <Link href="/about" className="lab-nav-link">
+          About
+        </Link>
       </div>
     </nav>
   );
