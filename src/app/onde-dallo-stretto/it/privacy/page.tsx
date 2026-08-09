@@ -80,7 +80,7 @@ export default function OndeDalloStrettoPrivacyItPage() {
               Le emittenti che desiderano che la propria stazione sia rimossa
               dall&apos;elenco possono scrivere a{" "}
               <a href="mailto:info@luthorlab.com">info@luthorlab.com</a>: la
-              rimozione viene effettuata entro cinque giorni lavorativi.
+              rimozione viene effettuata nel più breve tempo possibile.
             </p>
             <p>
               La disponibilità degli stream dipende esclusivamente dai server delle

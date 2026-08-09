@@ -80,7 +80,7 @@ export default function OndeDalloStrettoPrivacyPage() {
               If you represent a broadcaster and wish your station to be
               removed from the list, contact us at{" "}
               <a href="mailto:info@luthorlab.com">info@luthorlab.com</a>:
-              removal will be carried out within five working days.
+              removal will be carried out promptly.
             </p>
             <p>
               Stream availability depends entirely on the broadcasters&apos;
