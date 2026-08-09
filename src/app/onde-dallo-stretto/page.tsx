@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 import { LabNav } from "@/components/lab/LabChrome";
 
-import { ONDE_LANG_STORAGE_KEY, ONDE_LOCALES } from "./content";
+import OndeLocaleRedirect from "./OndeLocaleRedirect";
 
 export const metadata: Metadata = {
   title: "Onde dallo Stretto — live Italian radio, in your car",
@@ -15,32 +15,13 @@ export const metadata: Metadata = {
 
 export const dynamic = "force-static";
 
-/* Static export cannot negotiate Accept-Language on the server. This page
-   is a detector: plain JS reads localStorage (manual choice) or the browser
-   language, then replaces the URL with /onde-dallo-stretto/{locale}. */
-
-const DETECT_SCRIPT = `(function () {
-  var locales = ${JSON.stringify(ONDE_LOCALES)};
-  var key = ${JSON.stringify(ONDE_LANG_STORAGE_KEY)};
-  var chosen = null;
-  try {
-    var stored = localStorage.getItem(key);
-    if (stored && locales.indexOf(stored) !== -1) chosen = stored;
-  } catch (e) {}
-  if (!chosen) {
-    var nav = (navigator.language || "").toLowerCase();
-    if (nav.indexOf("it") === 0) chosen = "it";
-    else if (nav.indexOf("ja") === 0) chosen = "ja";
-    else if (nav.indexOf("fr") === 0) chosen = "fr";
-    else if (nav.indexOf("de") === 0) chosen = "de";
-    else chosen = "en";
-  }
-  location.replace("/onde-dallo-stretto/" + chosen);
-})();`;
+/* Primary redirect: blocking <head> script on full document load (root layout).
+   Soft-nav fallback: OndeLocaleRedirect. Prefer plain <a> links to this path. */
 
 export default function OndeDalloStrettoGatePage() {
   return (
     <div className="lab-root lab-root--onde">
+      <OndeLocaleRedirect />
       <LabNav />
       <main className="lab-main">
         <div className="lab-wrap">
@@ -60,7 +41,6 @@ export default function OndeDalloStrettoGatePage() {
           </noscript>
         </div>
       </main>
-      <script dangerouslySetInnerHTML={{ __html: DETECT_SCRIPT }} />
     </div>
   );
 }

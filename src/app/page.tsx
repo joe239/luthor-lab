@@ -128,9 +128,9 @@ export default function LabPage() {
                   living away from home.
                 </p>
                 <div className="lab-card-actions">
-                  <Link href="/onde-dallo-stretto" className="lab-card-open">
+                  <a href="/onde-dallo-stretto" className="lab-card-open">
                     View product →
-                  </Link>
+                  </a>
                 </div>
               </article>
 

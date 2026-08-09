@@ -1,4 +1,3 @@
-import Link from "next/link";
 import type { Metadata } from "next";
 
 import { LabFooter, LabNav } from "@/components/lab/LabChrome";
@@ -25,12 +24,12 @@ export default function OndeDalloStrettoPrivacyPage() {
         <div className="lab-wrap">
           <article className="lab-prose">
             <p className="lab-kicker">
-              <Link
+              <a
                 href="/onde-dallo-stretto"
                 style={{ color: "inherit", textDecoration: "none" }}
               >
                 Onde dallo Stretto
-              </Link>{" "}
+              </a>{" "}
               · Privacy &amp; Terms of Use
             </p>
             <h1>Privacy &amp; Terms of Use</h1>

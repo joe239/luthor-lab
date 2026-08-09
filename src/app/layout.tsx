@@ -1,5 +1,7 @@
 import type { Metadata, Viewport } from "next";
 
+import { ONDE_DETECT_LOCALE_SCRIPT } from "@/app/onde-dallo-stretto/detect-locale-script";
+
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -36,6 +38,9 @@ export default function RootLayout({
         <link
           href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Sans:wght@300;400;500&family=JetBrains+Mono:wght@300;400;500&display=swap"
           rel="stylesheet"
+        />
+        <script
+          dangerouslySetInnerHTML={{ __html: ONDE_DETECT_LOCALE_SCRIPT }}
         />
       </head>
       <body>{children}</body>
