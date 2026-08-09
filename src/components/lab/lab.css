@@ -1,0 +1,792 @@
+/* LUTHOR Lab — same design language as the landing page (landing.css):
+   cream + green palette, Sora headings, DM Sans body, JetBrains Mono labels.
+   Tokens are copied verbatim from .landing-root so the Lab pages read as
+   native siblings of the landing and About pages. */
+
+.lab-root {
+  --gold: #c8a24b;
+  --gold-deep: #a8842f;
+  --ink: #14120d;
+  --ink-soft: #4a463c;
+  --cream: #faf6ee;
+  --cream-2: #f3ecdd;
+  --green: #3e6b5c;
+  --green-soft: #e3ecdf;
+  --mint-ink: #2c4f43;
+  --dark: #191713;
+  --line: rgba(20, 18, 13, 0.12);
+  --line-dark: rgba(250, 246, 238, 0.13);
+
+  font-family: "DM Sans", sans-serif;
+  background: #fff;
+  color: var(--ink);
+  font-size: 17px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  min-height: 100dvh;
+  overflow-x: clip;
+  display: flex;
+  flex-direction: column;
+}
+
+.lab-root *,
+.lab-root *::before,
+.lab-root *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.lab-root h1,
+.lab-root h2,
+.lab-root h3 {
+  font-family: "Sora", sans-serif;
+  letter-spacing: -0.02em;
+}
+
+.lab-wrap {
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 28px;
+}
+
+.lab-main {
+  flex: 1;
+}
+
+/* —— Nav —— */
+
+.lab-nav {
+  position: sticky;
+  top: 0;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line);
+  z-index: 40;
+}
+
+.lab-nav-inner {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  height: 64px;
+}
+
+.lab-logo-mark {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 10px;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 1;
+  color: var(--gold);
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.lab-logo-word {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--green);
+}
+
+.lab-nav-spacer {
+  flex: 1;
+}
+
+.lab-nav-link {
+  font-size: 14px;
+  color: var(--ink-soft);
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color 0.15s;
+}
+
+.lab-nav-link:hover {
+  color: var(--ink);
+}
+
+/* —— Shared type —— */
+
+.lab-kicker {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--green);
+  margin-bottom: 14px;
+}
+
+.lab-hero {
+  padding: 80px 0 60px;
+}
+
+.lab-hero h1 {
+  font-size: clamp(34px, 5.4vw, 56px);
+  line-height: 1.08;
+  max-width: 18ch;
+}
+
+/* v2 hero — bigger type, more air (N26-style scale on house tokens) */
+
+.lab-hero--v2 {
+  padding: 104px 0 88px;
+}
+
+.lab-hero--v2 h1 {
+  font-size: clamp(40px, 7.2vw, 76px);
+  font-weight: 800;
+  line-height: 1.04;
+  max-width: 14ch;
+}
+
+.lab-mission {
+  margin-top: 26px;
+  max-width: 62ch;
+}
+
+.lab-hero-cta {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 34px;
+}
+
+.lab-hero-accent {
+  color: var(--green);
+}
+
+.lab-hero-lede {
+  margin: 22px 0 0;
+  font-size: 17.5px;
+  line-height: 1.65;
+  color: var(--ink-soft);
+  max-width: 58ch;
+}
+
+.lab-section {
+  padding: 0 0 84px;
+}
+
+/* Full-bleed cream band — breaks up the white/green rhythm. */
+.lab-section--cream {
+  background: var(--cream);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  padding-top: 72px;
+}
+
+/* Breathing room when a section follows a full-bleed band. */
+.lab-section--pad-top {
+  padding-top: 72px;
+}
+
+.lab-section-title {
+  font-size: clamp(24px, 3.4vw, 32px);
+  line-height: 1.15;
+}
+
+/* —— Principles (from .landing-pillar) —— */
+
+.lab-principles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.lab-principle {
+  background: var(--green-soft);
+  border-radius: 14px;
+  padding: 28px 24px;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.lab-principle:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 34px rgba(20, 18, 13, 0.1);
+}
+
+.lab-principle-num {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  color: var(--green);
+  margin-bottom: 12px;
+}
+
+.lab-principle h2 {
+  font-size: 18px;
+  color: var(--mint-ink);
+  margin-bottom: 8px;
+}
+
+.lab-principle-body {
+  font-size: 14.5px;
+  line-height: 1.65;
+  color: var(--mint-ink);
+}
+
+/* —— Product cards (from .landing-feat) —— */
+
+.lab-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+  margin-top: 36px;
+}
+
+.lab-card {
+  display: block;
+  background: var(--cream);
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--green);
+  border-radius: 14px;
+  padding: 26px 22px;
+  text-decoration: none;
+  color: inherit;
+  transition: box-shadow 0.18s ease, transform 0.18s ease;
+}
+
+.lab-card:hover {
+  box-shadow: 0 14px 34px rgba(20, 18, 13, 0.12);
+  transform: translateY(-4px);
+}
+
+.lab-card-name {
+  font-size: 19px;
+  margin-bottom: 8px;
+}
+
+.lab-card p {
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: var(--ink-soft);
+}
+
+.lab-card-actions {
+  display: flex;
+  align-items: baseline;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+
+.lab-card-open {
+  display: inline-block;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 10.5px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--green);
+  text-decoration: none;
+}
+
+.lab-card-open:hover {
+  color: var(--mint-ink);
+}
+
+.lab-card-alt {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 10.5px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.lab-card-alt:hover {
+  color: var(--ink);
+}
+
+/* Status badge (from .landing-badge / .landing-chip) */
+
+.lab-status {
+  display: inline-block;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 9.5px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 3px 9px;
+  border-radius: 999px;
+  margin-bottom: 14px;
+  font-weight: 400;
+}
+
+.lab-status--live {
+  background: var(--green);
+  color: var(--cream);
+}
+
+.lab-status--soon {
+  background: transparent;
+  color: var(--gold-deep);
+  border: 1px solid rgba(200, 162, 75, 0.5);
+}
+
+.lab-status--dev {
+  background: transparent;
+  color: #8a8478;
+  border: 1px solid var(--line);
+}
+
+/* —— Buttons (copied from .landing-btn) —— */
+
+.lab-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  padding: 14px 28px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: opacity 0.15s, transform 0.15s;
+}
+
+.lab-btn:hover {
+  opacity: 0.92;
+}
+
+.lab-btn--green {
+  background: var(--green);
+  color: var(--cream);
+}
+
+.lab-btn--ghost {
+  background: transparent;
+  color: var(--ink);
+  border: 1px solid var(--line);
+}
+
+.lab-btn--cream {
+  background: var(--cream);
+  color: var(--mint-ink);
+}
+
+/* —— Product page —— */
+
+.lab-product-lead {
+  margin-top: 26px;
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--ink-soft);
+  max-width: 62ch;
+}
+
+/* Screenshot slots — portrait iPhone-ratio frames, dark like .landing-frame.
+   Placeholders until real assets are dropped in. */
+
+.lab-shots {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  margin-top: 48px;
+}
+
+.lab-shot {
+  aspect-ratio: 9 / 19.5;
+  background: var(--dark);
+  border: 1px solid rgba(20, 18, 13, 0.2);
+  border-radius: 28px;
+  box-shadow: 0 24px 60px rgba(20, 18, 13, 0.22);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.lab-shot img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.lab-shot-placeholder {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(250, 246, 238, 0.35);
+  border: 1px dashed var(--line-dark);
+  border-radius: 12px;
+  padding: 14px 12px;
+  margin: 12px;
+  text-align: center;
+  line-height: 1.8;
+}
+
+/* App Store badge area */
+
+.lab-store {
+  margin-top: 48px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.lab-store-soon {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 13px 22px;
+  background: var(--cream-2);
+}
+
+.lab-store-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--dark);
+  color: var(--cream);
+  border-radius: 10px;
+  padding: 13px 22px;
+  text-decoration: none;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  transition: opacity 0.15s;
+}
+
+.lab-store-link:hover {
+  opacity: 0.92;
+}
+
+/* Store buttons — structure from the iMeditazione .bttn-icon pill
+   (icon + small/strong two-line label), restyled on the Lab tokens. */
+
+.lab-store-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  background: var(--dark);
+  color: var(--cream);
+  border-radius: 100px;
+  padding: 12px 28px 12px 22px;
+  text-decoration: none;
+  transition:
+    background 0.15s,
+    box-shadow 0.15s,
+    transform 0.15s;
+}
+
+a.lab-store-btn:hover {
+  background: var(--green);
+  box-shadow: 0 20px 40px -15px rgba(20, 18, 13, 0.4);
+  transform: translateY(-1px);
+}
+
+.lab-store-btn-icon {
+  width: 26px;
+  height: auto;
+  display: block;
+  flex: none;
+}
+
+.lab-store-btn-text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  line-height: 1.25;
+}
+
+.lab-store-btn-text small {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 9px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(250, 246, 238, 0.7);
+}
+
+.lab-store-btn-text strong {
+  font-family: "Sora", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+
+/* —— Join the Lab band (from .landing-wave) —— */
+
+.lab-join {
+  background: var(--green);
+}
+
+.lab-join-inner {
+  padding-top: 84px;
+  padding-bottom: 84px;
+}
+
+.lab-kicker--join {
+  color: #cfe0d5;
+}
+
+.lab-join h2 {
+  color: var(--cream);
+  font-size: clamp(26px, 4vw, 38px);
+  line-height: 1.15;
+  max-width: 22ch;
+}
+
+.lab-join-lede {
+  margin-top: 18px;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #dbe7de;
+  max-width: 58ch;
+}
+
+.lab-join-contact {
+  margin-top: 18px;
+  font-size: 14px;
+  color: #cfe0d5;
+}
+
+.lab-join-contact a {
+  color: var(--cream);
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+.lab-join-contact a:hover {
+  opacity: 0.85;
+}
+
+/* —— Reveal motion (CSS-only) ——
+   Base: fade/slide-in animation on load with a small stagger. Where
+   scroll-driven animations are supported, the same keyframes are bound to
+   the element's own view() timeline so sections reveal as they scroll in.
+   prefers-reduced-motion disables all of it (content fully visible). */
+
+@keyframes lab-rise {
+  from {
+    opacity: 0;
+    transform: translateY(22px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.lab-reveal {
+  animation: lab-rise 0.65s cubic-bezier(0.22, 0.61, 0.36, 1) both;
+}
+
+.lab-reveal--d1 {
+  animation-delay: 0.08s;
+}
+
+.lab-reveal--d2 {
+  animation-delay: 0.16s;
+}
+
+.lab-reveal--d3 {
+  animation-delay: 0.24s;
+}
+
+@supports (animation-timeline: view()) {
+  .lab-reveal {
+    animation: lab-rise linear both;
+    animation-delay: 0s;
+    animation-timeline: view();
+    animation-range: entry 0% entry 55%;
+  }
+}
+
+/* —— Privacy page —— */
+
+.lab-prose {
+  padding: 64px 0 84px;
+  max-width: 72ch;
+}
+
+.lab-prose h1 {
+  font-size: clamp(28px, 4vw, 40px);
+  line-height: 1.12;
+}
+
+.lab-prose-updated {
+  margin-top: 14px;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 10.5px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #8a8478;
+}
+
+.lab-prose h2 {
+  font-size: 19px;
+  margin: 40px 0 10px;
+}
+
+.lab-prose p {
+  margin-top: 10px;
+  font-size: 15.5px;
+  line-height: 1.7;
+  color: var(--ink-soft);
+}
+
+.lab-prose a {
+  color: var(--green);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+/* —— Footer (from .landing-footer) —— */
+
+.lab-footer {
+  background: var(--cream);
+  border-top: 1px solid var(--line);
+  padding: 36px 0 44px;
+}
+
+.lab-footer-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.lab-footer-logo {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1;
+  color: var(--gold);
+  text-decoration: none;
+}
+
+.lab-footer-links,
+.lab-footer-links a {
+  font-size: 12.5px;
+  color: #8a8478;
+  text-decoration: none;
+}
+
+.lab-footer-links a:hover {
+  color: var(--ink-soft);
+}
+
+.lab-footer-note {
+  margin-top: 18px;
+  font-size: 12.5px;
+  color: #a29a89;
+  line-height: 1.7;
+  max-width: 80ch;
+}
+
+.lab-footer-note a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.lab-footer-note a:hover {
+  color: var(--ink-soft);
+}
+
+/* —— Responsive —— */
+
+@media (max-width: 820px) {
+  .lab-cards,
+  .lab-principles {
+    grid-template-columns: 1fr;
+  }
+
+  .lab-shots {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+  }
+}
+
+@media (max-width: 640px) {
+  .lab-shots {
+    grid-template-columns: minmax(0, 260px);
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .lab-wrap {
+    padding-left: max(24px, env(safe-area-inset-left, 0px));
+    padding-right: max(24px, env(safe-area-inset-right, 0px));
+  }
+
+  .lab-hero {
+    padding-top: 56px;
+    padding-bottom: 48px;
+  }
+
+  .lab-hero--v2 {
+    padding-top: 72px;
+    padding-bottom: 60px;
+  }
+
+  .lab-hero-cta {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .lab-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .lab-join-inner {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  .lab-section {
+    padding-bottom: 64px;
+  }
+
+  .lab-footer-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .lab-store {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .lab-store-soon,
+  .lab-store-link,
+  .lab-store-btn {
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lab-root * {
+    transition: none !important;
+    animation: none !important;
+  }
+
+  .lab-reveal {
+    opacity: 1;
+    transform: none;
+  }
+}
