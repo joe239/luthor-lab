@@ -96,9 +96,7 @@ export default function OndeContent() {
         <header className="lab-hero">
           <div className="lab-wrap">
             <p className="lab-kicker">{t.kicker}</p>
-            <h1>
-              Onde <span className="lab-hero-accent">dallo Stretto</span>
-            </h1>
+            <h1>Onde dallo Stretto</h1>
             <p className="lab-hero-lede">{t.lede}</p>
             <div className="onde-dial" aria-hidden="true">
               <div className="onde-dial-scale">
