@@ -24,6 +24,7 @@ const STRINGS = {
     storeLabel: "Get the app",
     soonApple: "Coming soon to the",
     soonGoogle: "Coming soon on",
+    storeHint: "not in the stores yet — coming soon",
     noteBefore: "Onde dallo Stretto is a LUTHOR Lab product. Support:",
     shots: [
       {
@@ -48,6 +49,7 @@ const STRINGS = {
     storeLabel: "Scarica l'app",
     soonApple: "In arrivo su",
     soonGoogle: "In arrivo su",
+    storeHint: "non è ancora negli store — in arrivo",
     noteBefore: "Onde dallo Stretto è un prodotto LUTHOR Lab. Supporto:",
     shots: [
       {
@@ -84,17 +86,30 @@ export default function OndeContent() {
   const t = STRINGS[locale];
 
   return (
-    <div className="lab-root" lang={locale}>
+    <div className="lab-root lab-root--onde" lang={locale}>
       <LabNav />
 
       <main className="lab-main">
-        <header className="lab-hero lab-hero--onde">
+        <header className="lab-hero">
           <div className="lab-wrap">
             <p className="lab-kicker">{t.kicker}</p>
             <h1>
               Onde <span className="lab-hero-accent">dallo Stretto</span>
             </h1>
             <p className="lab-hero-lede">{t.lede}</p>
+            <div className="onde-dial" aria-hidden="true">
+              <div className="onde-dial-scale">
+                <span className="onde-dial-needle" />
+              </div>
+              <div className="onde-dial-numbers">
+                <span>87</span>
+                <span>92</span>
+                <span>96</span>
+                <span>100</span>
+                <span>104</span>
+                <span>108</span>
+              </div>
+            </div>
           </div>
         </header>
 
@@ -122,6 +137,7 @@ export default function OndeContent() {
 
         <section className="lab-section" aria-label={t.storeLabel}>
           <div className="lab-wrap">
+            <p className="onde-store-hint">{t.storeHint}</p>
             <div className="lab-store">
               <AppStoreBadge soonLabel={t.soonApple} />
               <GooglePlayBadge soonLabel={t.soonGoogle} />

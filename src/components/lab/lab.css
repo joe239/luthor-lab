@@ -712,40 +712,135 @@ a.lab-store-btn:hover {
   color: var(--ink-soft);
 }
 
-/* —— Onde dallo Stretto — dark radio bands ——
+/* —— Onde dallo Stretto — page skin from the app's own design ——
    Colors read from the app source (RadioUIConstants): background
    rgb(0.075, 0.078, 0.082), preset surface rgb(0.095, 0.098, 0.103),
-   amber rgb(1.0, 0.61, 0.12), off-white rgb(0.92, 0.91, 0.87). */
+   amber rgb(1.0, 0.61, 0.12), off-white rgb(0.92, 0.91, 0.87).
+   Everything is scoped to .lab-root--onde so the rest of the site keeps
+   the cream/green/gold tokens. */
 
 .lab-root {
   --onde-dark: #131415;
+  --onde-deep: #0e0f10;
   --onde-surface: #18191a;
   --onde-amber: #ff9c1f;
   --onde-offwhite: #ebe8de;
+  --onde-line: rgba(235, 232, 222, 0.14);
+  --onde-dim: rgba(235, 232, 222, 0.62);
 }
 
-.lab-hero--onde {
+.lab-root--onde {
   background: var(--onde-dark);
-}
-
-.lab-hero--onde .lab-kicker {
-  color: var(--onde-amber);
-}
-
-.lab-hero--onde h1 {
   color: var(--onde-offwhite);
 }
 
-.lab-hero--onde .lab-hero-accent {
+/* Chrome tinted to the app palette (this page only). */
+
+.lab-root--onde .lab-nav {
+  background: rgba(19, 20, 21, 0.92);
+  border-bottom-color: var(--onde-line);
+}
+
+.lab-root--onde .lab-logo-word {
   color: var(--onde-amber);
 }
 
-.lab-hero--onde .lab-hero-lede {
+.lab-root--onde .lab-footer {
+  background: var(--onde-dark);
+  border-top-color: var(--onde-line);
+}
+
+/* Hero — the radio face: thin mono display type, station-name lede. */
+
+.lab-root--onde .lab-kicker {
+  color: var(--onde-amber);
+}
+
+.lab-root--onde .lab-hero h1 {
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 300;
+  letter-spacing: 0.01em;
+  color: var(--onde-offwhite);
+  font-size: clamp(27px, 4.4vw, 48px);
+  max-width: none;
+}
+
+.lab-root--onde .lab-hero-accent {
+  color: var(--onde-amber);
+}
+
+.lab-root--onde .lab-hero-lede {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 12.5px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  line-height: 1.9;
+  color: var(--onde-dim);
+}
+
+/* Decorative FM dial, drawn like the app's tuner scale. */
+
+.onde-dial {
+  max-width: 540px;
+  margin-top: 48px;
+}
+
+.onde-dial-scale {
+  position: relative;
+  height: 15px;
+  border-top: 1px solid rgba(235, 232, 222, 0.4);
+  background-image:
+    repeating-linear-gradient(
+      90deg,
+      rgba(235, 232, 222, 0.28) 0,
+      rgba(235, 232, 222, 0.28) 1px,
+      transparent 1px,
+      transparent 11px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(235, 232, 222, 0.45) 0,
+      rgba(235, 232, 222, 0.45) 1px,
+      transparent 1px,
+      transparent 55px
+    );
+  background-size:
+    100% 7px,
+    100% 13px;
+  background-repeat: no-repeat;
+}
+
+.onde-dial-needle {
+  position: absolute;
+  top: -5px;
+  bottom: -2px;
+  left: 37.6%; /* 94.9 on the 87–108 scale */
+  width: 2px;
+  background: var(--onde-amber);
+}
+
+.onde-dial-numbers {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  color: var(--onde-dim);
+}
+
+/* Body copy on dark. */
+
+.lab-root--onde .lab-product-lead {
   color: rgba(235, 232, 222, 0.72);
 }
 
+/* Screenshot band — a deeper black, frames on the preset surface. */
+
 .lab-section--onde {
-  background: var(--onde-dark);
+  background: var(--onde-deep);
+  border-top: 1px solid rgba(235, 232, 222, 0.08);
+  border-bottom: 1px solid rgba(235, 232, 222, 0.08);
   padding-top: 72px;
 }
 
@@ -755,13 +850,32 @@ a.lab-store-btn:hover {
 
 .lab-section--onde .lab-shot {
   background: var(--onde-surface);
-  border-color: rgba(235, 232, 222, 0.16);
-  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+  border-color: var(--onde-line);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5);
 }
 
-.lab-section--onde .lab-shot-placeholder {
-  color: rgba(235, 232, 222, 0.45);
-  border-color: rgba(235, 232, 222, 0.2);
+/* Store area — mono hint like the app's preset caption, pills on the
+   preset surface. */
+
+.onde-store-hint {
+  margin-top: 48px;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 10.5px;
+  letter-spacing: 0.18em;
+  color: var(--onde-dim);
+}
+
+.lab-root--onde .lab-store {
+  margin-top: 16px;
+}
+
+.lab-root--onde .lab-store-btn {
+  background: var(--onde-surface);
+  border: 1px solid var(--onde-line);
+}
+
+.lab-root--onde .lab-store-btn--soon {
+  opacity: 0.85;
 }
 
 /* —— Responsive —— */
