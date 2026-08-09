@@ -99,7 +99,7 @@ export default function OndeProduct({ locale }: { locale: OndeLocale }) {
             {t.noteBefore}{" "}
             <a href={`mailto:${LAB_CONTACT_EMAIL}`}>{t.supportLabel}</a>
             {" · "}
-            <Link href="/onde-dallo-stretto/privacy">{t.privacyLabel}</Link>
+            <Link href={t.privacyHref}>{t.privacyLabel}</Link>
           </>
         }
       />

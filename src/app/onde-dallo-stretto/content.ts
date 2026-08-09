@@ -35,6 +35,7 @@ export type OndeStrings = {
   noteBefore: string;
   supportLabel: string;
   privacyLabel: string;
+  privacyHref: string;
   iconAlt: string;
   shots: OndeShot[];
 };
@@ -57,6 +58,7 @@ export const ONDE_STRINGS: Record<OndeLocale, OndeStrings> = {
     noteBefore: "Onde dallo Stretto è un prodotto LUTHOR Lab.",
     supportLabel: "Supporto",
     privacyLabel: "Privacy e termini d'uso",
+    privacyHref: "/onde-dallo-stretto/it/privacy",
     iconAlt: "Icona dell'app Onde dallo Stretto",
     shots: [
       {
@@ -94,6 +96,7 @@ export const ONDE_STRINGS: Record<OndeLocale, OndeStrings> = {
     noteBefore: "Onde dallo Stretto is a LUTHOR Lab product.",
     supportLabel: "Support",
     privacyLabel: "Privacy & Terms of Use",
+    privacyHref: "/onde-dallo-stretto/privacy",
     iconAlt: "Onde dallo Stretto app icon",
     shots: [
       {
@@ -131,6 +134,7 @@ export const ONDE_STRINGS: Record<OndeLocale, OndeStrings> = {
     noteBefore: "Onde dallo Stretto は LUTHOR Lab のプロダクトです。",
     supportLabel: "サポート",
     privacyLabel: "プライバシーと利用規約",
+    privacyHref: "/onde-dallo-stretto/privacy",
     iconAlt: "Onde dallo Stretto のアプリアイコン",
     shots: [
       {
@@ -168,6 +172,7 @@ export const ONDE_STRINGS: Record<OndeLocale, OndeStrings> = {
     noteBefore: "Onde dallo Stretto est un produit LUTHOR Lab.",
     supportLabel: "Assistance",
     privacyLabel: "Confidentialité et conditions d'utilisation",
+    privacyHref: "/onde-dallo-stretto/privacy",
     iconAlt: "Icône de l'app Onde dallo Stretto",
     shots: [
       {
@@ -205,6 +210,7 @@ export const ONDE_STRINGS: Record<OndeLocale, OndeStrings> = {
     noteBefore: "Onde dallo Stretto ist ein Produkt von LUTHOR Lab.",
     supportLabel: "Support",
     privacyLabel: "Datenschutz & Nutzungsbedingungen",
+    privacyHref: "/onde-dallo-stretto/privacy",
     iconAlt: "App-Symbol von Onde dallo Stretto",
     shots: [
       {
