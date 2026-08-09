@@ -55,8 +55,10 @@ export const RISKPRO_GOOGLE_PLAY_URL =
  */
 export function AppStoreBadge({
   storeUrl = null,
+  soonLabel = "Coming soon to the",
 }: {
   storeUrl?: string | null;
+  soonLabel?: string;
 }) {
   if (storeUrl) {
     return (
@@ -80,7 +82,7 @@ export function AppStoreBadge({
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img className="lab-store-btn-icon" src="/lab/store-apple.png" alt="" />
       <span className="lab-store-btn-text">
-        <small>Coming soon to the</small>
+        <small>{soonLabel}</small>
         <strong>App Store</strong>
       </span>
     </span>
@@ -89,8 +91,10 @@ export function AppStoreBadge({
 
 export function GooglePlayBadge({
   storeUrl = null,
+  soonLabel = "Coming soon on",
 }: {
   storeUrl?: string | null;
+  soonLabel?: string;
 }) {
   if (storeUrl) {
     return (
@@ -122,7 +126,7 @@ export function GooglePlayBadge({
         alt=""
       />
       <span className="lab-store-btn-text">
-        <small>Coming soon on</small>
+        <small>{soonLabel}</small>
         <strong>Google Play</strong>
       </span>
     </span>
