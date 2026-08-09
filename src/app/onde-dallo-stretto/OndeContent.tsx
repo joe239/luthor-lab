@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 import {
@@ -26,6 +27,7 @@ const STRINGS = {
     soonGoogle: "Coming soon on",
     storeHint: "not in the stores yet — coming soon",
     noteBefore: "Onde dallo Stretto is a LUTHOR Lab product. Support:",
+    privacyLabel: "Privacy Policy",
     shots: [
       {
         src: "/lab/onde-shot-dial.jpg",
@@ -51,6 +53,7 @@ const STRINGS = {
     soonGoogle: "In arrivo su",
     storeHint: "non è ancora negli store — in arrivo",
     noteBefore: "Onde dallo Stretto è un prodotto LUTHOR Lab. Supporto:",
+    privacyLabel: "Informativa privacy",
     shots: [
       {
         src: "/lab/onde-shot-dial.jpg",
@@ -150,7 +153,8 @@ export default function OndeContent() {
         note={
           <>
             {t.noteBefore}{" "}
-            <a href={`mailto:${LAB_CONTACT_EMAIL}`}>{LAB_CONTACT_EMAIL}</a>
+            <a href={`mailto:${LAB_CONTACT_EMAIL}`}>{LAB_CONTACT_EMAIL}</a> ·{" "}
+            <Link href="/onde-dallo-stretto/privacy">{t.privacyLabel}</Link>
           </>
         }
       />
