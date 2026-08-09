@@ -5,7 +5,6 @@ import {
   LabFooter,
   LabNav,
   LAB_CONTACT_EMAIL,
-  RISKPRO_APP_STORE_URL,
 } from "@/components/lab/LabChrome";
 
 export const metadata: Metadata = {
@@ -19,24 +18,6 @@ export const metadata: Metadata = {
 
 export const dynamic = "force-static";
 
-const PRINCIPLES = [
-  {
-    num: "01",
-    title: "Sharp and focused",
-    body: "Real tools, not demos.",
-  },
-  {
-    num: "02",
-    title: "Practitioners first",
-    body: "Built by people who do this for a living.",
-  },
-  {
-    num: "03",
-    title: "Pilots, not users",
-    body: "Your feedback is part of the product.",
-  },
-];
-
 export default function LabPage() {
   return (
     <div className="lab-root">
@@ -49,48 +30,25 @@ export default function LabPage() {
             <h1 className="lab-reveal lab-reveal--d1">
               Sharp tools.
               <br />
-              <span className="lab-hero-accent">Big ideas about risk.</span>
+              <span className="lab-hero-accent">
+                Each one built because I needed it.
+              </span>
             </h1>
             <p className="lab-hero-lede lab-mission lab-reveal lab-reveal--d2">
-              LUTHOR Lab is the workshop behind LUTHOR — where we build sharp,
-              focused tools that test big ideas about risk, regulation and
-              data. Built in Luxembourg by risk professionals, shipped early,
-              and shaped by the people who use them. Every Lab product is an
-              open experiment: you try it, you tell us where it&apos;s wrong,
-              and it gets better. That&apos;s the deal.
+              LUTHOR Lab is where I build. Some of it is regulatory software
+              for banks. Some of it is an app that plays the radio from the
+              city I come from. What they have in common is the starting
+              point: a problem I had, and nothing that solved it properly.
             </p>
-            <div className="lab-hero-cta lab-reveal lab-reveal--d3">
-              <a href="#join" className="lab-btn lab-btn--green">
-                Become a pilot
-              </a>
-            </div>
+            <p className="lab-hero-lede lab-mission lab-reveal lab-reveal--d3">
+              I build alone, and I release when something works. If you use
+              one of these and something annoys you, tell me — that is the
+              whole feedback loop.
+            </p>
           </div>
         </header>
 
-        <section
-          className="lab-section lab-section--cream"
-          aria-label="Lab principles"
-        >
-          <div className="lab-wrap">
-            <div className="lab-principles">
-              {PRINCIPLES.map((principle, index) => (
-                <article
-                  key={principle.num}
-                  className={`lab-principle lab-reveal lab-reveal--d${index + 1}`}
-                >
-                  <p className="lab-principle-num">{principle.num}</p>
-                  <h2>{principle.title}</h2>
-                  <p className="lab-principle-body">{principle.body}</p>
-                </article>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section
-          className="lab-section lab-section--pad-top"
-          aria-label="Lab products"
-        >
+        <section className="lab-section" aria-label="Lab products">
           <div className="lab-wrap">
             <p className="lab-kicker lab-reveal">What&apos;s on the bench</p>
             <h2 className="lab-section-title lab-reveal lab-reveal--d1">
@@ -98,10 +56,33 @@ export default function LabPage() {
             </h2>
             <div className="lab-cards">
               <article className="lab-card lab-reveal lab-reveal--d1">
+                <span className="lab-status lab-status--live">Live</span>
+                <h3 className="lab-card-name">LUTHOR</h3>
+                <p className="lab-card-sub">Regulatory AI for banks</p>
+                <p>
+                  Document review grounded in the actual text of CRR, CRD,
+                  DORA, BRRD, EBA guidelines and CSSF circulars, with exact
+                  citations. Built for the people who have to write those
+                  documents and defend them.
+                </p>
+                <div className="lab-card-actions">
+                  <a
+                    href="https://luthoradvisory.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="lab-card-open"
+                  >
+                    Visit site →
+                  </a>
+                </div>
+              </article>
+
+              <article className="lab-card lab-reveal lab-reveal--d2">
                 <span className="lab-status lab-status--live">
                   Live on the App Store
                 </span>
                 <h3 className="lab-card-name">RiskPRO</h3>
+                <p className="lab-card-sub">Risk assessment on iOS</p>
                 <p>
                   An independent risk read on US/EU stocks and UCITS ETFs —
                   three risk dimensions, a clear verdict, PRIIPs risk class
@@ -111,46 +92,13 @@ export default function LabPage() {
                   <Link href="/riskpro" className="lab-card-open">
                     View product →
                   </Link>
-                  <a
-                    href={RISKPRO_APP_STORE_URL}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="lab-card-alt"
-                  >
-                    Get it on the App Store
-                  </a>
-                  <a
-                    href={`mailto:${LAB_CONTACT_EMAIL}?subject=RiskPRO%20pilot`}
-                    className="lab-card-alt"
-                  >
-                    Become a TestFlight pilot
-                  </a>
                 </div>
               </article>
 
               <article className="lab-card lab-reveal lab-reveal--d2">
-                <span className="lab-status lab-status--dev">
-                  In development
-                </span>
-                <h3 className="lab-card-name">AnaCredit Doctor</h3>
-                <p>
-                  Diagnose AnaCredit submissions before the BCL does —
-                  validation rules, plausibility checks and a plain-language
-                  explanation of every error code.
-                </p>
-                <div className="lab-card-actions">
-                  <a
-                    href={`mailto:${LAB_CONTACT_EMAIL}?subject=AnaCredit%20Doctor`}
-                    className="lab-card-alt"
-                  >
-                    Ask about it
-                  </a>
-                </div>
-              </article>
-
-              <article className="lab-card lab-reveal lab-reveal--d3">
                 <span className="lab-status lab-status--soon">Coming soon</span>
                 <h3 className="lab-card-name">Onde dallo Stretto</h3>
+                <p className="lab-card-sub">The radio from home</p>
                 <p>
                   An Italian radio app that works like a real car radio — you
                   turn through the FM dial and pick up the stations you would
@@ -161,11 +109,24 @@ export default function LabPage() {
                   <Link href="/onde-dallo-stretto" className="lab-card-open">
                     View product →
                   </Link>
+                </div>
+              </article>
+
+              <article className="lab-card lab-reveal lab-reveal--d3">
+                <span className="lab-status lab-status--live">Live</span>
+                <h3 className="lab-card-name">iMeditazione</h3>
+                <p className="lab-card-sub">Guided meditation in Italian</p>
+                <p>
+                  Free, no account, nothing to sign up for. On the App Store.
+                </p>
+                <div className="lab-card-actions">
                   <a
-                    href={`mailto:${LAB_CONTACT_EMAIL}?subject=Onde%20dallo%20Stretto`}
-                    className="lab-card-alt"
+                    href="https://imeditazione.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="lab-card-open"
                   >
-                    Ask about it
+                    Visit site →
                   </a>
                 </div>
               </article>

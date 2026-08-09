@@ -269,6 +269,17 @@
   color: var(--ink-soft);
 }
 
+/* One-line descriptor under the card name. */
+
+.lab-card .lab-card-sub {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 10.5px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--green);
+  margin-bottom: 8px;
+}
+
 .lab-card-actions {
   display: flex;
   align-items: baseline;
