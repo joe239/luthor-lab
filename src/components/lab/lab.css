@@ -814,6 +814,54 @@ a.lab-store-btn:hover {
   color: var(--onde-dim);
 }
 
+/* Language switcher — top of the product page, mono like the dial. */
+
+.onde-langs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 8px 16px;
+  padding: 22px 0 0;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.onde-lang {
+  color: var(--onde-dim);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+a.onde-lang:hover {
+  color: var(--onde-offwhite);
+  border-bottom-color: rgba(235, 232, 222, 0.35);
+}
+
+.onde-lang--active {
+  color: var(--onde-amber);
+  border-bottom-color: var(--onde-amber);
+}
+
+.onde-lang-gate,
+.onde-lang-gate-links {
+  padding-top: 48px;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  color: var(--onde-dim);
+}
+
+.onde-lang-gate-links a {
+  color: var(--onde-offwhite);
+}
+
+.lab-root--onde .lab-hero {
+  padding-top: 36px;
+}
+
 /* Hero layout — copy on the left, app icon top right. */
 
 .onde-hero-wrap {
