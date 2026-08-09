@@ -45,7 +45,7 @@ export default function RiskProPage() {
       <main className="lab-main">
         <header className="lab-hero">
           <div className="lab-wrap">
-            <p className="lab-kicker">LUTHOR Lab · Product</p>
+            <p className="lab-kicker">LUTHOR Lab</p>
             <h1>
               Risk<span className="lab-hero-accent">PRO</span>
             </h1>
@@ -86,8 +86,9 @@ export default function RiskProPage() {
         note={
           <>
             RiskPRO is a LUTHOR Lab product. Made in Luxembourg by risk
-            professionals. Support:{" "}
-            <a href={`mailto:${LAB_CONTACT_EMAIL}`}>{LAB_CONTACT_EMAIL}</a> ·{" "}
+            professionals.{" "}
+            <a href={`mailto:${LAB_CONTACT_EMAIL}`}>Support</a>
+            {" · "}
             <Link href="/riskpro/privacy">Privacy Policy</Link>
           </>
         }

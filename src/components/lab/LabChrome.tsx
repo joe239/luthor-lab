@@ -3,7 +3,7 @@ import type { ReactNode } from "react";
 
 import "./lab.css";
 
-export const LAB_CONTACT_EMAIL = "info@luthoradvisory.com";
+export const LAB_CONTACT_EMAIL = "info@luthorlab.com";
 
 /* Shared chrome for the LUTHOR Lab marketing pages. Pure presentational
    server components — no auth, no Supabase, statically generated. */
@@ -31,7 +31,7 @@ export function LabFooter({ note }: { note?: ReactNode }) {
         <p className="lab-footer-links">
           <Link href="/">Lab</Link> ·{" "}
           <a href={`mailto:${LAB_CONTACT_EMAIL}`}>{LAB_CONTACT_EMAIL}</a> · ©
-          2026 Luthor Advisory · Luxembourg
+          2026 LUTHOR Lab · Luxembourg
         </p>
       </div>
       {note ? (
