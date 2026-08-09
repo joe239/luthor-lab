@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 import {
   LabFooter,
@@ -7,9 +8,9 @@ import {
 } from "@/components/lab/LabChrome";
 
 export const metadata: Metadata = {
-  title: "Giovanni Cusmano — LUTHOR Lab",
+  title: "About — LUTHOR Lab",
   description:
-    "Market risk and IRRBB in Luxembourg banking. FRM, MSc Bocconi. Luxembourg City.",
+    "LUTHOR Lab is a one-person software laboratory: useful applications built with AI, shipped and used in the real world.",
   alternates: {
     canonical: "https://luthorlab.com/about",
   },
@@ -49,10 +50,45 @@ export default function AboutPage() {
         <div className="lab-wrap">
           <article className="lab-prose">
             <p className="lab-kicker">LUTHOR Lab · About</p>
-            <h1>Giovanni Cusmano</h1>
+            <h1>LUTHOR Lab</h1>
             <p>
-              Market risk and IRRBB in Luxembourg banking. FRM, MSc Bocconi.
-              Luxembourg City.
+              LUTHOR Lab is a one-person software laboratory: useful
+              applications built with AI, shipped and used in the real world.
+            </p>
+            <p>
+              The method: the founder keeps the architecture, the domain
+              judgement and the testing; AI coding agents are the
+              implementation layer. Ship it, use it daily, fix what annoys.
+            </p>
+            <p>
+              What comes out of it:{" "}
+              <a
+                href="https://luthoradvisory.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LUTHOR
+              </a>
+              , a regulatory AI workspace that reviews bank documents against
+              the actual text of the regulation, with a corpus of 3,700+ legal
+              provisions parsed to article level and every answer anchored to a
+              citation; and the Lab apps — a{" "}
+              <Link href="/riskpro">risk assessment tool</Link>, a{" "}
+              <Link href="/onde-dallo-stretto">radio app</Link>, a{" "}
+              <a
+                href="https://imeditazione.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                meditation app
+              </a>
+              . Different domains, same method.
+            </p>
+
+            <h2>The founder</h2>
+            <p>
+              Giovanni Cusmano — market risk and IRRBB in Luxembourg banking.
+              FRM, MSc Bocconi. Luxembourg City.
             </p>
             <p>
               Fifteen years in risk management, the last five as the sole risk
@@ -60,10 +96,6 @@ export default function AboutPage() {
               means the whole perimeter sits on one desk: IRRBB, liquidity
               stress testing, ICAAP and ILAAP, the Recovery Plan, model design
               and validation, and the governance around all of it.
-            </p>
-            <p>
-              For the past year I have also been building the software I
-              wished existed for that work.
             </p>
 
             <h2>Now</h2>
@@ -73,29 +105,6 @@ export default function AboutPage() {
               and validating risk models against regulatory and Group
               requirements. Market and liquidity risk monitoring and
               reporting.
-            </p>
-
-            <h2>What I build</h2>
-            <p>
-              I write the code myself, working with AI coding agents as the
-              implementation layer while I keep the architecture, the domain
-              judgement and the testing.
-            </p>
-            <p>
-              LUTHOR is the main one: a regulatory AI workspace that reviews
-              bank documents against the actual text of the regulation. Under
-              it sits a corpus of more than 3,700 legal provisions — CRR, CRD,
-              DORA, BRRD, LCR, EBA guidelines and RTS, CSSF circulars — parsed
-              to article level, with hybrid retrieval (vector plus lexical)
-              and an AI reranking layer. Every answer is anchored to a
-              citation, and when there is no source in the corpus the system
-              stops instead of inventing one. Retrieval quality is measured on
-              fixed test batteries, not on impressions.
-            </p>
-            <p>
-              The rest of the Lab is smaller and more personal: an iOS risk
-              assessment tool, a radio app, a meditation app. Different
-              domains, same method — ship it, use it, fix what annoys me.
             </p>
 
             <h2>Experience</h2>
