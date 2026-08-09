@@ -102,9 +102,7 @@ export default function LabPage() {
               </article>
 
               <article className="lab-card lab-reveal lab-reveal--d2">
-                <span className="lab-status lab-status--live">
-                  Live on the App Store
-                </span>
+                <span className="lab-status lab-status--live">Live</span>
                 <h3 className="lab-card-name">RiskPRO</h3>
                 <p className="lab-card-sub">Risk assessment on iOS</p>
                 <p>
