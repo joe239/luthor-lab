@@ -167,21 +167,31 @@ export default function LabPage() {
               Giovanni Cusmano
             </h2>
             <p className="lab-hero-lede lab-reveal lab-reveal--d2">
-              Giovanni Cusmano — market risk and IRRBB in Luxembourg banking.
-              FRM, MSc Bocconi. Luxembourg City. Fifteen years in risk
-              management, the last five as the sole risk officer of a Class 1
-              third-country branch under CRD6 — which means the whole
-              perimeter sits on one desk: IRRBB, liquidity stress testing,
-              ICAAP and ILAAP, the Recovery Plan, model design and
-              validation, and the governance around all of it.
+              Fifteen years in risk management in Luxembourg banking. FRM, MSc
+              Bocconi.
+            </p>
+            <p className="lab-hero-lede lab-reveal lab-reveal--d2">
+              Based in Luxembourg City.
             </p>
             <p className="lab-hero-lede lab-reveal lab-reveal--d3">
-              Risk Management — Agricultural Bank of China, Luxembourg Branch.
-              June 2021 to present. Leading ICLAAP and Recovery Plan. Building
-              and validating risk models against regulatory and Group
-              requirements. Market and liquidity risk monitoring and
-              reporting.
+              My work sits on the technical side of prudential risk: IRRBB and
+              net interest income modelling, liquidity stress testing, ICAAP
+              and ILAAP, recovery planning, and the model design and validation
+              underneath all of it. Small teams, wide perimeter — which is how
+              you end up knowing every part of a process rather than one slice
+              of it.
             </p>
+            <p className="lab-hero-lede lab-reveal lab-reveal--d3">
+              That is also where the Lab comes from. Every tool here started as
+              something I needed and could not buy.
+            </p>
+            <div className="lab-prose lab-xp lab-reveal lab-reveal--d3">
+              <p className="lab-xp-role">
+                Risk Management — Luxembourg branch of an international banking
+                group
+              </p>
+              <p className="lab-xp-dates">June 2021 – present</p>
+            </div>
           </div>
         </section>
 
