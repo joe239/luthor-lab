@@ -13,7 +13,7 @@ export function LabNav() {
     <nav className="lab-nav">
       <div className="lab-wrap lab-nav-inner">
         <Link href="/" className="lab-logo-mark" aria-label="LUTHOR Lab home">
-          L<span className="lab-logo-word">Lab</span>
+          L
         </Link>
         <span className="lab-nav-spacer" />
       </div>
@@ -25,16 +25,11 @@ export function LabFooter({ note }: { note?: ReactNode }) {
   return (
     <footer className="lab-footer">
       <div className="lab-wrap lab-footer-top">
-        <div className="lab-footer-brand">
-          <Link
-            href="/"
-            className="lab-footer-logo"
-            aria-label="LUTHOR Lab home"
-          >
-            L
-          </Link>
-          {note ? <p className="lab-footer-note">{note}</p> : null}
-        </div>
+        {note ? (
+          <div className="lab-footer-brand">
+            <p className="lab-footer-note">{note}</p>
+          </div>
+        ) : null}
         <p className="lab-footer-links">
           <Link href="/">Lab</Link> ·{" "}
           <a href={`mailto:${LAB_CONTACT_EMAIL}`}>{LAB_CONTACT_EMAIL}</a> · ©
