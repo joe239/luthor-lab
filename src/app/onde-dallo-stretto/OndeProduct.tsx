@@ -1,4 +1,5 @@
 import Link from "next/link";
+import type { ReactNode } from "react";
 
 import {
   AppStoreBadge,
@@ -8,11 +9,40 @@ import {
   LAB_CONTACT_EMAIL,
 } from "@/components/lab/LabChrome";
 
-import { ONDE_STRINGS, type OndeLocale } from "./content";
+import {
+  ONDE_CARPLAY_SRC,
+  ONDE_STRINGS,
+  type OndeLocale,
+} from "./content";
 import OndeLangSwitcher from "./OndeLangSwitcher";
+
+/** Render light **bold** markers from content strings. */
+function richText(text: string): ReactNode {
+  const parts = text.split(/(\*\*[^*]+\*\*)/g);
+  return parts.map((part, i) => {
+    if (part.startsWith("**") && part.endsWith("**")) {
+      return <strong key={i}>{part.slice(2, -2)}</strong>;
+    }
+    return part;
+  });
+}
+
+function CarplayShot({ alt }: { alt: string }) {
+  return (
+    <div className="onde-carplay">
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img src={ONDE_CARPLAY_SRC} alt={alt} loading="lazy" />
+    </div>
+  );
+}
 
 export default function OndeProduct({ locale }: { locale: OndeLocale }) {
   const t = ONDE_STRINGS[locale];
+  const leadParas = Array.isArray(t.lead) ? t.lead : [t.lead];
+  const sections = t.sections?.filter(
+    (s) => s.title || s.paragraphs.length > 0 || (s.bullets?.length ?? 0) > 0,
+  );
+  const hasSections = Boolean(sections && sections.length > 0);
 
   return (
     <div className="lab-root lab-root--onde" lang={locale}>
@@ -55,7 +85,11 @@ export default function OndeProduct({ locale }: { locale: OndeLocale }) {
 
         <section className="lab-section lab-section--pad-top">
           <div className="lab-wrap">
-            <p className="lab-product-lead">{t.lead}</p>
+            {leadParas.map((para) => (
+              <p key={para} className="lab-product-lead">
+                {richText(para)}
+              </p>
+            ))}
             {t.features.length > 0 ? (
               <ul className="onde-features">
                 {t.features.map((feature) => (
@@ -63,6 +97,35 @@ export default function OndeProduct({ locale }: { locale: OndeLocale }) {
                 ))}
               </ul>
             ) : null}
+
+            {hasSections ? (
+              <div className="onde-copy-sections">
+                {sections!.map((section) => {
+                  const isInAuto =
+                    section.title.toLowerCase() === "in auto";
+                  return (
+                    <section key={section.title} className="onde-copy-section">
+                      <h2 className="onde-section-title">{section.title}</h2>
+                      {section.paragraphs.map((para) => (
+                        <p key={para} className="lab-product-lead">
+                          {richText(para)}
+                        </p>
+                      ))}
+                      {section.bullets && section.bullets.length > 0 ? (
+                        <ul className="onde-features">
+                          {section.bullets.map((item) => (
+                            <li key={item}>{item}</li>
+                          ))}
+                        </ul>
+                      ) : null}
+                      {isInAuto ? <CarplayShot alt={t.carplayAlt} /> : null}
+                    </section>
+                  );
+                })}
+              </div>
+            ) : (
+              <CarplayShot alt={t.carplayAlt} />
+            )}
           </div>
         </section>
 

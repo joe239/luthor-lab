@@ -19,14 +19,23 @@ export const ONDE_LANG_STORAGE_KEY = "onde-lang";
 
 type OndeShot = { src: string; alt: string };
 
+export type OndeSection = {
+  title: string;
+  paragraphs: string[];
+  bullets?: string[];
+};
+
 export type OndeStrings = {
   metaTitle: string;
   metaDescription: string;
   kicker: string;
   lede: string;
   subhead: string;
-  lead: string;
+  /** One or more lead paragraphs under the hero. */
+  lead: string | string[];
   features: string[];
+  /** Optional structured sections (Italian product copy). Absent/empty elsewhere. */
+  sections?: OndeSection[];
   shotsLabel: string;
   storeLabel: string;
   soonApple: string;
@@ -37,19 +46,66 @@ export type OndeStrings = {
   privacyLabel: string;
   privacyHref: string;
   iconAlt: string;
+  carplayAlt: string;
   shots: OndeShot[];
 };
 
+export const ONDE_CARPLAY_SRC = "/lab/onde-shot-carplay.jpg";
+
 export const ONDE_STRINGS: Record<OndeLocale, OndeStrings> = {
   it: {
-    metaTitle: "Onde dallo Stretto — la radio di Messina, ovunque tu sia",
+    metaTitle: "Onde dallo Stretto — le radio di casa, anche quando sei lontano",
     metaDescription:
-      "Onde dallo Stretto è una radio italiana che funziona come una vera autoradio. Per gli italiani lontani da casa: radio nazionali e voci locali, sulla banda FM con Messina e lo Stretto come riferimento. Un prodotto LUTHOR Lab.",
+      "Onde dallo Stretto ricrea l'esperienza di una vera autoradio: scala FM, preset, SCAN e radio siciliane e calabresi in streaming. Gratuita, senza pubblicità. Un prodotto LUTHOR Lab.",
     kicker: "LUTHOR Lab",
-    lede: "Una radio italiana che funziona come una vera autoradio.",
+    lede: "Le radio di casa, anche quando sei lontano",
     subhead: "",
-    lead: "Giri la manopola sulla banda FM, ti fermi su una frequenza e ascolti. Pensata per gli italiani che vivono lontano da casa: le grandi radio nazionali e le voci locali, sulla banda FM come la ricorderesti guidando in Italia — con Messina e lo Stretto come riferimento.",
+    lead: [
+      "Sei all'estero e ti manca ascoltare in auto le radio siciliane e calabresi?",
+      "**Onde dallo Stretto** ricrea l'esperienza di una vera autoradio anni '90: niente liste infinite, ma una scala FM da esplorare frequenza per frequenza, con ogni emittente nella sua posizione reale e il classico fruscio tra una stazione e l'altra.",
+    ],
     features: [],
+    sections: [
+      {
+        title: "Cosa trovi",
+        paragraphs: [],
+        bullets: [
+          "Una scala FM con le stazioni ordinate per frequenza",
+          "Sei preset per le tue radio preferite",
+          "SCAN per cercare automaticamente la stazione successiva",
+          '"In onda adesso" per vedere cosa stanno trasmettendo le emittenti',
+          "Titolo del brano in riproduzione, quando disponibile",
+        ],
+      },
+      {
+        title: "In auto",
+        paragraphs: [
+          "Con **CarPlay e Android Auto** puoi ascoltare e cambiare stazione direttamente dall'auto.",
+          "Anche tramite Bluetooth puoi utilizzare i comandi al volante per passare da una radio all'altra senza prendere il telefono.",
+        ],
+      },
+      {
+        title: "Semplice da usare",
+        paragraphs: [
+          "Scorri la scala FM per cambiare frequenza, salva le tue stazioni preferite oppure lascia fare a SCAN.",
+          "Puoi cambiare stazione anche dagli auricolari, dai comandi al volante o con Siri.",
+        ],
+      },
+      {
+        title: "Gratuita e senza pubblicità",
+        paragraphs: [
+          "Nessun account, nessuna registrazione, nessuna pubblicità nell'app e nessun tracciamento.",
+          "I preferiti e l'ultima stazione ascoltata restano salvati sul tuo dispositivo.",
+        ],
+      },
+      {
+        title: "Le radio restano le radio",
+        paragraphs: [
+          "Onde dallo Stretto non ospita né modifica l'audio delle emittenti: l'app si collega direttamente ai loro stream e li riproduce integralmente, compresi programmi e pubblicità.",
+          "La disponibilità delle singole stazioni dipende dai rispettivi servizi di streaming.",
+        ],
+      },
+    ],
     shotsLabel: "Schermate dell'app",
     storeLabel: "Scarica l'app",
     soonApple: "In arrivo su",
@@ -60,6 +116,7 @@ export const ONDE_STRINGS: Record<OndeLocale, OndeStrings> = {
     privacyLabel: "Privacy e termini d'uso",
     privacyHref: "/onde-dallo-stretto/it/privacy",
     iconAlt: "Icona dell'app Onde dallo Stretto",
+    carplayAlt: "Onde dallo Stretto su Apple CarPlay",
     shots: [
       {
         src: "/lab/onde-shot-dial.jpg",
@@ -98,6 +155,7 @@ export const ONDE_STRINGS: Record<OndeLocale, OndeStrings> = {
     privacyLabel: "Privacy & Terms of Use",
     privacyHref: "/onde-dallo-stretto/privacy",
     iconAlt: "Onde dallo Stretto app icon",
+    carplayAlt: "Onde dallo Stretto on Apple CarPlay",
     shots: [
       {
         src: "/lab/onde-shot-dial.jpg",
@@ -136,6 +194,7 @@ export const ONDE_STRINGS: Record<OndeLocale, OndeStrings> = {
     privacyLabel: "プライバシーと利用規約",
     privacyHref: "/onde-dallo-stretto/privacy",
     iconAlt: "Onde dallo Stretto のアプリアイコン",
+    carplayAlt: "Onde dallo Stretto の Apple CarPlay 画面",
     shots: [
       {
         src: "/lab/onde-shot-dial.jpg",
@@ -174,6 +233,7 @@ export const ONDE_STRINGS: Record<OndeLocale, OndeStrings> = {
     privacyLabel: "Confidentialité et conditions d'utilisation",
     privacyHref: "/onde-dallo-stretto/privacy",
     iconAlt: "Icône de l'app Onde dallo Stretto",
+    carplayAlt: "Onde dallo Stretto sur Apple CarPlay",
     shots: [
       {
         src: "/lab/onde-shot-dial.jpg",
@@ -212,6 +272,7 @@ export const ONDE_STRINGS: Record<OndeLocale, OndeStrings> = {
     privacyLabel: "Datenschutz & Nutzungsbedingungen",
     privacyHref: "/onde-dallo-stretto/privacy",
     iconAlt: "App-Symbol von Onde dallo Stretto",
+    carplayAlt: "Onde dallo Stretto auf Apple CarPlay",
     shots: [
       {
         src: "/lab/onde-shot-dial.jpg",

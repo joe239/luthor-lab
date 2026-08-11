@@ -1059,6 +1059,68 @@ a.onde-lang:hover {
   color: rgba(235, 232, 222, 0.72);
 }
 
+.lab-root--onde .lab-product-lead + .lab-product-lead {
+  margin-top: 14px;
+}
+
+.lab-root--onde .lab-product-lead strong {
+  color: var(--onde-offwhite);
+  font-weight: 600;
+}
+
+.onde-copy-sections {
+  margin-top: 40px;
+}
+
+.onde-copy-section + .onde-copy-section {
+  margin-top: 36px;
+}
+
+.onde-section-title {
+  margin: 0 0 14px;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--onde-amber);
+}
+
+.onde-copy-section .lab-product-lead {
+  margin-top: 0;
+}
+
+.onde-copy-section .lab-product-lead + .lab-product-lead {
+  margin-top: 14px;
+}
+
+.onde-copy-section .onde-features {
+  margin-top: 16px;
+}
+
+.onde-carplay {
+  margin-top: 28px;
+  max-width: 720px;
+  aspect-ratio: 16 / 10;
+  background: var(--onde-surface);
+  border: 1px solid var(--onde-line);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+}
+
+.onde-carplay img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.lab-root--onde .onde-copy-sections .onde-carplay {
+  max-width: min(100%, 720px);
+}
+
 /* Screenshot band — a deeper black, frames on the preset surface. */
 
 .lab-section--onde {
