@@ -1104,8 +1104,9 @@ a.onde-lang:hover {
   margin-inline: auto;
   background: transparent;
   border: none;
-  border-radius: 10px;
-  overflow: hidden;
+  outline: none;
+  border-radius: 0;
+  overflow: visible;
   box-shadow: none;
 }
 
@@ -1114,6 +1115,11 @@ a.onde-lang:hover {
   width: 100%;
   height: auto;
   object-fit: contain;
+  border: none;
+  outline: none;
+  /* Soft silhouette shadow for transparent PNG — no hard stroke */
+  filter: drop-shadow(0 16px 34px rgba(0, 0, 0, 0.55))
+    drop-shadow(0 4px 12px rgba(0, 0, 0, 0.4));
 }
 
 .lab-root--onde .onde-copy-sections .onde-carplay {
