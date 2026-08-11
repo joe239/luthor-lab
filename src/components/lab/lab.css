@@ -1100,13 +1100,13 @@ a.onde-lang:hover {
 
 .onde-carplay {
   margin-top: 28px;
-  max-width: 640px;
+  max-width: 720px;
   margin-inline: auto;
-  background: var(--onde-surface);
-  border: 1px solid var(--onde-line);
+  background: transparent;
+  border: none;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+  box-shadow: none;
 }
 
 .onde-carplay img {
@@ -1117,7 +1117,7 @@ a.onde-lang:hover {
 }
 
 .lab-root--onde .onde-copy-sections .onde-carplay {
-  max-width: min(100%, 640px);
+  max-width: min(100%, 720px);
 }
 
 /* Screenshot band — a deeper black, frames on the preset surface. */
