@@ -156,45 +156,6 @@ export default function LabPage() {
           </div>
         </section>
 
-        <section
-          id="behind-the-lab"
-          className="lab-section lab-section--cream"
-          aria-label="Behind the Lab"
-        >
-          <div className="lab-wrap">
-            <p className="lab-kicker lab-reveal">Behind the Lab</p>
-            <h2 className="lab-section-title lab-reveal lab-reveal--d1">
-              Giovanni Cusmano
-            </h2>
-            <p className="lab-hero-lede lab-reveal lab-reveal--d2">
-              Fifteen years in risk management in Luxembourg banking. FRM, MSc
-              Bocconi.
-            </p>
-            <p className="lab-hero-lede lab-reveal lab-reveal--d2">
-              Based in Luxembourg City.
-            </p>
-            <p className="lab-hero-lede lab-reveal lab-reveal--d3">
-              My work sits on the technical side of prudential risk: IRRBB and
-              net interest income modelling, liquidity stress testing, ICAAP
-              and ILAAP, recovery planning, and the model design and validation
-              underneath all of it. Small teams, wide perimeter — which is how
-              you end up knowing every part of a process rather than one slice
-              of it.
-            </p>
-            <p className="lab-hero-lede lab-reveal lab-reveal--d3">
-              That is also where the Lab comes from. Every tool here started as
-              something I needed and could not buy.
-            </p>
-            <div className="lab-prose lab-xp lab-reveal lab-reveal--d3">
-              <p className="lab-xp-role">
-                Risk Management — Luxembourg branch of an international banking
-                group
-              </p>
-              <p className="lab-xp-dates">June 2021 – present</p>
-            </div>
-          </div>
-        </section>
-
         <section id="join" className="lab-join" aria-label="Join the Lab">
           <div className="lab-wrap lab-join-inner">
             <p className="lab-kicker lab-kicker--join lab-reveal">
