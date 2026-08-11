@@ -63,11 +63,11 @@ export const ONDE_STRINGS: Record<OndeLocale, OndeStrings> = {
     shots: [
       {
         src: "/lab/onde-shot-dial.jpg",
-        alt: "L'app Onde dallo Stretto — sintonizzata su 94.9 FM, Radio Empire",
+        alt: "L'app Onde dallo Stretto — sintonizzata su 106.8 FM, SEGNALE BLU",
       },
       {
         src: "/lab/onde-shot-tuning.jpg",
-        alt: "L'app Onde dallo Stretto — la manopola su 91.1 FM, Radio 24",
+        alt: "L'app Onde dallo Stretto — la manopola su 88.4 FM, ONDE UNO, preset 1",
       },
       {
         src: "/lab/onde-shot-onair.jpg",
@@ -101,11 +101,11 @@ export const ONDE_STRINGS: Record<OndeLocale, OndeStrings> = {
     shots: [
       {
         src: "/lab/onde-shot-dial.jpg",
-        alt: "Onde dallo Stretto app — tuned to 94.9 FM, Radio Empire",
+        alt: "Onde dallo Stretto app — tuned to 106.8 FM, SEGNALE BLU",
       },
       {
         src: "/lab/onde-shot-tuning.jpg",
-        alt: "Onde dallo Stretto app — turning the dial to 91.1 FM, Radio 24",
+        alt: "Onde dallo Stretto app — dial on 88.4 FM, ONDE UNO, preset 1",
       },
       {
         src: "/lab/onde-shot-onair.jpg",
@@ -139,11 +139,11 @@ export const ONDE_STRINGS: Record<OndeLocale, OndeStrings> = {
     shots: [
       {
         src: "/lab/onde-shot-dial.jpg",
-        alt: "Onde dallo Stretto — 94.9 FM、Radio Empire を受信中",
+        alt: "Onde dallo Stretto — 106.8 FM、SEGNALE BLU を受信中",
       },
       {
         src: "/lab/onde-shot-tuning.jpg",
-        alt: "Onde dallo Stretto — ダイヤルを 91.1 FM、Radio 24 に",
+        alt: "Onde dallo Stretto — ダイヤルを 88.4 FM、ONDE UNO（プリセット1）に",
       },
       {
         src: "/lab/onde-shot-onair.jpg",
@@ -177,11 +177,11 @@ export const ONDE_STRINGS: Record<OndeLocale, OndeStrings> = {
     shots: [
       {
         src: "/lab/onde-shot-dial.jpg",
-        alt: "L'app Onde dallo Stretto — réglée sur 94.9 FM, Radio Empire",
+        alt: "L'app Onde dallo Stretto — réglée sur 106.8 FM, SEGNALE BLU",
       },
       {
         src: "/lab/onde-shot-tuning.jpg",
-        alt: "L'app Onde dallo Stretto — la molette sur 91.1 FM, Radio 24",
+        alt: "L'app Onde dallo Stretto — la molette sur 88.4 FM, ONDE UNO, présélection 1",
       },
       {
         src: "/lab/onde-shot-onair.jpg",
@@ -215,11 +215,11 @@ export const ONDE_STRINGS: Record<OndeLocale, OndeStrings> = {
     shots: [
       {
         src: "/lab/onde-shot-dial.jpg",
-        alt: "Die App Onde dallo Stretto — eingestellt auf 94.9 FM, Radio Empire",
+        alt: "Die App Onde dallo Stretto — eingestellt auf 106.8 FM, SEGNALE BLU",
       },
       {
         src: "/lab/onde-shot-tuning.jpg",
-        alt: "Die App Onde dallo Stretto — der Regler auf 91.1 FM, Radio 24",
+        alt: "Die App Onde dallo Stretto — der Regler auf 88.4 FM, ONDE UNO, Preset 1",
       },
       {
         src: "/lab/onde-shot-onair.jpg",
