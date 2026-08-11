@@ -50,7 +50,7 @@ export type OndeStrings = {
   shots: OndeShot[];
 };
 
-export const ONDE_CARPLAY_SRC = "/lab/onde-shot-carplay.jpg";
+export const ONDE_CARPLAY_SRC = "/lab/onde-shot-carplay.png";
 
 export const ONDE_STRINGS: Record<OndeLocale, OndeStrings> = {
   it: {
