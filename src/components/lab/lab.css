@@ -877,7 +877,7 @@ a.lab-store-btn:hover {
 
 .onde-features li::before {
   content: "— ";
-  color: var(--onde-amber);
+  color: currentColor;
 }
 
 /* Language dropdown — top right of the product page. */
