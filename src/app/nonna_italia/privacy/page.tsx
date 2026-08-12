@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 export const dynamic = "force-static";
 
-const CONTACT_EMAIL = "cusmanodev@gmail.com";
+const CONTACT_EMAIL = "info@luthorlab.com";
 const LAST_UPDATED = "21 July 2026";
 
 export default function NonnaItaliaPrivacyPage() {
