@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     "Nonna Italia collects no personal data: no accounts, no analytics, no tracking, no third-party SDKs, no ads. Fully offline — the app requests no permissions.",
   alternates: {
-    canonical: "https://luthorlab.com/lab/nonna_italia/privacy",
+    canonical: "https://luthorlab.com/nonna_italia/privacy",
   },
 };
 
@@ -27,7 +27,7 @@ export default function NonnaItaliaPrivacyPage() {
           <article className="lab-prose">
             <p className="lab-kicker">
               <Link
-                href="/lab/nonna_italia"
+                href="/nonna_italia"
                 style={{ color: "inherit", textDecoration: "none" }}
               >
                 Nonna Italia

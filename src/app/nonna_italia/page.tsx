@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   description:
     "Nonna Italia is a soundboard of Italian grandmother expressions — 100 audio clips recorded in Sicilian dialect, with subtitles in Italian, English and Sicilian. Share any clip. A LUTHOR Lab product.",
   alternates: {
-    canonical: "https://luthorlab.com/lab/nonna_italia",
+    canonical: "https://luthorlab.com/nonna_italia",
   },
 };
 
@@ -63,7 +63,7 @@ export default function NonnaItaliaPage() {
             Nonna Italia is a LUTHOR Lab product.{" "}
             <a href={`mailto:${LAB_CONTACT_EMAIL}`}>Support</a>
             {" · "}
-            <Link href="/lab/nonna_italia/privacy">Privacy Policy</Link>
+            <Link href="/nonna_italia/privacy">Privacy Policy</Link>
           </>
         }
       />
