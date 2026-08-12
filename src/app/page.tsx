@@ -58,13 +58,10 @@ export default function LabPage() {
               LUTHOR Lab
             </h2>
             <p className="lab-hero-lede lab-reveal lab-reveal--d2">
-              LUTHOR Lab is a one-person software laboratory: useful
-              applications built with AI, shipped and used in the real world.
+              LUTHOR Lab is an independent digital lab creating focused apps and AI-powered tools for real-world problems.
             </p>
             <p className="lab-hero-lede lab-reveal lab-reveal--d3">
-              The method: the founder keeps the architecture, the domain
-              judgement and the testing; AI coding agents are the
-              implementation layer. Ship it, use it daily, fix what annoys.
+              From risk and regulatory technology to everyday consumer apps, each project starts with a simple idea: make something useful, clear and thoughtfully designed.
             </p>
           </div>
         </section>
