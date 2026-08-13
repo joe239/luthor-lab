@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 export const dynamic = "force-static";
 
-const LAST_UPDATED = "9 August 2026";
+const LAST_UPDATED = "13 August 2026";
 
 export default function OndeDalloStrettoPrivacyPage() {
   return (
@@ -57,6 +57,25 @@ export default function OndeDalloStrettoPrivacyPage() {
               file. The file contains no personal data and no identifiers,
               but the request reaches the hosting provider, which may record
               the IP address in its technical logs, as with any web request.
+            </p>
+
+            <h2>Data retention</h2>
+            <p>
+              We retain no user data. There are no accounts and no backend of
+              ours that stores information about you. Your presets and your
+              last played station stay on your device for as long as the app
+              is installed. The technical logs described above, kept by the
+              hosting provider and by the broadcasters&apos; own servers, are
+              retained under their own policies and are outside our control.
+            </p>
+
+            <h2>Data deletion</h2>
+            <p>
+              We hold no user data, so there is no data deletion request
+              procedure: there is nothing we could delete on your behalf. You
+              can remove everything the app has saved at any time by
+              uninstalling the app, or by clearing the app&apos;s data from
+              your device&apos;s system settings.
             </p>
 
             <h2>Terms of Use</h2>
