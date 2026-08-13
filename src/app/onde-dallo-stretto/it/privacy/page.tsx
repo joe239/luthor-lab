@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 export const dynamic = "force-static";
 
-const LAST_UPDATED = "9 agosto 2026";
+const LAST_UPDATED = "13 agosto 2026";
 
 export default function OndeDalloStrettoPrivacyItPage() {
   return (
@@ -59,6 +59,25 @@ export default function OndeDalloStrettoPrivacyItPage() {
               file non contiene dati personali né identificativi, ma la richiesta
               raggiunge il fornitore di hosting, che può registrare l&apos;indirizzo IP
               nei propri log tecnici, come avviene per qualsiasi richiesta web.
+            </p>
+
+            <h2>Conservazione dei dati</h2>
+            <p>
+              Non conserviamo alcun dato degli utenti. Non ci sono account e non
+              esiste un nostro server che memorizzi informazioni su di te. I preset
+              e l&apos;ultima stazione ascoltata restano sul dispositivo finché l&apos;app è
+              installata. I log tecnici descritti sopra, tenuti dal fornitore di
+              hosting e dai server delle emittenti, seguono le rispettive
+              informative e non dipendono da noi.
+            </p>
+
+            <h2>Cancellazione dei dati</h2>
+            <p>
+              Non conserviamo dati degli utenti, quindi non esiste una procedura di
+              richiesta di cancellazione: non c&apos;è nulla che possiamo cancellare al
+              posto tuo. Puoi rimuovere in qualsiasi momento tutto quello che
+              l&apos;app ha salvato, disinstallando l&apos;app oppure cancellando i dati
+              dell&apos;app dalle impostazioni di sistema del dispositivo.
             </p>
 
             <h2>Termini d&apos;uso</h2>
