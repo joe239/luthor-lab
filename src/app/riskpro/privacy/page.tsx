@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 
 export const dynamic = "force-static";
 
-const LAST_UPDATED = "19 July 2026";
+const LAST_UPDATED = "13 August 2026";
 
 export default function RiskProPrivacyPage() {
   return (
@@ -56,6 +56,22 @@ export default function RiskProPrivacyPage() {
               Links to fund documents (PRIIPs KIDs) open the issuer&apos;s
               website. Once you leave the app, the issuer&apos;s own privacy
               policy applies.
+            </p>
+
+            <h2>Data retention</h2>
+            <p>
+              RiskPRO does not store or retain user data. There are no accounts and no user
+              profiles, and the requests the app sends to our backend contain no personal
+              information. Anything the app saves stays on your device for as long as the app is
+              installed.
+            </p>
+
+            <h2>Data deletion</h2>
+            <p>
+              We hold no user data on our systems, so there is no data deletion request
+              procedure: there is nothing we could delete on your behalf. You can remove
+              everything the app has saved at any time by uninstalling the app, or by clearing
+              the app&apos;s data from your device&apos;s system settings.
             </p>
 
             <h2>Contact</h2>
