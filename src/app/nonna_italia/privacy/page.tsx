@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 export const dynamic = "force-static";
 
 const CONTACT_EMAIL = "info@luthorlab.com";
-const LAST_UPDATED = "21 July 2026";
+const LAST_UPDATED = "13 August 2026";
 
 export default function NonnaItaliaPrivacyPage() {
   return (
@@ -58,6 +58,22 @@ export default function NonnaItaliaPrivacyPage() {
               When you share a clip, the app opens your device&apos;s system
               share sheet. The app itself doesn&apos;t transmit or store
               anything.
+            </p>
+
+            <h2>Data retention</h2>
+            <p>
+              Nonna Italia stores no data on our systems: there are no servers, no accounts and
+              no backups, so there is nothing to retain and no retention period to state.
+              Anything the app saves on your device stays there for as long as the app is
+              installed.
+            </p>
+
+            <h2>Data deletion</h2>
+            <p>
+              We hold no data on our systems, so there is no data deletion request procedure:
+              there is nothing we could delete on your behalf. You can remove everything the app
+              has saved at any time by uninstalling the app, or by clearing the app&apos;s data from
+              your device&apos;s system settings.
             </p>
 
             <h2>Contact</h2>
