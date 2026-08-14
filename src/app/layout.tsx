@@ -29,6 +29,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        {/* Explicit dark lock for Android/Xiaomi auto-theming. */}
+        <meta name="color-scheme" content="dark" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"

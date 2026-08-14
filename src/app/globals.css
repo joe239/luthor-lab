@@ -12,9 +12,17 @@
     --luthor-input-focus-glow: rgba(200, 162, 75, 0.22);
   }
 
+  /*
+    Site-wide dark lock: tell browsers this document is already dark so
+    Chrome Android "Automatic darkening" / Xiaomi theme inversion should
+    not rewrite backgrounds while leaving Lab ink (#ebe8de) untouched.
+    No prefers-color-scheme: light — Lab identity is dark; a light variant
+    would change desktop for light-OS users and fight the brand.
+  */
   html {
-    background-color: var(--lab-dark);
     color-scheme: dark;
+    background-color: #131415;
+    color: #ebe8de;
     scroll-behavior: smooth;
   }
 
@@ -22,7 +30,7 @@
     margin: 0;
     min-height: 100vh;
     min-height: 100dvh;
-    background-color: var(--lab-dark);
+    background-color: #131415;
     color: #ebe8de;
   }
 }
