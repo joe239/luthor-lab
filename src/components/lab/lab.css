@@ -24,7 +24,7 @@
   -webkit-font-smoothing: antialiased;
   min-height: 100vh;
   min-height: 100dvh;
-  overflow-x: clip;
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
 }

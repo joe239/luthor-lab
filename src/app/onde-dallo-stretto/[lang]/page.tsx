@@ -6,12 +6,16 @@ import OndeProduct from "../OndeProduct";
 
 export const dynamic = "force-static";
 
+/* `it` is a static segment (`it/page.tsx` + `it/privacy`) so it is excluded
+   here — nesting privacy under a dynamic `[lang]=it` collides in the export. */
+const DYNAMIC_LOCALES = ONDE_LOCALES.filter((lang) => lang !== "it");
+
 export function generateStaticParams() {
-  return ONDE_LOCALES.map((lang) => ({ lang }));
+  return DYNAMIC_LOCALES.map((lang) => ({ lang }));
 }
 
 function isOndeLocale(lang: string): lang is OndeLocale {
-  return (ONDE_LOCALES as string[]).includes(lang);
+  return (DYNAMIC_LOCALES as string[]).includes(lang);
 }
 
 export async function generateMetadata({

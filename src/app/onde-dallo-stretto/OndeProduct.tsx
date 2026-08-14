@@ -1,4 +1,3 @@
-import Link from "next/link";
 import type { ReactNode } from "react";
 
 import {
@@ -162,7 +161,7 @@ export default function OndeProduct({ locale }: { locale: OndeLocale }) {
             {t.noteBefore}{" "}
             <a href={`mailto:${LAB_CONTACT_EMAIL}`}>{t.supportLabel}</a>
             {" · "}
-            <Link href={t.privacyHref}>{t.privacyLabel}</Link>
+            <a href={t.privacyHref}>{t.privacyLabel}</a>
           </>
         }
       />

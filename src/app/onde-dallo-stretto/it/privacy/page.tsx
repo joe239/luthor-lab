@@ -1,4 +1,3 @@
-import Link from "next/link";
 import type { Metadata } from "next";
 
 import { LabFooter, LabNav } from "@/components/lab/LabChrome";
@@ -16,6 +15,8 @@ export const dynamic = "force-static";
 
 const LAST_UPDATED = "13 agosto 2026";
 
+/* Plain <a> (not next/link): Google Play and mobile browsers must get a full
+   document load of static HTML, not a client soft-navigation into the locale tree. */
 export default function OndeDalloStrettoPrivacyItPage() {
   return (
     <div className="lab-root">
@@ -25,12 +26,12 @@ export default function OndeDalloStrettoPrivacyItPage() {
         <div className="lab-wrap">
           <article className="lab-prose">
             <p className="lab-kicker">
-              <Link
+              <a
                 href="/onde-dallo-stretto/it"
                 style={{ color: "inherit", textDecoration: "none" }}
               >
                 Onde dallo Stretto
-              </Link>{" "}
+              </a>{" "}
               · Privacy e Termini d&apos;uso
             </p>
             <h1>Privacy e Termini d&apos;uso</h1>
@@ -98,8 +99,13 @@ export default function OndeDalloStrettoPrivacyItPage() {
             <p>
               Le emittenti che desiderano che la propria stazione sia rimossa
               dall&apos;elenco possono scrivere a{" "}
-              <a href="mailto:info@luthorlab.com">info@luthorlab.com</a>: la
-              rimozione viene effettuata nel più breve tempo possibile.
+              <span
+                dangerouslySetInnerHTML={{
+                  __html:
+                    '<!--email_off--><a href="mailto:info@luthorlab.com">info@luthorlab.com</a><!--/email_off-->',
+                }}
+              />
+              : la rimozione viene effettuata nel più breve tempo possibile.
             </p>
             <p>
               La disponibilità degli stream dipende esclusivamente dai server delle
