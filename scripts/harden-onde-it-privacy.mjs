@@ -33,11 +33,16 @@ html = html.replace(/<style\s+data-privacy-critical>[\s\S]*?<\/style>/gi, "");
 const critical = [
   '<meta name="color-scheme" content="dark">',
   "<style data-privacy-critical>",
-  "html{color-scheme:dark;background-color:#131415;color:#ebe8de}",
+  // Gradient doubles the color: forced-dark engines rewrite background-color
+  // but rarely background-image.
+  "html{color-scheme:dark;background-color:#131415;",
+  "background-image:linear-gradient(#131415,#131415);color:#ebe8de}",
   "body,.lab-root,.lab-main,.lab-prose,.lab-footer{",
-  "background-color:#131415;color:#ebe8de;margin:0",
+  "background-color:#131415;",
+  "background-image:linear-gradient(#131415,#131415);color:#ebe8de;margin:0",
   "}",
-  ".lab-nav{background-color:#131415;color:#ebe8de}",
+  ".lab-nav{background-color:#131415;",
+  "background-image:linear-gradient(#131415,#131415);color:#ebe8de}",
   ".lab-prose a,a[href^=mailto]{color:#7a9e8e}",
   "</style>",
 ].join("");

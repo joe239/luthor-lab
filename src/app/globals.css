@@ -22,6 +22,8 @@
   html {
     color-scheme: dark;
     background-color: #131415;
+    /* Forced-dark engines rewrite background-color but rarely background-image. */
+    background-image: linear-gradient(#131415, #131415);
     color: #ebe8de;
     scroll-behavior: smooth;
   }
@@ -31,6 +33,7 @@
     min-height: 100vh;
     min-height: 100dvh;
     background-color: #131415;
+    background-image: linear-gradient(#131415, #131415);
     color: #ebe8de;
   }
 }
