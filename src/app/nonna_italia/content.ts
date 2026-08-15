@@ -66,7 +66,7 @@ export const NONNA_STRINGS: Record<NonnaLocale, NonnaStrings> = {
     canonical: "https://luthorlab.com/nonna_italia/it",
     lede: "100 audio di nonne siciliane, sempre in tasca, compresi gli insulti.",
     lead:
-      "Cento audio registrati in dialetto siciliano. Ogni clip include i sottotitoli in italiano, inglese e siciliano, ed è pronta da condividere con un solo tocco.",
+      "Cento audio registrati in dialetto siciliano. Ogni registrazione include i sottotitoli in italiano, inglese e siciliano, ed è pronta da condividere con un solo click.",
     cards: [
       {
         title: "100 clip",
