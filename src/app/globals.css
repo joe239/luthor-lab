@@ -36,4 +36,26 @@
     background-image: linear-gradient(#131415, #131415);
     color: #ebe8de;
   }
+
+  /*
+    Exception to the dark lock, by rule — not an inconsistency: each
+    product's privacy page follows its own app's colours, because the
+    theme jolt is only ever seen by someone arriving from that app's
+    Privacy button. Nonna Italia's app is pale azure (#E0F1FD), so its
+    privacy pages render light via .lab-root--paper (see lab.css);
+    Onde's dark privacy page is already correct by the same rule.
+    Same anti-forced-dark defences as above, light equivalent.
+  */
+  html:has(.lab-root--paper) {
+    color-scheme: light;
+    background-color: #e0f1fd;
+    background-image: linear-gradient(#e0f1fd, #e0f1fd);
+    color: #1c1d1e;
+  }
+
+  html:has(.lab-root--paper) body {
+    background-color: #e0f1fd;
+    background-image: linear-gradient(#e0f1fd, #e0f1fd);
+    color: #1c1d1e;
+  }
 }

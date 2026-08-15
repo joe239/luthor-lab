@@ -19,7 +19,7 @@ const LAST_UPDATED = "13 August 2026";
 
 export default function NonnaItaliaPrivacyPage() {
   return (
-    <div className="lab-root">
+    <div className="lab-root lab-root--paper">
       <LabNav />
 
       <main className="lab-main">

@@ -1369,3 +1369,85 @@ a.onde-lang:hover {
   font-family: "Sora", sans-serif;
   letter-spacing: -0.01em;
 }
+
+/* —— Nonna Italia privacy — light paper skin ——
+   Chi arriva dal bottone Privacy dell'app proviene da uno schermo
+   #E0F1FD: le due pagine privacy di Nonna restano chiare, sempre.
+   Stesse difese anti-forced-dark del tema scuro, in equivalente light
+   (hex espliciti + background-image). L'override html-level sta in
+   globals.css (html:has(.lab-root--paper)). */
+.lab-root--paper,
+.lab-root--paper .lab-main {
+  background-color: #e0f1fd;
+  background: #e0f1fd;
+  background-image: linear-gradient(#e0f1fd, #e0f1fd);
+  color: #1c1d1e;
+}
+
+.lab-root--paper .lab-nav {
+  background-color: #e0f1fd;
+  background: rgba(224, 241, 253, 0.92);
+  background-image: linear-gradient(
+    rgba(224, 241, 253, 0.92),
+    rgba(224, 241, 253, 0.92)
+  );
+  color: #1c1d1e;
+  border-bottom: 1px solid rgba(28, 29, 30, 0.12);
+}
+
+.lab-root--paper .lab-nav-link {
+  color: rgba(28, 29, 30, 0.65);
+}
+
+.lab-root--paper .lab-nav-link:hover {
+  color: #1c1d1e;
+}
+
+.lab-root--paper .lab-prose {
+  background-color: transparent;
+  background-image: none;
+  color: #1c1d1e;
+}
+
+.lab-root--paper .lab-prose h1,
+.lab-root--paper .lab-prose h2 {
+  color: #1c1d1e;
+}
+
+.lab-root--paper .lab-prose p {
+  color: rgba(28, 29, 30, 0.78);
+}
+
+.lab-root--paper .lab-prose-updated {
+  color: rgba(28, 29, 30, 0.5);
+}
+
+.lab-root--paper .lab-kicker {
+  color: rgba(28, 29, 30, 0.6);
+}
+
+.lab-root--paper .lab-prose a {
+  color: #14649c;
+}
+
+.lab-root--paper .lab-footer {
+  background-color: #cfe6f8;
+  background: #cfe6f8;
+  background-image: linear-gradient(#cfe6f8, #cfe6f8);
+  color: #1c1d1e;
+  border-top: 1px solid rgba(28, 29, 30, 0.12);
+}
+
+.lab-root--paper .lab-footer-links,
+.lab-root--paper .lab-footer-links a {
+  color: rgba(28, 29, 30, 0.55);
+}
+
+.lab-root--paper .lab-footer-links a:hover,
+.lab-root--paper .lab-footer-note a:hover {
+  color: #1c1d1e;
+}
+
+.lab-root--paper .lab-footer-note {
+  color: rgba(28, 29, 30, 0.55);
+}

@@ -20,7 +20,7 @@ const LAST_UPDATED = "15 agosto 2026";
    document load of static HTML, not a client soft-navigation into the locale tree. */
 export default function NonnaItaliaPrivacyItPage() {
   return (
-    <div className="lab-root">
+    <div className="lab-root lab-root--paper">
       <LabNav />
 
       <main className="lab-main">
