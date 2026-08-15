@@ -1287,3 +1287,85 @@ a.onde-lang:hover {
     transform: none;
   }
 }
+
+/* —— Nonna Italia — page skin from the app's own palette ——
+   Values sampled from the app source and artwork: sky #5BACDE (sky.png,
+   modal colour at 98%), accent #62B9F4 (language badge), Info paper
+   #E0F1FD (paperSky/paper_sky in both apps), ground #E3E3E3 (artwork
+   bottom row). Scoped to the product page; base Lab chrome untouched. */
+.lab-root--nonna {
+  --nonna-sky: #5bacde;
+  --nonna-accent: #62b9f4;
+  --nonna-paper: #e0f1fd;
+  --nonna-ground: #e3e3e3;
+  --nonna-ink: #1c1d1e;
+}
+
+.lab-root--nonna .lab-hero-accent {
+  color: var(--nonna-accent);
+}
+
+/* Showcase: la composizione della home dell'app — cielo, tile, terreno */
+.nonna-showcase {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #5bacde;
+  background-image: linear-gradient(#5bacde, #5bacde);
+  border-radius: 22px;
+  min-height: 260px;
+  margin-top: 34px;
+  overflow: hidden;
+}
+
+.nonna-showcase::after {
+  /* il terreno dell'artwork, come la base della home */
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 44px;
+  background-color: #e3e3e3;
+  background-image: linear-gradient(#e3e3e3, #e3e3e3);
+}
+
+.nonna-icon-tile {
+  width: 128px;
+  height: 128px;
+  border-radius: 29px; /* 22/96 del tile dell'app */
+  position: relative;
+  z-index: 1;
+  margin-bottom: 30px;
+  box-shadow: 0 12px 32px rgba(10, 38, 58, 0.35);
+}
+
+/* Fascia in stile schermata Info: card bianche su carta azzurra */
+.nonna-info-band {
+  background-color: #e0f1fd;
+  background-image: linear-gradient(#e0f1fd, #e0f1fd);
+  border-radius: 22px;
+  padding: 24px;
+  margin-top: 26px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.nonna-card {
+  background-color: #ffffff;
+  background-image: linear-gradient(#ffffff, #ffffff);
+  border-radius: 16px;
+  padding: 16px;
+  color: #1c1d1e;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.nonna-card strong {
+  display: block;
+  margin-bottom: 6px;
+  font-family: "Sora", sans-serif;
+  letter-spacing: -0.01em;
+}
