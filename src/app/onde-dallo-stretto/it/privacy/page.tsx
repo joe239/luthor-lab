@@ -31,8 +31,7 @@ export default function OndeDalloStrettoPrivacyItPage() {
                 style={{ color: "inherit", textDecoration: "none" }}
               >
                 Onde dallo Stretto
-              </a>{" "}
-              · Privacy e Termini d&apos;uso
+              </a>
             </p>
             <h1>Privacy e Termini d&apos;uso</h1>
 

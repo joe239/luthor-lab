@@ -29,8 +29,7 @@ export default function OndeDalloStrettoPrivacyPage() {
                 style={{ color: "inherit", textDecoration: "none" }}
               >
                 Onde dallo Stretto
-              </a>{" "}
-              · Privacy &amp; Terms of Use
+              </a>
             </p>
             <h1>Privacy &amp; Terms of Use</h1>
 
