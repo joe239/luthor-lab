@@ -64,6 +64,8 @@ export default function NonnaItaliaPage() {
             <a href={`mailto:${LAB_CONTACT_EMAIL}`}>Support</a>
             {" · "}
             <Link href="/nonna_italia/privacy">Privacy Policy</Link>
+            {" · "}
+            <a href="/nonna_italia/it/privacy">Informativa sulla privacy</a>
           </>
         }
       />

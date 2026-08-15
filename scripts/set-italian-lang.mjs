@@ -10,6 +10,7 @@ import path from "node:path";
 const ITALIAN_PAGES = [
   path.join("out", "onde-dallo-stretto", "it.html"),
   path.join("out", "onde-dallo-stretto", "it", "privacy.html"),
+  path.join("out", "nonna_italia", "it", "privacy.html"),
 ];
 
 for (const file of ITALIAN_PAGES) {
