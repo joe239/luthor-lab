@@ -64,7 +64,7 @@ export const NONNA_STRINGS: Record<NonnaLocale, NonnaStrings> = {
     metaDescription:
       "Nonna Italia è una soundboard di espressioni di nonna siciliana: 100 audio registrati in dialetto, con sottotitoli in italiano, inglese e siciliano. Ogni clip si può condividere. Un prodotto LUTHOR Lab.",
     canonical: "https://luthorlab.com/nonna_italia/it",
-    lede: "Cento espressioni di nonna siciliana, sempre in tasca.",
+    lede: "100 audio di nonne siciliane, sempre in tasca, compresi gli insulti.",
     lead:
       "Cento audio registrati in dialetto siciliano. Ogni clip include i sottotitoli in italiano, inglese e siciliano, ed è pronta da condividere con un solo tocco.",
     cards: [
