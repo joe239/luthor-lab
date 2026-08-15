@@ -1475,3 +1475,14 @@ a.onde-lang:hover {
 .nonna-lang a:hover {
   color: #ebe8de;
 }
+
+/* Header della pagina Nonna: la L nel colore accent dell'app e il
+   kicker bianco — scoped al modificatore, il chrome condiviso di
+   RiskPro/Onde resta oro/verde */
+.lab-root--nonna .lab-logo-mark {
+  color: var(--nonna-accent);
+}
+
+.lab-root--nonna .lab-kicker {
+  color: #ffffff;
+}
