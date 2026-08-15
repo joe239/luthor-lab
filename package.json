@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && node scripts/harden-onde-it-privacy.mjs",
+    "build": "next build && node scripts/set-italian-lang.mjs && node scripts/harden-onde-it-privacy.mjs",
     "start": "next start",
     "lint": "next lint"
   },
