@@ -28,22 +28,20 @@ export default function LabPage() {
           <div className="lab-wrap">
             <p className="lab-kicker lab-reveal">LUTHOR Lab</p>
             <h1 className="lab-reveal lab-reveal--d1">
-              Sharp tools.
-              <br />
-              <span className="lab-hero-accent">
-                Each one built because I needed it.
-              </span>
+              An independent lab for developing apps, experimenting with
+              technology, and turning ideas into working projects.
             </h1>
             <p className="lab-hero-lede lab-mission lab-reveal lab-reveal--d2">
-              LUTHOR Lab is where I build. Some of it is regulatory software
-              for banks. Some of it is an app that plays the radio from the
-              city I come from. What they have in common is the starting
-              point: a problem I had, and nothing that solved it properly.
+              LUTHOR Lab is a space for building and exploring. Projects can
+              start from a practical problem, a curiosity, or simply an idea
+              worth testing — from financial and regulatory software to apps,
+              digital tools, and small experiments.
             </p>
             <p className="lab-hero-lede lab-mission lab-reveal lab-reveal--d3">
-              I build alone, and I release when something works. If you use
-              one of these and something annoys you, tell me — that is the
-              whole feedback loop.
+              Everything is developed independently, with a focus on
+              simplicity, usefulness, and making things that actually work.
+              Some projects become finished products. Others remain
+              experiments. The lab is where both can happen.
             </p>
           </div>
         </header>
