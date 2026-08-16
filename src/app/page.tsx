@@ -28,8 +28,11 @@ export default function LabPage() {
           <div className="lab-wrap">
             <p className="lab-kicker lab-reveal">LUTHOR Lab</p>
             <h1 className="lab-reveal lab-reveal--d1">
-              An independent lab for developing apps, experimenting with
-              technology, and turning ideas into working projects.
+              Independent lab.
+              <br />
+              <span className="lab-hero-accent">
+                Apps, experiments, ideas made real.
+              </span>
             </h1>
             <p className="lab-hero-lede lab-mission lab-reveal lab-reveal--d2">
               LUTHOR Lab is a space for building and exploring. Projects can
