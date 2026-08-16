@@ -121,8 +121,9 @@ export default function LabPage() {
                 <p className="lab-card-sub">The radio from home</p>
                 <p>
                   An Italian radio app that works like a real car radio — you
-                  turn through the FM dial and pick up the stations you would
-                  receive driving around Messina. For people from Messina
+                  turn through the FM dial and pick up the local stations you
+                  would receive driving between Sicily and Calabria, with the
+                  Strait of Messina at the centre. For Sicilians and Calabrians
                   living away from home.
                 </p>
                 <div className="lab-card-actions">
