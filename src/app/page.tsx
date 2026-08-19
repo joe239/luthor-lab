@@ -102,7 +102,7 @@ export default function LabPage() {
               <article className="lab-card lab-reveal lab-reveal--d2">
                 <span className="lab-status lab-status--live">Live</span>
                 <h3 className="lab-card-name">RiskPRO</h3>
-                <p className="lab-card-sub">Risk assessment on iOS</p>
+                <p className="lab-card-sub">Risk assessment</p>
                 <p>
                   An independent risk read on US/EU stocks and UCITS ETFs —
                   three risk dimensions, a clear verdict, PRIIPs risk class
