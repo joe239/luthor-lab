@@ -1044,8 +1044,17 @@ a.onde-lang:hover {
 .onde-skyline {
   display: block;
   width: 100%;
+  /* Stessa colonna del testo: 62ch risolti al font-size dei paragrafi. */
+  max-width: 62ch;
+  font-size: 16px;
   height: auto;
-  margin-top: 40px;
+  margin-top: 24px;
+}
+
+/* L'illustrazione ha aria propria dentro il PNG: la sezione dopo l'hero
+   non deve sommare altro vuoto. */
+.lab-root--onde .lab-section--pad-top {
+  padding-top: 28px;
 }
 
 /* Body copy on dark. */
