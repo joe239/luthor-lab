@@ -59,25 +59,22 @@ export default function OndeProduct({ locale }: { locale: OndeLocale }) {
               <h1>Onde dallo Stretto</h1>
               <p className="lab-hero-lede">{t.lede}</p>
               {t.subhead ? <p className="onde-subhead">{t.subhead}</p> : null}
-              <div className="onde-dial" aria-hidden="true">
-                <div className="onde-dial-scale">
-                  <span className="onde-dial-needle" />
-                </div>
-                <div className="onde-dial-numbers">
-                  <span>87</span>
-                  <span>92</span>
-                  <span>96</span>
-                  <span>100</span>
-                  <span>104</span>
-                  <span>108</span>
-                </div>
-              </div>
             </div>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               className="onde-app-icon"
               src="/lab/onde-icon.png"
               alt={t.iconAlt}
+            />
+          </div>
+          <div className="lab-wrap">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              className="onde-skyline"
+              src="/lab/onde-skyline.png"
+              alt={t.skylineAlt}
+              width={1536}
+              height={620}
             />
           </div>
         </header>

@@ -47,6 +47,7 @@ export type OndeStrings = {
   privacyHref: string;
   iconAlt: string;
   carplayAlt: string;
+  skylineAlt: string;
   shots: OndeShot[];
 };
 
@@ -132,6 +133,8 @@ export const ONDE_STRINGS: Record<OndeLocale, OndeStrings> = {
     privacyHref: "/onde-dallo-stretto/it/privacy",
     iconAlt: "Icona dell'app Onde dallo Stretto",
     carplayAlt: "Onde dallo Stretto su Apple CarPlay",
+    skylineAlt:
+      "Lo skyline di Onde dallo Stretto — i monumenti dello Stretto sopra la scala FM con l'indicatore ambra",
     shots: [
       {
         src: "/lab/onde-shot-dial.jpg",
@@ -171,6 +174,8 @@ export const ONDE_STRINGS: Record<OndeLocale, OndeStrings> = {
     privacyHref: "/onde-dallo-stretto/privacy",
     iconAlt: "Onde dallo Stretto app icon",
     carplayAlt: "Onde dallo Stretto on Apple CarPlay",
+    skylineAlt:
+      "The Onde dallo Stretto skyline — landmarks of the Strait above the FM scale with the amber needle",
     shots: [
       {
         src: "/lab/onde-shot-dial.jpg",
@@ -210,6 +215,8 @@ export const ONDE_STRINGS: Record<OndeLocale, OndeStrings> = {
     privacyHref: "/onde-dallo-stretto/privacy",
     iconAlt: "Onde dallo Stretto のアプリアイコン",
     carplayAlt: "Onde dallo Stretto の Apple CarPlay 画面",
+    skylineAlt:
+      "Onde dallo Stretto のスカイライン — FM スケールと琥珀色の針の上に並ぶ海峡の名所",
     shots: [
       {
         src: "/lab/onde-shot-dial.jpg",
@@ -249,6 +256,8 @@ export const ONDE_STRINGS: Record<OndeLocale, OndeStrings> = {
     privacyHref: "/onde-dallo-stretto/privacy",
     iconAlt: "Icône de l'app Onde dallo Stretto",
     carplayAlt: "Onde dallo Stretto sur Apple CarPlay",
+    skylineAlt:
+      "La skyline d'Onde dallo Stretto — les monuments du Détroit au-dessus de l'échelle FM avec l'aiguille ambre",
     shots: [
       {
         src: "/lab/onde-shot-dial.jpg",
@@ -288,6 +297,8 @@ export const ONDE_STRINGS: Record<OndeLocale, OndeStrings> = {
     privacyHref: "/onde-dallo-stretto/privacy",
     iconAlt: "App-Symbol von Onde dallo Stretto",
     carplayAlt: "Onde dallo Stretto auf Apple CarPlay",
+    skylineAlt:
+      "Die Skyline von Onde dallo Stretto — Wahrzeichen der Meerenge über der FM-Skala mit der bernsteinfarbenen Nadel",
     shots: [
       {
         src: "/lab/onde-shot-dial.jpg",

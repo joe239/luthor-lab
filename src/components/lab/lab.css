@@ -1003,6 +1003,9 @@ a.onde-lang:hover {
 
 .lab-root--onde .lab-hero {
   padding-top: 36px;
+  /* Lo skyline chiude l'hero: il distacco dal testo lo dà il pad-top
+     della sezione successiva, senza il vecchio vuoto sotto la scala. */
+  padding-bottom: 0;
 }
 
 /* Hero layout — copy on the left, app icon top right. */
@@ -1035,55 +1038,14 @@ a.onde-lang:hover {
   }
 }
 
-/* Decorative FM dial, drawn like the app's tuner scale. */
+/* Skyline della schermata Informazioni: scala FM completa, fondo #131415
+   come la pagina — nessuna cornice, si fonde col fondo. */
 
-.onde-dial {
-  max-width: 540px;
-  margin-top: 48px;
-}
-
-.onde-dial-scale {
-  position: relative;
-  height: 15px;
-  border-top: 1px solid rgba(235, 232, 222, 0.4);
-  background-image:
-    repeating-linear-gradient(
-      90deg,
-      rgba(235, 232, 222, 0.28) 0,
-      rgba(235, 232, 222, 0.28) 1px,
-      transparent 1px,
-      transparent 11px
-    ),
-    repeating-linear-gradient(
-      90deg,
-      rgba(235, 232, 222, 0.45) 0,
-      rgba(235, 232, 222, 0.45) 1px,
-      transparent 1px,
-      transparent 55px
-    );
-  background-size:
-    100% 7px,
-    100% 13px;
-  background-repeat: no-repeat;
-}
-
-.onde-dial-needle {
-  position: absolute;
-  top: -5px;
-  bottom: -2px;
-  left: 37.6%; /* 94.9 on the 87–108 scale */
-  width: 2px;
-  background: var(--onde-amber);
-}
-
-.onde-dial-numbers {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 8px;
-  font-family: "JetBrains Mono", monospace;
-  font-size: 10px;
-  letter-spacing: 0.08em;
-  color: var(--onde-dim);
+.onde-skyline {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: 40px;
 }
 
 /* Body copy on dark. */
