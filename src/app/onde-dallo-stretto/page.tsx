@@ -11,6 +11,24 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://luthorlab.com/onde-dallo-stretto",
   },
+  openGraph: {
+    title: "Onde dallo Stretto — live Italian radio, in your car",
+    description:
+      "Onde dallo Stretto brings real Italian radio to your dashboard: the music, the voices, the warmth of Italy — live and unfiltered. Turn the dial across a real FM band, stop on a frequency, and listen. A LUTHOR Lab product.",
+    url: "https://luthorlab.com/onde-dallo-stretto",
+    locale: "en_US",
+    images: [
+      {
+        url: "https://luthorlab.com/lab/onde-og.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Onde dallo Stretto app — tuned to 106.8 FM, SEGNALE BLU",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+  },
 };
 
 export const dynamic = "force-static";

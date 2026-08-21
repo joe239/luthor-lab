@@ -52,6 +52,21 @@ export type OndeStrings = {
 
 export const ONDE_CARPLAY_SRC = "/lab/onde-shot-carplay.png";
 
+/* Open Graph: FM-dial screenshot composed onto a 1200x630 brand-dark canvas. */
+export const ONDE_OG_IMAGE = {
+  url: "https://luthorlab.com/lab/onde-og.jpg",
+  width: 1200,
+  height: 630,
+} as const;
+
+export const ONDE_OG_LOCALES: Record<OndeLocale, string> = {
+  it: "it_IT",
+  en: "en_US",
+  ja: "ja_JP",
+  fr: "fr_FR",
+  de: "de_DE",
+};
+
 export const ONDE_STRINGS: Record<OndeLocale, OndeStrings> = {
   it: {
     metaTitle: "Onde dallo Stretto — le radio di casa, anche quando sei lontano",
@@ -148,7 +163,7 @@ export const ONDE_STRINGS: Record<OndeLocale, OndeStrings> = {
     shotsLabel: "App screenshots",
     storeLabel: "Get the app",
     soonApple: "Coming soon to the",
-    soonGoogle: "Coming soon on",
+    soonGoogle: "Coming soon to",
     storeHint: "not in the stores yet — coming soon",
     noteBefore: "Onde dallo Stretto is a LUTHOR Lab product.",
     supportLabel: "Support",

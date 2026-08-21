@@ -1,7 +1,13 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
-import { ONDE_LOCALES, ONDE_STRINGS, type OndeLocale } from "../content";
+import {
+  ONDE_LOCALES,
+  ONDE_OG_IMAGE,
+  ONDE_OG_LOCALES,
+  ONDE_STRINGS,
+  type OndeLocale,
+} from "../content";
 import OndeProduct from "../OndeProduct";
 
 export const dynamic = "force-static";
@@ -28,11 +34,22 @@ export async function generateMetadata({
     return {};
   }
   const t = ONDE_STRINGS[lang];
+  const url = `https://luthorlab.com/onde-dallo-stretto/${lang}`;
   return {
     title: t.metaTitle,
     description: t.metaDescription,
     alternates: {
-      canonical: `https://luthorlab.com/onde-dallo-stretto/${lang}`,
+      canonical: url,
+    },
+    openGraph: {
+      title: t.metaTitle,
+      description: t.metaDescription,
+      url,
+      locale: ONDE_OG_LOCALES[lang],
+      images: [{ ...ONDE_OG_IMAGE, alt: t.shots[0].alt }],
+    },
+    twitter: {
+      card: "summary_large_image",
     },
   };
 }

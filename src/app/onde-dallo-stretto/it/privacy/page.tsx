@@ -9,6 +9,24 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://luthorlab.com/onde-dallo-stretto/it/privacy",
   },
+  openGraph: {
+    title: "Onde dallo Stretto — Privacy e Termini d'uso",
+    description:
+      "Onde dallo Stretto non raccoglie, non conserva e non trasmette alcun dato personale. L'app non ha account, non richiede registrazione, non usa strumenti di analisi, non traccia gli utenti e non contiene pubblicità.",
+    url: "https://luthorlab.com/onde-dallo-stretto/it/privacy",
+    locale: "it_IT",
+    images: [
+      {
+        url: "https://luthorlab.com/lab/onde-og.jpg",
+        width: 1200,
+        height: 630,
+        alt: "L'app Onde dallo Stretto — sintonizzata su 106.8 FM, SEGNALE BLU",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+  },
 };
 
 export const dynamic = "force-static";
