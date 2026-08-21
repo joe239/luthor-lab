@@ -95,6 +95,18 @@ export const NONNA_STRINGS: Record<NonnaLocale, NonnaStrings> = {
   },
 };
 
+/* Open Graph: app-icon tile on the showcase sky, native 1200x630. */
+export const NONNA_OG_IMAGE = {
+  url: "https://luthorlab.com/lab/nonna-og.jpg",
+  width: 1200,
+  height: 630,
+} as const;
+
+export const NONNA_OG_LOCALES: Record<NonnaLocale, string> = {
+  en: "en_US",
+  it: "it_IT",
+};
+
 export const NONNA_LOCALE_HREFS: Record<NonnaLocale, string> = {
   en: "/nonna_italia",
   it: "/nonna_italia/it",

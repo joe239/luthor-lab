@@ -14,6 +14,17 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://luthoradvisory.com/lab/riskpro/privacy",
   },
+  /* No og:image yet — the project has no RiskPRO app icon asset. */
+  openGraph: {
+    title: "RiskPRO Privacy Policy — LUTHOR Lab",
+    description:
+      "RiskPRO collects no personal data: no accounts, no analytics, no tracking, no third-party SDKs.",
+    url: "https://luthoradvisory.com/lab/riskpro/privacy",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+  },
 };
 
 export const dynamic = "force-static";
