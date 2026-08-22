@@ -111,3 +111,9 @@ export const NONNA_LOCALE_HREFS: Record<NonnaLocale, string> = {
   en: "/nonna_italia",
   it: "/nonna_italia/it",
 };
+
+export const NONNA_LANGUAGE_ALTERNATES = {
+  en: NONNA_STRINGS.en.canonical,
+  it: NONNA_STRINGS.it.canonical,
+  "x-default": NONNA_STRINGS.en.canonical,
+} as const;

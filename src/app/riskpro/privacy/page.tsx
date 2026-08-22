@@ -12,14 +12,14 @@ export const metadata: Metadata = {
   description:
     "RiskPRO collects no personal data: no accounts, no analytics, no tracking, no third-party SDKs.",
   alternates: {
-    canonical: "https://luthoradvisory.com/lab/riskpro/privacy",
+    canonical: "https://luthorlab.com/riskpro/privacy",
   },
-  /* No og:image yet — the project has no RiskPRO app icon asset. */
   openGraph: {
     title: "RiskPRO Privacy Policy — LUTHOR Lab",
     description:
       "RiskPRO collects no personal data: no accounts, no analytics, no tracking, no third-party SDKs.",
-    url: "https://luthoradvisory.com/lab/riskpro/privacy",
+    url: "https://luthorlab.com/riskpro/privacy",
+    type: "website",
     locale: "en_US",
   },
   twitter: {

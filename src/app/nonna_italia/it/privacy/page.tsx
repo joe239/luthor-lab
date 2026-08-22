@@ -8,12 +8,18 @@ export const metadata: Metadata = {
     "Nonna Italia non raccoglie dati personali: niente account, niente analytics, niente tracciamento, niente SDK di terzi, niente pubblicità. Completamente offline — l'app non richiede alcun permesso.",
   alternates: {
     canonical: "https://luthorlab.com/nonna_italia/it/privacy",
+    languages: {
+      en: "https://luthorlab.com/nonna_italia/privacy",
+      it: "https://luthorlab.com/nonna_italia/it/privacy",
+      "x-default": "https://luthorlab.com/nonna_italia/privacy",
+    },
   },
   openGraph: {
     title: "Nonna Italia — Informativa sulla privacy",
     description:
       "Nonna Italia non raccoglie dati personali: niente account, niente analytics, niente tracciamento, niente SDK di terzi, niente pubblicità. Completamente offline — l'app non richiede alcun permesso.",
     url: "https://luthorlab.com/nonna_italia/it/privacy",
+    type: "website",
     locale: "it_IT",
     images: [
       {

@@ -8,12 +8,18 @@ export const metadata: Metadata = {
     "Onde dallo Stretto non raccoglie, non conserva e non trasmette alcun dato personale. L'app non ha account, non richiede registrazione, non usa strumenti di analisi, non traccia gli utenti e non contiene pubblicità.",
   alternates: {
     canonical: "https://luthorlab.com/onde-dallo-stretto/it/privacy",
+    languages: {
+      en: "https://luthorlab.com/onde-dallo-stretto/privacy",
+      it: "https://luthorlab.com/onde-dallo-stretto/it/privacy",
+      "x-default": "https://luthorlab.com/onde-dallo-stretto/privacy",
+    },
   },
   openGraph: {
     title: "Onde dallo Stretto — Privacy e Termini d'uso",
     description:
       "Onde dallo Stretto non raccoglie, non conserva e non trasmette alcun dato personale. L'app non ha account, non richiede registrazione, non usa strumenti di analisi, non traccia gli utenti e non contiene pubblicità.",
     url: "https://luthorlab.com/onde-dallo-stretto/it/privacy",
+    type: "website",
     locale: "it_IT",
     images: [
       {

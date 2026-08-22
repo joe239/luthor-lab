@@ -4,18 +4,21 @@ import { LabNav } from "@/components/lab/LabChrome";
 
 import OndeLocaleRedirect from "./OndeLocaleRedirect";
 
+const GATE_TITLE = "Onde dallo Stretto — Choose your language";
+const GATE_DESCRIPTION =
+  "Choose Italian, English, Japanese, French or German to discover Onde dallo Stretto, the live Italian radio app from LUTHOR Lab.";
+
 export const metadata: Metadata = {
-  title: "Onde dallo Stretto — live Italian radio, in your car",
-  description:
-    "Onde dallo Stretto brings real Italian radio to your dashboard: the music, the voices, the warmth of Italy — live and unfiltered. Turn the dial across a real FM band, stop on a frequency, and listen. A LUTHOR Lab product.",
+  title: GATE_TITLE,
+  description: GATE_DESCRIPTION,
   alternates: {
     canonical: "https://luthorlab.com/onde-dallo-stretto",
   },
   openGraph: {
-    title: "Onde dallo Stretto — live Italian radio, in your car",
-    description:
-      "Onde dallo Stretto brings real Italian radio to your dashboard: the music, the voices, the warmth of Italy — live and unfiltered. Turn the dial across a real FM band, stop on a frequency, and listen. A LUTHOR Lab product.",
+    title: GATE_TITLE,
+    description: GATE_DESCRIPTION,
     url: "https://luthorlab.com/onde-dallo-stretto",
+    type: "website",
     locale: "en_US",
     images: [
       {
@@ -28,6 +31,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
+    title: GATE_TITLE,
+    description: GATE_DESCRIPTION,
+    images: ["https://luthorlab.com/lab/onde-og.jpg"],
   },
 };
 

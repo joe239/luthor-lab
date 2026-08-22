@@ -68,6 +68,12 @@ export const ONDE_OG_LOCALES: Record<OndeLocale, string> = {
   de: "de_DE",
 };
 
+export const ONDE_EN_IT_LANGUAGE_ALTERNATES = {
+  en: "https://luthorlab.com/onde-dallo-stretto/en",
+  it: "https://luthorlab.com/onde-dallo-stretto/it",
+  "x-default": "https://luthorlab.com/onde-dallo-stretto/en",
+} as const;
+
 export const ONDE_STRINGS: Record<OndeLocale, OndeStrings> = {
   it: {
     metaTitle: "Onde dallo Stretto — le radio di casa, anche quando sei lontano",

@@ -16,18 +16,29 @@ export const metadata: Metadata = {
   description:
     "RiskPRO gives you three risk dimensions, a clear verdict, and for UCITS funds the PRIIPs risk class computed from live market data — side by side with the fund's own KID. A LUTHOR Lab product.",
   alternates: {
-    canonical: "https://luthoradvisory.com/lab/riskpro",
+    canonical: "https://luthorlab.com/riskpro",
   },
-  /* No og:image yet — the project has no RiskPRO app icon asset. */
   openGraph: {
     title: "RiskPRO — An independent risk read on US/EU stocks and UCITS ETFs",
     description:
       "RiskPRO gives you three risk dimensions, a clear verdict, and for UCITS funds the PRIIPs risk class computed from live market data — side by side with the fund's own KID. A LUTHOR Lab product.",
-    url: "https://luthoradvisory.com/lab/riskpro",
+    url: "https://luthorlab.com/riskpro",
+    type: "website",
     locale: "en_US",
+    images: [
+      {
+        url: "https://luthorlab.com/lab/riskpro-og.png",
+        width: 1200,
+        height: 630,
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
+    title: "RiskPRO — An independent risk read on US/EU stocks and UCITS ETFs",
+    description:
+      "RiskPRO gives you three risk dimensions, a clear verdict, and for UCITS funds the PRIIPs risk class computed from live market data — side by side with the fund's own KID. A LUTHOR Lab product.",
+    images: ["https://luthorlab.com/lab/riskpro-og.png"],
   },
 };
 

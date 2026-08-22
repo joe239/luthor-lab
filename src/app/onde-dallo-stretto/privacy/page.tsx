@@ -8,12 +8,18 @@ export const metadata: Metadata = {
     "Onde dallo Stretto collects no personal data. There is no account, no sign-up, no analytics, no advertising, and no third-party tracking of any kind.",
   alternates: {
     canonical: "https://luthorlab.com/onde-dallo-stretto/privacy",
+    languages: {
+      en: "https://luthorlab.com/onde-dallo-stretto/privacy",
+      it: "https://luthorlab.com/onde-dallo-stretto/it/privacy",
+      "x-default": "https://luthorlab.com/onde-dallo-stretto/privacy",
+    },
   },
   openGraph: {
     title: "Onde dallo Stretto — Privacy & Terms of Use",
     description:
       "Onde dallo Stretto collects no personal data. There is no account, no sign-up, no analytics, no advertising, and no third-party tracking of any kind.",
     url: "https://luthorlab.com/onde-dallo-stretto/privacy",
+    type: "website",
     locale: "en_US",
     images: [
       {

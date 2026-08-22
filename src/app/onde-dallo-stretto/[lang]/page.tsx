@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 import {
+  ONDE_EN_IT_LANGUAGE_ALTERNATES,
   ONDE_LOCALES,
   ONDE_OG_IMAGE,
   ONDE_OG_LOCALES,
@@ -40,16 +41,21 @@ export async function generateMetadata({
     description: t.metaDescription,
     alternates: {
       canonical: url,
+      languages: lang === "en" ? ONDE_EN_IT_LANGUAGE_ALTERNATES : undefined,
     },
     openGraph: {
       title: t.metaTitle,
       description: t.metaDescription,
       url,
+      type: "website",
       locale: ONDE_OG_LOCALES[lang],
       images: [{ ...ONDE_OG_IMAGE, alt: t.shots[0].alt }],
     },
     twitter: {
       card: "summary_large_image",
+      title: t.metaTitle,
+      description: t.metaDescription,
+      images: [ONDE_OG_IMAGE.url],
     },
   };
 }

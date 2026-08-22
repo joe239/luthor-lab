@@ -7,12 +7,28 @@ import {
   LAB_CONTACT_EMAIL,
 } from "@/components/lab/LabChrome";
 
+const HOME_TITLE = "LUTHOR Lab — Sharp tools. Big ideas about risk.";
+const HOME_DESCRIPTION =
+  "LUTHOR Lab is the workshop behind LUTHOR — sharp, focused tools that test big ideas about risk, regulation and data. Built in Luxembourg by risk professionals, shipped early, shaped by pilots.";
+const HOME_URL = "https://luthorlab.com/";
+
 export const metadata: Metadata = {
-  title: "LUTHOR Lab — Sharp tools. Big ideas about risk.",
-  description:
-    "LUTHOR Lab is the workshop behind LUTHOR — sharp, focused tools that test big ideas about risk, regulation and data. Built in Luxembourg by risk professionals, shipped early, shaped by pilots.",
+  title: HOME_TITLE,
+  description: HOME_DESCRIPTION,
   alternates: {
-    canonical: "https://luthoradvisory.com/lab",
+    canonical: HOME_URL,
+  },
+  openGraph: {
+    title: HOME_TITLE,
+    description: HOME_DESCRIPTION,
+    url: HOME_URL,
+    type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: HOME_TITLE,
+    description: HOME_DESCRIPTION,
   },
 };
 
