@@ -18,6 +18,17 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://luthorlab.com/riskpro",
   },
+  icons: {
+    icon: [{ url: "/favicon.ico", sizes: "any", type: "image/x-icon" }],
+    apple: [
+      {
+        url: "https://luthorlab.com/riskpro/apple-icon.png",
+        sizes: "180x180",
+        type: "image/png",
+      },
+    ],
+    shortcut: "/favicon.ico",
+  },
   openGraph: {
     title: "RiskPRO — An independent risk read on US/EU stocks and UCITS ETFs",
     description:
