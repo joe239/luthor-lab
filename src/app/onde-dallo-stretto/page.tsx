@@ -4,9 +4,11 @@ import { LabNav } from "@/components/lab/LabChrome";
 
 import OndeLocaleRedirect from "./OndeLocaleRedirect";
 
-const GATE_TITLE = "Onde dallo Stretto — Choose your language";
+/* Link-preview copy is Italian: the gate URL is what gets shared, and the app's
+   home audience is Italian — the "Choose your language" copy made ugly previews. */
+const GATE_TITLE = "Onde dallo Stretto — le radio di Sicilia e Calabria";
 const GATE_DESCRIPTION =
-  "Choose Italian, English, Japanese, French or German to discover Onde dallo Stretto, the live Italian radio app from LUTHOR Lab.";
+  "Stanco delle solite playlist? Passa anche tu alla radio: le emittenti locali di Sicilia e Calabria in streaming, come su un'autoradio anni '90. Gratis, senza pubblicità, senza registrazione. iOS e Android.";
 
 export const metadata: Metadata = {
   title: GATE_TITLE,
@@ -19,7 +21,7 @@ export const metadata: Metadata = {
     description: GATE_DESCRIPTION,
     url: "https://luthorlab.com/onde-dallo-stretto",
     type: "website",
-    locale: "en_US",
+    locale: "it_IT",
     images: [
       {
         url: "https://luthorlab.com/lab/onde-og.jpg",

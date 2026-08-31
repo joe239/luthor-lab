@@ -28,6 +28,10 @@ export type OndeSection = {
 export type OndeStrings = {
   metaTitle: string;
   metaDescription: string;
+  /** Link-preview copy (og:/twitter: title+description) — kept separate from
+      metaTitle/metaDescription so the HTML <title> stays useful for navigation. */
+  ogTitle: string;
+  ogDescription: string;
   kicker: string;
   lede: string;
   subhead: string;
@@ -79,6 +83,9 @@ export const ONDE_STRINGS: Record<OndeLocale, OndeStrings> = {
     metaTitle: "Onde dallo Stretto — le radio di casa, anche quando sei lontano",
     metaDescription:
       "Onde dallo Stretto ricrea l'esperienza di una vera autoradio: scala FM, preset, SCAN e radio siciliane e calabresi in streaming. Gratuita, senza pubblicità. Un prodotto LUTHOR Lab.",
+    ogTitle: "Onde dallo Stretto — le radio di Sicilia e Calabria",
+    ogDescription:
+      "Stanco delle solite playlist? Passa anche tu alla radio: le emittenti locali di Sicilia e Calabria in streaming, come su un'autoradio anni '90. Gratis, senza pubblicità, senza registrazione. iOS e Android.",
     kicker: "LUTHOR Lab",
     lede: "Le radio di casa, anche quando sei lontano",
     subhead: "",
@@ -160,6 +167,9 @@ export const ONDE_STRINGS: Record<OndeLocale, OndeStrings> = {
     metaTitle: "Onde dallo Stretto — live Italian radio, in your car",
     metaDescription:
       "Onde dallo Stretto brings real Italian radio to your dashboard: the music, the voices, the warmth of Italy — live and unfiltered. Turn the dial across a real FM band, stop on a frequency, and listen. A LUTHOR Lab product.",
+    ogTitle: "Onde dallo Stretto — the radio stations of Sicily and Calabria",
+    ogDescription:
+      "Tired of the same old playlists? Make the switch to radio: the local stations of Sicily and Calabria in streaming, like on a '90s car radio. Free, no ads, no sign-up. iOS and Android.",
     kicker: "LUTHOR Lab",
     lede: "Live Italian radio, in your car.",
     subhead: "Turn the dial. Italy comes through.",
@@ -201,6 +211,9 @@ export const ONDE_STRINGS: Record<OndeLocale, OndeStrings> = {
     metaTitle: "Onde dallo Stretto — イタリアのラジオを、そのまま車の中へ",
     metaDescription:
       "Onde dallo Stretto は、イタリアのラジオをライブのまま届けます。音楽も、声も、街の空気も、放送そのまま。本物のFMバンドをダイヤルで回り、周波数に止まって、耳を傾ける——いまイタリアで流れているラジオです。LUTHOR Lab のプロダクト。",
+    ogTitle: "Onde dallo Stretto — シチリアとカラブリアのラジオ",
+    ogDescription:
+      "いつものプレイリストに飽きたら、あなたもラジオへ。シチリアとカラブリアのローカル局を、90年代のカーラジオのようにストリーミングで。無料、広告なし、登録不要。iOS・Android対応。",
     kicker: "LUTHOR Lab",
     lede: "イタリアのラジオを、そのまま車の中へ。",
     subhead: "ダイヤルを回せば、そこはイタリア。",
@@ -242,6 +255,9 @@ export const ONDE_STRINGS: Record<OndeLocale, OndeStrings> = {
     metaTitle: "Onde dallo Stretto — la radio italienne en direct, dans votre voiture",
     metaDescription:
       "Onde dallo Stretto fait entrer la vraie radio italienne dans votre voiture : la musique, les voix, l'art de vivre italien — en direct et sans filtre. Tournez sur une vraie bande FM, arrêtez-vous sur une fréquence et écoutez. Un produit LUTHOR Lab.",
+    ogTitle: "Onde dallo Stretto — les radios de Sicile et de Calabre",
+    ogDescription:
+      "Fatigué des playlists habituelles ? Passez vous aussi à la radio : les stations locales de Sicile et de Calabre en streaming, comme sur un autoradio des années 90. Gratuit, sans publicité, sans inscription. iOS et Android.",
     kicker: "LUTHOR Lab",
     lede: "La radio italienne en direct, dans votre voiture.",
     subhead: "Tournez la molette. L'Italie est là.",
@@ -283,6 +299,9 @@ export const ONDE_STRINGS: Record<OndeLocale, OndeStrings> = {
     metaTitle: "Onde dallo Stretto — Italienisches Radio, live in deinem Auto",
     metaDescription:
       "Onde dallo Stretto bringt echtes italienisches Radio in dein Auto: die Musik, die Stimmen, das Lebensgefühl Italiens — live und ungefiltert. Dreh über ein echtes FM-Band, bleib auf einer Frequenz stehen und hör zu. Ein Produkt von LUTHOR Lab.",
+    ogTitle: "Onde dallo Stretto — die Radiosender aus Sizilien und Kalabrien",
+    ogDescription:
+      "Genug von den üblichen Playlists? Steig auch du aufs Radio um: die Lokalsender aus Sizilien und Kalabrien im Streaming, wie auf einem Autoradio der 90er. Kostenlos, ohne Werbung, ohne Registrierung. iOS und Android.",
     kicker: "LUTHOR Lab",
     lede: "Italienisches Radio, live in deinem Auto.",
     subhead: "Dreh am Rad — und Italien ist da.",

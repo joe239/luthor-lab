@@ -44,8 +44,8 @@ export async function generateMetadata({
       languages: lang === "en" ? ONDE_EN_IT_LANGUAGE_ALTERNATES : undefined,
     },
     openGraph: {
-      title: t.metaTitle,
-      description: t.metaDescription,
+      title: t.ogTitle,
+      description: t.ogDescription,
       url,
       type: "website",
       locale: ONDE_OG_LOCALES[lang],
@@ -53,8 +53,8 @@ export async function generateMetadata({
     },
     twitter: {
       card: "summary_large_image",
-      title: t.metaTitle,
-      description: t.metaDescription,
+      title: t.ogTitle,
+      description: t.ogDescription,
       images: [ONDE_OG_IMAGE.url],
     },
   };
