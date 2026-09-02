@@ -9,6 +9,7 @@ import {
 } from "@/components/lab/LabChrome";
 
 import {
+  ONDE_APP_STORE_URL,
   ONDE_CARPLAY_SRC,
   ONDE_STRINGS,
   type OndeLocale,
@@ -145,7 +146,10 @@ export default function OndeProduct({ locale }: { locale: OndeLocale }) {
           <div className="lab-wrap">
             <p className="onde-store-hint">{t.storeHint}</p>
             <div className="lab-store">
-              <AppStoreBadge soonLabel={t.soonApple} />
+              <AppStoreBadge
+                storeUrl={ONDE_APP_STORE_URL}
+                downloadLabel={t.getApple}
+              />
               <GooglePlayBadge soonLabel={t.soonGoogle} />
             </div>
           </div>

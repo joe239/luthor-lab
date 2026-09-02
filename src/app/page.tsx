@@ -132,7 +132,7 @@ export default function LabPage() {
               </article>
 
               <article className="lab-card lab-reveal lab-reveal--d2">
-                <span className="lab-status lab-status--soon">Coming soon</span>
+                <span className="lab-status lab-status--live">Live</span>
                 <h3 className="lab-card-name">Onde dallo Stretto</h3>
                 <p className="lab-card-sub">The radio from home</p>
                 <p>

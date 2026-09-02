@@ -54,9 +54,11 @@ export const RISKPRO_GOOGLE_PLAY_URL =
 export function AppStoreBadge({
   storeUrl = null,
   soonLabel = "Coming soon to the",
+  downloadLabel = "Download on the",
 }: {
   storeUrl?: string | null;
   soonLabel?: string;
+  downloadLabel?: string;
 }) {
   if (storeUrl) {
     return (
@@ -69,7 +71,7 @@ export function AppStoreBadge({
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img className="lab-store-btn-icon" src="/lab/store-apple.png" alt="" />
         <span className="lab-store-btn-text">
-          <small>Download on the</small>
+          <small>{downloadLabel}</small>
           <strong>App Store</strong>
         </span>
       </a>

@@ -5,12 +5,10 @@ import { LabNav } from "@/components/lab/LabChrome";
 import OndeLocaleRedirect from "./OndeLocaleRedirect";
 
 /* Link-preview copy is Italian: the gate URL is what gets shared, and the app's
-   home audience is Italian — the "Choose your language" copy made ugly previews.
-   Kept short and complementary to the manual share text ("Stanco delle solite
-   playlist? Scopri cosa passa alla radio.") — don't repeat those phrases here. */
+   home audience is Italian — the "Choose your language" copy made ugly previews. */
 const GATE_TITLE = "Onde dallo Stretto — le radio di Sicilia e Calabria";
 const GATE_DESCRIPTION =
-  "Ascoltale in streaming come su un’autoradio anni ’90. Gratis, senza pubblicità aggiuntiva e senza registrazione.";
+  "Stanco delle solite playlist? Passa alla radio! Le radio di Sicilia e Calabria in streaming, come su un'autoradio anni '90. Gratis, senza pubblicità aggiuntiva e senza registrazione.";
 
 export const metadata: Metadata = {
   title: GATE_TITLE,

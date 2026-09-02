@@ -42,6 +42,8 @@ export type OndeStrings = {
   sections?: OndeSection[];
   shotsLabel: string;
   storeLabel: string;
+  /** Top line of the active App Store badge ("Download on the" / "Scarica su"). */
+  getApple: string;
   soonApple: string;
   soonGoogle: string;
   storeHint: string;
@@ -56,6 +58,11 @@ export type OndeStrings = {
 };
 
 export const ONDE_CARPLAY_SRC = "/lab/onde-shot-carplay.png";
+
+/* `/it/` storefront: the country-less URL 404s (it defaults to the US store,
+   where the app is not published — verified 2026-09-02; live on EU storefronts).
+   On-device the App Store resolves the app id in the visitor's own storefront. */
+export const ONDE_APP_STORE_URL = "https://apps.apple.com/it/app/id6799721986";
 
 /* Open Graph: FM-dial screenshot composed onto a 1200x630 brand-dark canvas. */
 export const ONDE_OG_IMAGE = {
@@ -85,7 +92,7 @@ export const ONDE_STRINGS: Record<OndeLocale, OndeStrings> = {
       "Onde dallo Stretto ricrea l'esperienza di una vera autoradio: scala FM, preset, SCAN e radio siciliane e calabresi in streaming. Gratuita, senza pubblicità. Un prodotto LUTHOR Lab.",
     ogTitle: "Onde dallo Stretto — le radio di Sicilia e Calabria",
     ogDescription:
-      "Stanco delle solite playlist? Passa anche tu alla radio: le emittenti locali di Sicilia e Calabria in streaming, come su un'autoradio anni '90. Gratis, senza pubblicità, senza registrazione. iOS e Android.",
+      "Stanco delle solite playlist? Passa alla radio! Le radio di Sicilia e Calabria in streaming, come su un'autoradio anni '90. Gratis, senza pubblicità aggiuntiva e senza registrazione.",
     kicker: "LUTHOR Lab",
     lede: "Le radio di casa, anche quando sei lontano",
     subhead: "",
@@ -137,9 +144,10 @@ export const ONDE_STRINGS: Record<OndeLocale, OndeStrings> = {
     ],
     shotsLabel: "Schermate dell'app",
     storeLabel: "Scarica l'app",
+    getApple: "Scarica su",
     soonApple: "In arrivo su",
     soonGoogle: "In arrivo su",
-    storeHint: "non è ancora negli store — in arrivo",
+    storeHint: "disponibile su App Store — versione Android in arrivo",
     noteBefore: "Onde dallo Stretto è un prodotto LUTHOR Lab.",
     supportLabel: "Supporto",
     privacyLabel: "Privacy e termini d'uso",
@@ -169,7 +177,7 @@ export const ONDE_STRINGS: Record<OndeLocale, OndeStrings> = {
       "Onde dallo Stretto brings real Italian radio to your dashboard: the music, the voices, the warmth of Italy — live and unfiltered. Turn the dial across a real FM band, stop on a frequency, and listen. A LUTHOR Lab product.",
     ogTitle: "Onde dallo Stretto — the radio stations of Sicily and Calabria",
     ogDescription:
-      "Tired of the same old playlists? Make the switch to radio: the local stations of Sicily and Calabria in streaming, like on a '90s car radio. Free, no ads, no sign-up. iOS and Android.",
+      "Tired of the same old playlists? Switch to the radio! The radio stations of Sicily and Calabria in streaming, like on a '90s car radio. Free, with no added ads and no sign-up.",
     kicker: "LUTHOR Lab",
     lede: "Live Italian radio, in your car.",
     subhead: "Turn the dial. Italy comes through.",
@@ -181,9 +189,10 @@ export const ONDE_STRINGS: Record<OndeLocale, OndeStrings> = {
     ],
     shotsLabel: "App screenshots",
     storeLabel: "Get the app",
+    getApple: "Download on the",
     soonApple: "Coming soon to the",
     soonGoogle: "Coming soon to",
-    storeHint: "not in the stores yet — coming soon",
+    storeHint: "now on the App Store — Android version coming soon",
     noteBefore: "Onde dallo Stretto is a LUTHOR Lab product.",
     supportLabel: "Support",
     privacyLabel: "Privacy & Terms of Use",
@@ -213,7 +222,7 @@ export const ONDE_STRINGS: Record<OndeLocale, OndeStrings> = {
       "Onde dallo Stretto は、イタリアのラジオをライブのまま届けます。音楽も、声も、街の空気も、放送そのまま。本物のFMバンドをダイヤルで回り、周波数に止まって、耳を傾ける——いまイタリアで流れているラジオです。LUTHOR Lab のプロダクト。",
     ogTitle: "Onde dallo Stretto — シチリアとカラブリアのラジオ",
     ogDescription:
-      "いつものプレイリストに飽きたら、あなたもラジオへ。シチリアとカラブリアのローカル局を、90年代のカーラジオのようにストリーミングで。無料、広告なし、登録不要。iOS・Android対応。",
+      "いつものプレイリストに飽きたら、ラジオへ！シチリアとカラブリアのラジオを、90年代のカーラジオのようにストリーミングで。無料、追加広告なし、登録不要。",
     kicker: "LUTHOR Lab",
     lede: "イタリアのラジオを、そのまま車の中へ。",
     subhead: "ダイヤルを回せば、そこはイタリア。",
@@ -225,9 +234,10 @@ export const ONDE_STRINGS: Record<OndeLocale, OndeStrings> = {
     ],
     shotsLabel: "アプリの画面",
     storeLabel: "アプリを入手",
+    getApple: "ダウンロードは",
     soonApple: "近日公開",
     soonGoogle: "近日公開",
-    storeHint: "ストアではまだ配信されていません — 近日公開",
+    storeHint: "App Storeで配信中 — Android版は近日公開",
     noteBefore: "Onde dallo Stretto は LUTHOR Lab のプロダクトです。",
     supportLabel: "サポート",
     privacyLabel: "プライバシーと利用規約",
@@ -257,7 +267,7 @@ export const ONDE_STRINGS: Record<OndeLocale, OndeStrings> = {
       "Onde dallo Stretto fait entrer la vraie radio italienne dans votre voiture : la musique, les voix, l'art de vivre italien — en direct et sans filtre. Tournez sur une vraie bande FM, arrêtez-vous sur une fréquence et écoutez. Un produit LUTHOR Lab.",
     ogTitle: "Onde dallo Stretto — les radios de Sicile et de Calabre",
     ogDescription:
-      "Fatigué des playlists habituelles ? Passez vous aussi à la radio : les stations locales de Sicile et de Calabre en streaming, comme sur un autoradio des années 90. Gratuit, sans publicité, sans inscription. iOS et Android.",
+      "Fatigué des playlists habituelles ? Passez à la radio ! Les radios de Sicile et de Calabre en streaming, comme sur un autoradio des années 90. Gratuit, sans publicité ajoutée et sans inscription.",
     kicker: "LUTHOR Lab",
     lede: "La radio italienne en direct, dans votre voiture.",
     subhead: "Tournez la molette. L'Italie est là.",
@@ -269,9 +279,10 @@ export const ONDE_STRINGS: Record<OndeLocale, OndeStrings> = {
     ],
     shotsLabel: "Captures d'écran de l'app",
     storeLabel: "Télécharger l'app",
+    getApple: "Télécharger dans l'",
     soonApple: "Bientôt sur l'",
     soonGoogle: "Bientôt sur",
-    storeHint: "pas encore sur les stores — bientôt disponible",
+    storeHint: "disponible sur l'App Store — version Android bientôt disponible",
     noteBefore: "Onde dallo Stretto est un produit LUTHOR Lab.",
     supportLabel: "Assistance",
     privacyLabel: "Confidentialité et conditions d'utilisation",
@@ -301,7 +312,7 @@ export const ONDE_STRINGS: Record<OndeLocale, OndeStrings> = {
       "Onde dallo Stretto bringt echtes italienisches Radio in dein Auto: die Musik, die Stimmen, das Lebensgefühl Italiens — live und ungefiltert. Dreh über ein echtes FM-Band, bleib auf einer Frequenz stehen und hör zu. Ein Produkt von LUTHOR Lab.",
     ogTitle: "Onde dallo Stretto — die Radiosender aus Sizilien und Kalabrien",
     ogDescription:
-      "Genug von den üblichen Playlists? Steig auch du aufs Radio um: die Lokalsender aus Sizilien und Kalabrien im Streaming, wie auf einem Autoradio der 90er. Kostenlos, ohne Werbung, ohne Registrierung. iOS und Android.",
+      "Genug von den üblichen Playlists? Schalt aufs Radio um! Die Radiosender aus Sizilien und Kalabrien im Streaming, wie auf einem Autoradio der 90er. Kostenlos, ohne zusätzliche Werbung und ohne Registrierung.",
     kicker: "LUTHOR Lab",
     lede: "Italienisches Radio, live in deinem Auto.",
     subhead: "Dreh am Rad — und Italien ist da.",
@@ -313,9 +324,10 @@ export const ONDE_STRINGS: Record<OndeLocale, OndeStrings> = {
     ],
     shotsLabel: "App-Screenshots",
     storeLabel: "App laden",
+    getApple: "Laden im",
     soonApple: "Bald im",
     soonGoogle: "Bald bei",
-    storeHint: "noch nicht in den Stores — bald verfügbar",
+    storeHint: "jetzt im App Store — Android-Version bald verfügbar",
     noteBefore: "Onde dallo Stretto ist ein Produkt von LUTHOR Lab.",
     supportLabel: "Support",
     privacyLabel: "Datenschutz & Nutzungsbedingungen",
