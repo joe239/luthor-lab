@@ -138,9 +138,7 @@ export default function LabPage() {
                 <p>
                   An Italian radio app that works like a real car radio — you
                   turn through the FM dial and pick up the local stations you
-                  would receive driving between Sicily and Calabria, with the
-                  Strait of Messina at the centre. For Sicilians and Calabrians
-                  living away from home.
+                  would receive driving between Sicily and Calabria.
                 </p>
                 <div className="lab-card-actions">
                   <a href="/onde-dallo-stretto" className="lab-card-open">

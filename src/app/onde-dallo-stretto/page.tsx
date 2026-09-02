@@ -7,8 +7,12 @@ import OndeLocaleRedirect from "./OndeLocaleRedirect";
 /* Link-preview copy is Italian: the gate URL is what gets shared, and the app's
    home audience is Italian — the "Choose your language" copy made ugly previews. */
 const GATE_TITLE = "Onde dallo Stretto — le radio di Sicilia e Calabria";
+/* SEO meta description (not shown in link previews). */
 const GATE_DESCRIPTION =
   "Stanco delle solite playlist? Passa alla radio! Le radio di Sicilia e Calabria in streaming, come su un'autoradio anni '90. Gratis, senza pubblicità aggiuntiva e senza registrazione.";
+/* Link previews carry only the hook — the rest is what people write themselves
+   when sharing, and WhatsApp already shows the domain. */
+const GATE_PREVIEW_DESCRIPTION = "Stanco delle solite playlist? Passa alla radio!";
 
 export const metadata: Metadata = {
   title: GATE_TITLE,
@@ -18,7 +22,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: GATE_TITLE,
-    description: GATE_DESCRIPTION,
+    description: GATE_PREVIEW_DESCRIPTION,
     url: "https://luthorlab.com/onde-dallo-stretto",
     type: "website",
     locale: "it_IT",
@@ -34,7 +38,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: GATE_TITLE,
-    description: GATE_DESCRIPTION,
+    description: GATE_PREVIEW_DESCRIPTION,
     images: ["https://luthorlab.com/lab/onde-og.jpg"],
   },
 };

@@ -91,8 +91,7 @@ export const ONDE_STRINGS: Record<OndeLocale, OndeStrings> = {
     metaDescription:
       "Onde dallo Stretto ricrea l'esperienza di una vera autoradio: scala FM, preset, SCAN e radio siciliane e calabresi in streaming. Gratuita, senza pubblicità. Un prodotto LUTHOR Lab.",
     ogTitle: "Onde dallo Stretto — le radio di Sicilia e Calabria",
-    ogDescription:
-      "Stanco delle solite playlist? Passa alla radio! Le radio di Sicilia e Calabria in streaming, come su un'autoradio anni '90. Gratis, senza pubblicità aggiuntiva e senza registrazione.",
+    ogDescription: "Stanco delle solite playlist? Passa alla radio!",
     kicker: "LUTHOR Lab",
     lede: "Le radio di casa, anche quando sei lontano",
     subhead: "",
@@ -176,8 +175,7 @@ export const ONDE_STRINGS: Record<OndeLocale, OndeStrings> = {
     metaDescription:
       "Onde dallo Stretto brings real Italian radio to your dashboard: the music, the voices, the warmth of Italy — live and unfiltered. Turn the dial across a real FM band, stop on a frequency, and listen. A LUTHOR Lab product.",
     ogTitle: "Onde dallo Stretto — the radio stations of Sicily and Calabria",
-    ogDescription:
-      "Tired of the same old playlists? Switch to the radio! The radio stations of Sicily and Calabria in streaming, like on a '90s car radio. Free, with no added ads and no sign-up.",
+    ogDescription: "Tired of the same old playlists? Switch to the radio!",
     kicker: "LUTHOR Lab",
     lede: "Live Italian radio, in your car.",
     subhead: "Turn the dial. Italy comes through.",
@@ -221,8 +219,7 @@ export const ONDE_STRINGS: Record<OndeLocale, OndeStrings> = {
     metaDescription:
       "Onde dallo Stretto は、イタリアのラジオをライブのまま届けます。音楽も、声も、街の空気も、放送そのまま。本物のFMバンドをダイヤルで回り、周波数に止まって、耳を傾ける——いまイタリアで流れているラジオです。LUTHOR Lab のプロダクト。",
     ogTitle: "Onde dallo Stretto — シチリアとカラブリアのラジオ",
-    ogDescription:
-      "いつものプレイリストに飽きたら、ラジオへ！シチリアとカラブリアのラジオを、90年代のカーラジオのようにストリーミングで。無料、追加広告なし、登録不要。",
+    ogDescription: "いつものプレイリストに飽きたら、ラジオへ！",
     kicker: "LUTHOR Lab",
     lede: "イタリアのラジオを、そのまま車の中へ。",
     subhead: "ダイヤルを回せば、そこはイタリア。",
@@ -266,8 +263,7 @@ export const ONDE_STRINGS: Record<OndeLocale, OndeStrings> = {
     metaDescription:
       "Onde dallo Stretto fait entrer la vraie radio italienne dans votre voiture : la musique, les voix, l'art de vivre italien — en direct et sans filtre. Tournez sur une vraie bande FM, arrêtez-vous sur une fréquence et écoutez. Un produit LUTHOR Lab.",
     ogTitle: "Onde dallo Stretto — les radios de Sicile et de Calabre",
-    ogDescription:
-      "Fatigué des playlists habituelles ? Passez à la radio ! Les radios de Sicile et de Calabre en streaming, comme sur un autoradio des années 90. Gratuit, sans publicité ajoutée et sans inscription.",
+    ogDescription: "Fatigué des playlists habituelles ? Passez à la radio !",
     kicker: "LUTHOR Lab",
     lede: "La radio italienne en direct, dans votre voiture.",
     subhead: "Tournez la molette. L'Italie est là.",
@@ -311,8 +307,7 @@ export const ONDE_STRINGS: Record<OndeLocale, OndeStrings> = {
     metaDescription:
       "Onde dallo Stretto bringt echtes italienisches Radio in dein Auto: die Musik, die Stimmen, das Lebensgefühl Italiens — live und ungefiltert. Dreh über ein echtes FM-Band, bleib auf einer Frequenz stehen und hör zu. Ein Produkt von LUTHOR Lab.",
     ogTitle: "Onde dallo Stretto — die Radiosender aus Sizilien und Kalabrien",
-    ogDescription:
-      "Genug von den üblichen Playlists? Schalt aufs Radio um! Die Radiosender aus Sizilien und Kalabrien im Streaming, wie auf einem Autoradio der 90er. Kostenlos, ohne zusätzliche Werbung und ohne Registrierung.",
+    ogDescription: "Genug von den üblichen Playlists? Schalt aufs Radio um!",
     kicker: "LUTHOR Lab",
     lede: "Italienisches Radio, live in deinem Auto.",
     subhead: "Dreh am Rad — und Italien ist da.",
