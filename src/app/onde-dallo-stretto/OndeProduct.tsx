@@ -2,7 +2,6 @@ import type { ReactNode } from "react";
 
 import {
   AppStoreBadge,
-  GooglePlayBadge,
   LabFooter,
   LabNav,
   LAB_CONTACT_EMAIL,
@@ -11,6 +10,8 @@ import {
 import {
   ONDE_APP_STORE_URL,
   ONDE_CARPLAY_SRC,
+  ONDE_GOOGLE_PLAY_BADGES,
+  ONDE_GOOGLE_PLAY_URL,
   ONDE_STRINGS,
   type OndeLocale,
 } from "./content";
@@ -38,6 +39,7 @@ function CarplayShot({ alt }: { alt: string }) {
 
 export default function OndeProduct({ locale }: { locale: OndeLocale }) {
   const t = ONDE_STRINGS[locale];
+  const googlePlayBadge = ONDE_GOOGLE_PLAY_BADGES[locale];
   const leadParas = Array.isArray(t.lead) ? t.lead : [t.lead];
   const sections = t.sections?.filter(
     (s) => s.title || s.paragraphs.length > 0 || (s.bullets?.length ?? 0) > 0,
@@ -150,7 +152,20 @@ export default function OndeProduct({ locale }: { locale: OndeLocale }) {
                 storeUrl={ONDE_APP_STORE_URL}
                 downloadLabel={t.getApple}
               />
-              <GooglePlayBadge soonLabel={t.soonGoogle} />
+              <a
+                className="onde-google-play-badge"
+                href={ONDE_GOOGLE_PLAY_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={googlePlayBadge.src}
+                  alt={googlePlayBadge.alt}
+                  width={googlePlayBadge.width}
+                  height={googlePlayBadge.height}
+                />
+              </a>
             </div>
           </div>
         </section>
