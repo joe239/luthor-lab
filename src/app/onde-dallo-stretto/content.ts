@@ -44,6 +44,8 @@ export type OndeStrings = {
   storeLabel: string;
   /** Top line of the active App Store badge ("Download on the" / "Scarica su"). */
   getApple: string;
+  /** Top line of the active Google Play badge. */
+  getGoogle: string;
   soonApple: string;
   storeHint: string;
   noteBefore: string;
@@ -65,42 +67,6 @@ export const ONDE_APP_STORE_URL = "https://apps.apple.com/it/app/id6799721986";
 
 export const ONDE_GOOGLE_PLAY_URL =
   "https://play.google.com/store/apps/details?id=com.cusmanodev.ondedallostretto";
-
-export const ONDE_GOOGLE_PLAY_BADGES: Record<
-  OndeLocale,
-  { src: string; alt: string; width: number; height: number }
-> = {
-  it: {
-    src: "/lab/google-play-badge-it.png",
-    alt: "Disponibile su Google Play",
-    width: 478,
-    height: 142,
-  },
-  en: {
-    src: "/lab/google-play-badge-en.png",
-    alt: "Get it on Google Play",
-    width: 478,
-    height: 142,
-  },
-  ja: {
-    src: "/lab/google-play-badge-ja.png",
-    alt: "Google Play で手に入れよう",
-    width: 270,
-    height: 80,
-  },
-  fr: {
-    src: "/lab/google-play-badge-fr.png",
-    alt: "Disponible sur Google Play",
-    width: 478,
-    height: 142,
-  },
-  de: {
-    src: "/lab/google-play-badge-de.png",
-    alt: "Jetzt bei Google Play",
-    width: 478,
-    height: 142,
-  },
-};
 
 /* Open Graph: FM-dial screenshot composed onto a 1200x630 brand-dark canvas. */
 export const ONDE_OG_IMAGE = {
@@ -182,6 +148,7 @@ export const ONDE_STRINGS: Record<OndeLocale, OndeStrings> = {
     shotsLabel: "Schermate dell'app",
     storeLabel: "Scarica l'app",
     getApple: "Scarica su",
+    getGoogle: "Scarica su",
     soonApple: "In arrivo su",
     storeHint: "disponibile su App Store e Google Play",
     noteBefore: "Onde dallo Stretto è un prodotto LUTHOR Lab.",
@@ -225,6 +192,7 @@ export const ONDE_STRINGS: Record<OndeLocale, OndeStrings> = {
     shotsLabel: "App screenshots",
     storeLabel: "Get the app",
     getApple: "Download on the",
+    getGoogle: "Get it on",
     soonApple: "Coming soon to the",
     storeHint: "now on the App Store and Google Play",
     noteBefore: "Onde dallo Stretto is a LUTHOR Lab product.",
@@ -268,6 +236,7 @@ export const ONDE_STRINGS: Record<OndeLocale, OndeStrings> = {
     shotsLabel: "アプリの画面",
     storeLabel: "アプリを入手",
     getApple: "ダウンロードは",
+    getGoogle: "ダウンロードは",
     soonApple: "近日公開",
     storeHint: "App StoreとGoogle Playで配信中",
     noteBefore: "Onde dallo Stretto は LUTHOR Lab のプロダクトです。",
@@ -311,6 +280,7 @@ export const ONDE_STRINGS: Record<OndeLocale, OndeStrings> = {
     shotsLabel: "Captures d'écran de l'app",
     storeLabel: "Télécharger l'app",
     getApple: "Télécharger dans l'",
+    getGoogle: "Télécharger sur",
     soonApple: "Bientôt sur l'",
     storeHint: "disponible sur l'App Store et Google Play",
     noteBefore: "Onde dallo Stretto est un produit LUTHOR Lab.",
@@ -354,6 +324,7 @@ export const ONDE_STRINGS: Record<OndeLocale, OndeStrings> = {
     shotsLabel: "App-Screenshots",
     storeLabel: "App laden",
     getApple: "Laden im",
+    getGoogle: "Jetzt bei",
     soonApple: "Bald im",
     storeHint: "jetzt im App Store und bei Google Play",
     noteBefore: "Onde dallo Stretto ist ein Produkt von LUTHOR Lab.",

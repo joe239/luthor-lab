@@ -10,7 +10,6 @@ import {
 import {
   ONDE_APP_STORE_URL,
   ONDE_CARPLAY_SRC,
-  ONDE_GOOGLE_PLAY_BADGES,
   ONDE_GOOGLE_PLAY_URL,
   ONDE_STRINGS,
   type OndeLocale,
@@ -39,7 +38,6 @@ function CarplayShot({ alt }: { alt: string }) {
 
 export default function OndeProduct({ locale }: { locale: OndeLocale }) {
   const t = ONDE_STRINGS[locale];
-  const googlePlayBadge = ONDE_GOOGLE_PLAY_BADGES[locale];
   const leadParas = Array.isArray(t.lead) ? t.lead : [t.lead];
   const sections = t.sections?.filter(
     (s) => s.title || s.paragraphs.length > 0 || (s.bullets?.length ?? 0) > 0,
@@ -153,18 +151,26 @@ export default function OndeProduct({ locale }: { locale: OndeLocale }) {
                 downloadLabel={t.getApple}
               />
               <a
-                className="onde-google-play-badge"
+                className="lab-store-btn"
                 href={ONDE_GOOGLE_PLAY_URL}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src={googlePlayBadge.src}
-                  alt={googlePlayBadge.alt}
-                  width={googlePlayBadge.width}
-                  height={googlePlayBadge.height}
-                />
+                <svg
+                  className="lab-store-btn-icon"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <path
+                    fill="#ebe8de"
+                    d="M5.2 2.1A1.6 1.6 0 0 0 2.8 3.5v17a1.6 1.6 0 0 0 2.4 1.4l15.2-8.5a1.6 1.6 0 0 0 0-2.8L5.2 2.1Z"
+                  />
+                </svg>
+                <span className="lab-store-btn-text">
+                  <small>{t.getGoogle}</small>
+                  <strong>Google Play</strong>
+                </span>
               </a>
             </div>
           </div>
