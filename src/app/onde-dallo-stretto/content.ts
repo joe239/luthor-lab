@@ -63,7 +63,7 @@ export const ONDE_CARPLAY_SRC = "/lab/onde-shot-carplay.jpg";
 /* `/it/` storefront: the country-less URL 404s (it defaults to the US store,
    where the app is not published — verified 2026-09-02; live on EU storefronts).
    On-device the App Store resolves the app id in the visitor's own storefront. */
-export const ONDE_APP_STORE_URL = "https://apps.apple.com/it/app/id6799721986";
+export const ONDE_APP_STORE_URL = "https://apps.apple.com/it/app/onde-dallo-stretto/id6799721986";
 
 export const ONDE_GOOGLE_PLAY_URL =
   "https://play.google.com/store/apps/details?id=com.cusmanodev.ondedallostretto";
