@@ -43,8 +43,8 @@ const LAST_UPDATED = "13 agosto 2026";
    document load of static HTML, not a client soft-navigation into the locale tree. */
 export default function OndeDalloStrettoPrivacyItPage() {
   return (
-    <div className="lab-root">
-      <LabNav />
+    <div className="lab-root lab-root--onde-privacy">
+      <LabNav brandText="LUTHOR Lab" />
 
       <main className="lab-main">
         <div className="lab-wrap">

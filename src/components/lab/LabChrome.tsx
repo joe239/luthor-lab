@@ -8,12 +8,18 @@ export const LAB_CONTACT_EMAIL = "info@luthorlab.com";
 /* Shared chrome for the LUTHOR Lab marketing pages. Pure presentational
    server components — no auth, no Supabase, statically generated. */
 
-export function LabNav() {
+export function LabNav({ brandText = "L" }: { brandText?: string } = {}) {
   return (
     <nav className="lab-nav">
       <div className="lab-wrap lab-nav-inner">
-        <Link href="/" className="lab-logo-mark" aria-label="LUTHOR Lab home">
-          L
+        <Link
+          href="/"
+          className={`lab-logo-mark${
+            brandText === "L" ? "" : " lab-logo-mark--wordmark"
+          }`}
+          aria-label="LUTHOR Lab home"
+        >
+          {brandText}
         </Link>
         <span className="lab-nav-spacer" />
       </div>

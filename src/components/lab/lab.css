@@ -102,6 +102,12 @@
   flex-shrink: 0;
 }
 
+.lab-logo-mark--wordmark {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
 .lab-logo-word {
   font-size: 11px;
   font-weight: 500;
@@ -1198,6 +1204,11 @@ a.onde-lang:hover {
   .lab-wrap {
     padding-left: max(24px, env(safe-area-inset-left, 0px));
     padding-right: max(24px, env(safe-area-inset-right, 0px));
+  }
+
+  .lab-root--onde-privacy .lab-prose {
+    padding-top: 80px;
+    padding-inline: 8px;
   }
 
   .lab-hero {

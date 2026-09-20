@@ -41,8 +41,8 @@ const LAST_UPDATED = "13 August 2026";
 
 export default function OndeDalloStrettoPrivacyPage() {
   return (
-    <div className="lab-root">
-      <LabNav />
+    <div className="lab-root lab-root--onde-privacy">
+      <LabNav brandText="LUTHOR Lab" />
 
       <main className="lab-main">
         <div className="lab-wrap">
