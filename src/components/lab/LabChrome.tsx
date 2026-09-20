@@ -14,9 +14,9 @@ export function LabNav({ brandText = "L" }: { brandText?: string } = {}) {
       <div className="lab-wrap lab-nav-inner">
         <Link
           href="/"
-          className={`lab-logo-mark${
-            brandText === "L" ? "" : " lab-logo-mark--wordmark"
-          }`}
+          className={
+            brandText === "L" ? "lab-logo-mark" : "lab-kicker lab-nav-eyebrow"
+          }
           aria-label="LUTHOR Lab home"
         >
           {brandText}
