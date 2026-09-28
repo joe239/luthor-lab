@@ -5,7 +5,7 @@ import { ONDE_DETECT_LOCALE_SCRIPT } from "@/app/onde-dallo-stretto/detect-local
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "LUTHOR Lab — Sharp tools. Big ideas about risk.",
+  title: "LUTHOR Lab — Apps, experiments, ideas made real.",
   description:
     "LUTHOR Lab is an independent digital lab creating focused apps and AI-powered tools for real-world problems.",
   icons: {
