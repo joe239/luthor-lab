@@ -7,7 +7,7 @@ import {
   LAB_CONTACT_EMAIL,
 } from "@/components/lab/LabChrome";
 
-const HOME_TITLE = "LUTHOR Lab — Sharp tools. Big ideas about risk.";
+const HOME_TITLE = "LUTHOR Lab — Apps, experiments, ideas made real.";
 const HOME_DESCRIPTION =
   "LUTHOR Lab is an independent digital lab creating focused apps and AI-powered tools for real-world problems.";
 const HOME_URL = "https://luthorlab.com/";
@@ -75,7 +75,7 @@ export default function LabPage() {
               LUTHOR Lab is an independent digital lab creating focused apps and AI-powered tools for real-world problems.
             </p>
             <p className="lab-hero-lede lab-reveal lab-reveal--d3">
-              From risk and regulatory technology to everyday consumer apps, each project starts with a simple idea: make something useful, clear and thoughtfully designed.
+              From focused digital tools and small experiments to everyday consumer apps, each project starts with a simple idea: make something useful, clear and thoughtfully designed.
             </p>
           </div>
         </section>
@@ -153,9 +153,9 @@ export default function LabPage() {
               Try what we ship. Tell us where it&apos;s wrong.
             </h2>
             <p className="lab-join-lede lab-reveal lab-reveal--d2">
-              Lab products grow through their pilots. If you work in funds,
-              risk or compliance — or you just care about honest tools — try
-              what we ship and tell us where it&apos;s wrong.
+              Lab products grow through their pilots. Anyone who wants to try
+              the apps and help shape what comes next is welcome — use what we
+              ship and send us your feedback.
             </p>
             <div className="lab-hero-cta lab-reveal lab-reveal--d3">
               <a
