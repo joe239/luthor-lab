@@ -7,7 +7,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "LUTHOR Lab — Sharp tools. Big ideas about risk.",
   description:
-    "LUTHOR Lab is the workshop behind LUTHOR — sharp, focused tools that test big ideas about risk, regulation and data. Built in Luxembourg by risk professionals, shipped early, shaped by pilots.",
+    "LUTHOR Lab is an independent digital lab creating focused apps and AI-powered tools for real-world problems.",
   icons: {
     icon: [{ url: "/favicon.ico", sizes: "any", type: "image/x-icon" }],
     apple: [{ url: "/apple-icon.png", sizes: "180x180", type: "image/png" }],

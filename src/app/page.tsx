@@ -9,7 +9,7 @@ import {
 
 const HOME_TITLE = "LUTHOR Lab — Sharp tools. Big ideas about risk.";
 const HOME_DESCRIPTION =
-  "LUTHOR Lab is the workshop behind LUTHOR — sharp, focused tools that test big ideas about risk, regulation and data. Built in Luxembourg by risk professionals, shipped early, shaped by pilots.";
+  "LUTHOR Lab is an independent digital lab creating focused apps and AI-powered tools for real-world problems.";
 const HOME_URL = "https://luthorlab.com/";
 
 export const metadata: Metadata = {
@@ -94,28 +94,6 @@ export default function LabPage() {
             </h2>
             <div className="lab-cards">
               <article className="lab-card lab-reveal lab-reveal--d1">
-                <span className="lab-status lab-status--live">Live</span>
-                <h3 className="lab-card-name">LUTHOR</h3>
-                <p className="lab-card-sub">Regulatory AI for banks</p>
-                <p>
-                  Document review grounded in the actual text of CRR, CRD,
-                  DORA, BRRD, EBA guidelines and CSSF circulars, with exact
-                  citations. Built for the people who have to write those
-                  documents and defend them.
-                </p>
-                <div className="lab-card-actions">
-                  <a
-                    href="https://luthoradvisory.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="lab-card-open"
-                  >
-                    Visit site →
-                  </a>
-                </div>
-              </article>
-
-              <article className="lab-card lab-reveal lab-reveal--d2">
                 <span className="lab-status lab-status--live">Live</span>
                 <h3 className="lab-card-name">RiskPRO</h3>
                 <p className="lab-card-sub">Risk assessment</p>
