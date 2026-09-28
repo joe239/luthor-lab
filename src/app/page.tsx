@@ -42,19 +42,16 @@ export default function LabPage() {
       <main className="lab-main">
         <header className="lab-hero lab-hero--v2">
           <div className="lab-wrap">
-            <p className="lab-kicker lab-reveal">LUTHOR Lab</p>
+            <p className="lab-kicker lab-reveal">Independent lab.</p>
             <h1 className="lab-reveal lab-reveal--d1">
-              Independent lab.
+              Apps, experiments,
               <br />
-              <span className="lab-hero-accent">
-                Apps, experiments, ideas made real.
-              </span>
+              <span className="lab-hero-accent">ideas made real.</span>
             </h1>
             <p className="lab-hero-lede lab-mission lab-reveal lab-reveal--d2">
               LUTHOR Lab is a space for building and exploring. Projects can
               start from a practical problem, a curiosity, or simply an idea
-              worth testing — from financial and regulatory software to apps,
-              digital tools, and small experiments.
+              worth testing — apps, digital tools, small experiments.
             </p>
             <p className="lab-hero-lede lab-mission lab-reveal lab-reveal--d3">
               Everything is developed independently, with a focus on
