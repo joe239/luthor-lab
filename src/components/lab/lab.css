@@ -1118,8 +1118,8 @@ a.onde-lang:hover {
   font-size: 16px;
   height: auto;
   margin-bottom: 44px;
-  /* Il fondo del render (#110e11) non è esattamente #131415: la vignetta
-     sfuma i bordi nel fondo pagina ed elimina la cucitura. */
+  /* Il render è trasparente: la vignetta serve solo a sfumare la mappa
+     dove il canvas la taglia sul bordo. */
   -webkit-mask-image: radial-gradient(
     115% 115% at 50% 50%,
     #000 58%,
