@@ -1115,18 +1115,10 @@ a.onde-lang:hover {
   display: block;
   width: 100%;
   height: auto;
-  /* Aria sopra la mappa: la scena scende e il blocco di chiusura
-     respira tra la banda screenshot e il footer. */
-  margin-top: 64px;
+  margin-top: 24px;
   margin-bottom: 44px;
-  /* Il render è trasparente: la vignetta serve solo a sfumare la mappa
-     dove il canvas la taglia sul bordo. */
-  -webkit-mask-image: radial-gradient(
-    115% 115% at 50% 50%,
-    #000 58%,
-    transparent 96%
-  );
-  mask-image: radial-gradient(115% 115% at 50% 50%, #000 58%, transparent 96%);
+  /* Niente vignetta: il render sfuma da sé la mappa in alto, e il telefono
+     arriva fino ai bordi del canvas. */
 }
 
 .onde-carplay {
