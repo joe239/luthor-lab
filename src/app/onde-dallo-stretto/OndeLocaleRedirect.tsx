@@ -26,6 +26,7 @@ function chooseLocale(): string {
   if (nav.startsWith("ro")) return "ro";
   if (nav.startsWith("hu")) return "hu";
   if (nav.startsWith("cs")) return "cs";
+  if (nav.startsWith("sk")) return "sk";
   return "en";
 }
 
