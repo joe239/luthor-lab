@@ -59,7 +59,7 @@ export type OndeStrings = {
   shots: OndeShot[];
 };
 
-export const ONDE_CARPLAY_SRC = "/lab/onde-carplay-v4.webp";
+export const ONDE_CARPLAY_SRC = "/lab/onde-carplay-v5.webp";
 
 /* `/it/` storefront: the country-less URL 404s (it defaults to the US store,
    where the app is not published — verified 2026-09-02; live on EU storefronts).
