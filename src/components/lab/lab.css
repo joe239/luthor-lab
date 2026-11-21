@@ -1114,8 +1114,6 @@ a.onde-lang:hover {
 .onde-phone-radio {
   display: block;
   width: 100%;
-  max-width: 62ch;
-  font-size: 16px;
   height: auto;
   /* Aria sopra la mappa: la scena scende e il blocco di chiusura
      respira tra la banda screenshot e il footer. */
