@@ -1,11 +1,11 @@
-/* Seven language versions of the product page. These are not translations of
+/* Eight language versions of the product page. These are not translations of
    one text: Italian carries the original "radio from home" positioning for
    people from Messina living away; the other languages present the app as
    live Italian radio for the car. */
 
-export type OndeLocale = "it" | "en" | "ja" | "fr" | "de" | "es" | "pl";
+export type OndeLocale = "it" | "en" | "ja" | "fr" | "de" | "es" | "pl" | "sl";
 
-export const ONDE_LOCALES: OndeLocale[] = ["it", "en", "ja", "fr", "de", "es", "pl"];
+export const ONDE_LOCALES: OndeLocale[] = ["it", "en", "ja", "fr", "de", "es", "pl", "sl"];
 
 export const ONDE_LANG_LABELS: Record<OndeLocale, string> = {
   it: "Italiano",
@@ -15,6 +15,7 @@ export const ONDE_LANG_LABELS: Record<OndeLocale, string> = {
   de: "Deutsch",
   es: "Español",
   pl: "Polski",
+  sl: "Slovenščina",
 };
 
 export const ONDE_LANG_STORAGE_KEY = "onde-lang";
@@ -86,6 +87,7 @@ export const ONDE_OG_LOCALES: Record<OndeLocale, string> = {
   de: "de_DE",
   es: "es_ES",
   pl: "pl_PL",
+  sl: "sl_SI",
 };
 
 export const ONDE_EN_IT_LANGUAGE_ALTERNATES = {
@@ -454,6 +456,53 @@ export const ONDE_STRINGS: Record<OndeLocale, OndeStrings> = {
       {
         src: "/lab/onde-shot-onair.jpg",
         alt: "Aplikacja Onde dallo Stretto — lista stacji nadających w tej chwili",
+      },
+    ],
+  },
+
+  sl: {
+    metaTitle: "Onde dallo Stretto — italijanski radio v živo, v vašem avtu",
+    metaDescription:
+      "Onde dallo Stretto prinaša pravi italijanski radio v vaš avto: glasba, glasovi, utrip Italije — v živo in brez filtrov. Zavrtite gumb po pravem FM-pasu, ustavite se na frekvenci in prisluhnite. Izdelek LUTHOR Lab.",
+    ogTitle: "Onde dallo Stretto — radijske postaje Sicilije in Kalabrije",
+    ogDescription: "Dovolj istih seznamov predvajanja? Preklopite na radio!",
+    kicker: "LUTHOR Lab",
+    lede: "Italijanski radio v živo, v vašem avtu.",
+    subhead: "Zavrtite gumb. Italija se oglasi.",
+    lead: "Onde dallo Stretto prinaša pravi italijanski radio na vašo armaturno ploščo: glasba, glasovi, toplina Italije — v živo in brez filtrov. Zavrtite gumb po pravem FM-pasu, ustavite se na frekvenci in prisluhnite. Brez seznamov predvajanja, brez algoritmov: samo radio, kakršen ta hip igra v Italiji.",
+    features: [
+      "Pravi FM-pas: zavrtite, naravnajte, poslušajte",
+      "Narejena za avto: CarPlay, tipke na volanu, šest shranjenih postaj",
+      "Brezplačna. Brez oglasov, brez računa.",
+    ],
+    shotsLabel: "Posnetki zaslona aplikacije",
+    storeLabel: "Prenesite aplikacijo",
+    getApple: "Prenesite iz",
+    getGoogle: "Na voljo v",
+    soonApple: "Kmalu v",
+    storeHint: "na voljo v App Store in Google Play",
+    phoneRadioAlt:
+      "Onde dallo Stretto na iPhonu v ležečem položaju, s teleskopsko anteno radia in zemljevidom Ožine v ozadju",
+    noteBefore: "Onde dallo Stretto je izdelek LUTHOR Lab.",
+    supportLabel: "Podpora",
+    privacyLabel: "Zasebnost in pogoji uporabe",
+    privacyHref: "/onde-dallo-stretto/privacy",
+    iconAlt: "Ikona aplikacije Onde dallo Stretto",
+    carplayAlt: "Onde dallo Stretto v Apple CarPlay",
+    skylineAlt:
+      "Panorama Onde dallo Stretto — znamenitosti Ožine nad FM-skalo z jantarno iglo",
+    shots: [
+      {
+        src: "/lab/onde-shot-dial.jpg",
+        alt: "Aplikacija Onde dallo Stretto — naravnana na 106.8 FM, SEGNALE BLU",
+      },
+      {
+        src: "/lab/onde-shot-tuning.jpg",
+        alt: "Aplikacija Onde dallo Stretto — gumb na 88.4 FM, ONDE UNO, postaja 1",
+      },
+      {
+        src: "/lab/onde-shot-onair.jpg",
+        alt: "Aplikacija Onde dallo Stretto — seznam postaj, ki ta hip oddajajo",
       },
     ],
   },
