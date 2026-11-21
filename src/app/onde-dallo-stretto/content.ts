@@ -48,6 +48,7 @@ export type OndeStrings = {
   getGoogle: string;
   soonApple: string;
   storeHint: string;
+  heroStoreLink: string;
   phoneRadioAlt: string;
   noteBefore: string;
   supportLabel: string;
@@ -152,6 +153,7 @@ export const ONDE_STRINGS: Record<OndeLocale, OndeStrings> = {
     getGoogle: "Scarica su",
     soonApple: "In arrivo su",
     storeHint: "disponibile su App Store e Google Play",
+    heroStoreLink: "Disponibile su App Store e Google Play ↓",
     phoneRadioAlt:
       "Onde dallo Stretto su iPhone in orizzontale, con l'antenna telescopica di una radio e la mappa dello Stretto sullo sfondo",
     noteBefore: "Onde dallo Stretto è un prodotto LUTHOR Lab.",
@@ -198,6 +200,7 @@ export const ONDE_STRINGS: Record<OndeLocale, OndeStrings> = {
     getGoogle: "Get it on",
     soonApple: "Coming soon to the",
     storeHint: "now on the App Store and Google Play",
+    heroStoreLink: "Available on the App Store and Google Play ↓",
     phoneRadioAlt:
       "Onde dallo Stretto on an iPhone held sideways, with a radio's telescopic antenna and the map of the Strait in the background",
     noteBefore: "Onde dallo Stretto is a LUTHOR Lab product.",
@@ -244,6 +247,7 @@ export const ONDE_STRINGS: Record<OndeLocale, OndeStrings> = {
     getGoogle: "ダウンロードは",
     soonApple: "近日公開",
     storeHint: "App StoreとGoogle Playで配信中",
+    heroStoreLink: "App StoreとGoogle Playで配信中 ↓",
     phoneRadioAlt:
       "横向きの iPhone に表示された Onde dallo Stretto — ラジオの伸縮アンテナと、背景に海峡の地図",
     noteBefore: "Onde dallo Stretto は LUTHOR Lab のプロダクトです。",
@@ -290,6 +294,7 @@ export const ONDE_STRINGS: Record<OndeLocale, OndeStrings> = {
     getGoogle: "Télécharger sur",
     soonApple: "Bientôt sur l'",
     storeHint: "disponible sur l'App Store et Google Play",
+    heroStoreLink: "Disponible sur l'App Store et Google Play ↓",
     phoneRadioAlt:
       "Onde dallo Stretto sur un iPhone à l'horizontale, avec l'antenne télescopique d'une radio et la carte du Détroit en arrière-plan",
     noteBefore: "Onde dallo Stretto est un produit LUTHOR Lab.",
@@ -336,6 +341,7 @@ export const ONDE_STRINGS: Record<OndeLocale, OndeStrings> = {
     getGoogle: "Jetzt bei",
     soonApple: "Bald im",
     storeHint: "jetzt im App Store und bei Google Play",
+    heroStoreLink: "Im App Store und bei Google Play ↓",
     phoneRadioAlt:
       "Onde dallo Stretto auf einem iPhone im Querformat, mit der Teleskopantenne eines Radios und der Karte der Meerenge im Hintergrund",
     noteBefore: "Onde dallo Stretto ist ein Produkt von LUTHOR Lab.",

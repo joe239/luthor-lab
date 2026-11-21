@@ -901,6 +901,32 @@ a.lab-store-btn:hover {
   max-width: 42ch;
 }
 
+/* Hero store link: stessa voce mono del resto dei kicker, discreta,
+   porta ai badge in fondo pagina. */
+.onde-hero-store {
+  margin: 22px 0 0;
+}
+
+.onde-hero-store a {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--onde-amber);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 164, 50, 0.35);
+  padding-bottom: 3px;
+  transition: border-color 0.15s ease;
+}
+
+.onde-hero-store a:hover {
+  border-bottom-color: var(--onde-amber);
+}
+
+#onde-store {
+  scroll-margin-top: 24px;
+}
+
 .onde-features {
   margin: 28px 0 0;
   padding: 0;

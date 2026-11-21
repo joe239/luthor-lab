@@ -60,6 +60,9 @@ export default function OndeProduct({ locale }: { locale: OndeLocale }) {
               <h1>Onde dallo Stretto</h1>
               <p className="lab-hero-lede">{t.lede}</p>
               {t.subhead ? <p className="onde-subhead">{t.subhead}</p> : null}
+              <p className="onde-hero-store">
+                <a href="#onde-store">{t.heroStoreLink}</a>
+              </p>
             </div>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
@@ -142,7 +145,7 @@ export default function OndeProduct({ locale }: { locale: OndeLocale }) {
           </div>
         </section>
 
-        <section className="lab-section" aria-label={t.storeLabel}>
+        <section id="onde-store" className="lab-section" aria-label={t.storeLabel}>
           <div className="lab-wrap">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
