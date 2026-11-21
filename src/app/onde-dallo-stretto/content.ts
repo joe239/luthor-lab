@@ -1,11 +1,11 @@
-/* Seventeen language versions of the product page. These are not translations of
+/* Eighteen language versions of the product page. These are not translations of
    one text: Italian carries the original "radio from home" positioning for
    people from Messina living away; the other languages present the app as
    live Italian radio for the car. */
 
-export type OndeLocale = "it" | "en" | "ja" | "fr" | "de" | "es" | "pl" | "sl" | "el" | "pt" | "ro" | "hu" | "cs" | "sk" | "hr" | "zh" | "nl";
+export type OndeLocale = "it" | "en" | "ja" | "fr" | "de" | "es" | "pl" | "sl" | "el" | "pt" | "ro" | "hu" | "cs" | "sk" | "hr" | "zh" | "nl" | "sv";
 
-export const ONDE_LOCALES: OndeLocale[] = ["it", "en", "ja", "fr", "de", "es", "pl", "sl", "el", "pt", "ro", "hu", "cs", "sk", "hr", "zh", "nl"];
+export const ONDE_LOCALES: OndeLocale[] = ["it", "en", "ja", "fr", "de", "es", "pl", "sl", "el", "pt", "ro", "hu", "cs", "sk", "hr", "zh", "nl", "sv"];
 
 export const ONDE_LANG_LABELS: Record<OndeLocale, string> = {
   it: "Italiano",
@@ -25,6 +25,7 @@ export const ONDE_LANG_LABELS: Record<OndeLocale, string> = {
   hr: "Hrvatski",
   zh: "中文",
   nl: "Nederlands",
+  sv: "Svenska",
 };
 
 export const ONDE_LANG_STORAGE_KEY = "onde-lang";
@@ -106,6 +107,7 @@ export const ONDE_OG_LOCALES: Record<OndeLocale, string> = {
   hr: "hr_HR",
   zh: "zh_CN",
   nl: "nl_NL",
+  sv: "sv_SE",
 };
 
 export const ONDE_EN_IT_LANGUAGE_ALTERNATES = {
@@ -944,6 +946,53 @@ export const ONDE_STRINGS: Record<OndeLocale, OndeStrings> = {
       {
         src: "/lab/onde-shot-onair.jpg",
         alt: "De app Onde dallo Stretto — de lijst van zenders die nu uitzenden",
+      },
+    ],
+  },
+
+  sv: {
+    metaTitle: "Onde dallo Stretto — italiensk radio live, i din bil",
+    metaDescription:
+      "Onde dallo Stretto tar den äkta italienska radion in i din bil: musiken, rösterna, känslan av Italien — live och ofiltrerat. Vrid på vredet över ett riktigt FM-band, stanna på en frekvens och lyssna. En produkt från LUTHOR Lab.",
+    ogTitle: "Onde dallo Stretto — radiostationerna från Sicilien och Kalabrien",
+    ogDescription: "Trött på samma gamla spellistor? Byt till radion!",
+    kicker: "LUTHOR Lab",
+    lede: "Italiensk radio live, i din bil.",
+    subhead: "Vrid på vredet. Italien kommer fram.",
+    lead: "Onde dallo Stretto tar den äkta italienska radion till din instrumentbräda: musiken, rösterna, Italiens värme — live och ofiltrerat. Vrid på vredet över ett riktigt FM-band, stanna på en frekvens och lyssna. Inga spellistor, inga algoritmer: bara radio precis som den låter i Italien, just nu.",
+    features: [
+      "Ett riktigt FM-band: vrid, ställ in, lyssna",
+      "Gjord för bilen: CarPlay, rattkontroller, sex snabbval",
+      "Gratis. Ingen reklam, inget konto.",
+    ],
+    shotsLabel: "Skärmbilder från appen",
+    storeLabel: "Hämta appen",
+    getApple: "Hämta i",
+    getGoogle: "Ladda ned på",
+    soonApple: "Snart i",
+    storeHint: "finns på App Store och Google Play",
+    phoneRadioAlt:
+      "Onde dallo Stretto på en liggande iPhone, med en radios teleskopantenn och kartan över Sundet i bakgrunden",
+    noteBefore: "Onde dallo Stretto är en produkt från LUTHOR Lab.",
+    supportLabel: "Support",
+    privacyLabel: "Integritet och användarvillkor",
+    privacyHref: "/onde-dallo-stretto/privacy",
+    iconAlt: "Appikonen för Onde dallo Stretto",
+    carplayAlt: "Onde dallo Stretto i Apple CarPlay",
+    skylineAlt:
+      "Onde dallo Strettos skyline — Sundets landmärken ovanför FM-skalan med den bärnstensfärgade visaren",
+    shots: [
+      {
+        src: "/lab/onde-shot-dial.jpg",
+        alt: "Appen Onde dallo Stretto — inställd på 106.8 FM, SEGNALE BLU",
+      },
+      {
+        src: "/lab/onde-shot-tuning.jpg",
+        alt: "Appen Onde dallo Stretto — vredet på 88.4 FM, ONDE UNO, snabbval 1",
+      },
+      {
+        src: "/lab/onde-shot-onair.jpg",
+        alt: "Appen Onde dallo Stretto — listan över stationer som sänder just nu",
       },
     ],
   },
