@@ -1,11 +1,11 @@
-/* Five language versions of the product page. These are not translations of
+/* Six language versions of the product page. These are not translations of
    one text: Italian carries the original "radio from home" positioning for
    people from Messina living away; the other languages present the app as
    live Italian radio for the car. */
 
-export type OndeLocale = "it" | "en" | "ja" | "fr" | "de";
+export type OndeLocale = "it" | "en" | "ja" | "fr" | "de" | "es";
 
-export const ONDE_LOCALES: OndeLocale[] = ["it", "en", "ja", "fr", "de"];
+export const ONDE_LOCALES: OndeLocale[] = ["it", "en", "ja", "fr", "de", "es"];
 
 export const ONDE_LANG_LABELS: Record<OndeLocale, string> = {
   it: "Italiano",
@@ -13,6 +13,7 @@ export const ONDE_LANG_LABELS: Record<OndeLocale, string> = {
   ja: "日本語",
   fr: "Français",
   de: "Deutsch",
+  es: "Español",
 };
 
 export const ONDE_LANG_STORAGE_KEY = "onde-lang";
@@ -82,6 +83,7 @@ export const ONDE_OG_LOCALES: Record<OndeLocale, string> = {
   ja: "ja_JP",
   fr: "fr_FR",
   de: "de_DE",
+  es: "es_ES",
 };
 
 export const ONDE_EN_IT_LANGUAGE_ALTERNATES = {
@@ -357,6 +359,52 @@ export const ONDE_STRINGS: Record<OndeLocale, OndeStrings> = {
       {
         src: "/lab/onde-shot-onair.jpg",
         alt: "Die App Onde dallo Stretto — die Liste der Sender, die gerade senden",
+      },
+    ],
+  },
+  es: {
+    metaTitle: "Onde dallo Stretto — radio italiana en directo, en tu coche",
+    metaDescription:
+      "Onde dallo Stretto lleva la verdadera radio italiana a tu coche: la música, las voces, el espíritu de Italia — en directo y sin filtros. Gira el dial por una auténtica banda FM, párate en una frecuencia y escucha. Un producto de LUTHOR Lab.",
+    ogTitle: "Onde dallo Stretto — las radios de Sicilia y Calabria",
+    ogDescription: "¿Cansado de las playlists de siempre? ¡Pásate a la radio!",
+    kicker: "LUTHOR Lab",
+    lede: "Radio italiana en directo, en tu coche.",
+    subhead: "Gira el dial. Italia está ahí.",
+    lead: "Onde dallo Stretto lleva la verdadera radio italiana a tu salpicadero: la música, las voces, el calor de Italia — en directo y sin filtros. Gira el dial por una auténtica banda FM, párate en una frecuencia y escucha. Sin playlists, sin algoritmos: solo la radio tal y como suena en Italia, ahora mismo.",
+    features: [
+      "Una banda FM de verdad: gira, sintoniza, escucha",
+      "Pensada para el coche: CarPlay, mandos en el volante, seis presintonías",
+      "Gratuita. Sin publicidad, sin cuenta.",
+    ],
+    shotsLabel: "Capturas de pantalla de la app",
+    storeLabel: "Descargar la app",
+    getApple: "Descárgala en el",
+    getGoogle: "Disponible en",
+    soonApple: "Próximamente en el",
+    storeHint: "disponible en App Store y Google Play",
+    phoneRadioAlt:
+      "Onde dallo Stretto en un iPhone en horizontal, con la antena telescópica de una radio y el mapa del Estrecho de fondo",
+    noteBefore: "Onde dallo Stretto es un producto de LUTHOR Lab.",
+    supportLabel: "Soporte",
+    privacyLabel: "Privacidad y condiciones de uso",
+    privacyHref: "/onde-dallo-stretto/privacy",
+    iconAlt: "Icono de la app Onde dallo Stretto",
+    carplayAlt: "Onde dallo Stretto en Apple CarPlay",
+    skylineAlt:
+      "El skyline de Onde dallo Stretto — los monumentos del Estrecho sobre la escala FM con la aguja ámbar",
+    shots: [
+      {
+        src: "/lab/onde-shot-dial.jpg",
+        alt: "La app Onde dallo Stretto — sintonizada en 106.8 FM, SEGNALE BLU",
+      },
+      {
+        src: "/lab/onde-shot-tuning.jpg",
+        alt: "La app Onde dallo Stretto — el dial en 88.4 FM, ONDE UNO, presintonía 1",
+      },
+      {
+        src: "/lab/onde-shot-onair.jpg",
+        alt: "La app Onde dallo Stretto — la lista de emisoras en antena ahora mismo",
       },
     ],
   },
