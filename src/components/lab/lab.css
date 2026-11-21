@@ -1114,6 +1114,9 @@ a.onde-lang:hover {
 .onde-phone-radio {
   display: block;
   width: 100%;
+  /* Stessa larghezza dello skyline: 62ch al font-size dei paragrafi. */
+  max-width: 62ch;
+  font-size: 16px;
   height: auto;
   margin-bottom: 44px;
   /* Niente vignetta: il render sfuma da sé la mappa in alto, e il telefono
