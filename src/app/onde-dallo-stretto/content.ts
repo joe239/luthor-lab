@@ -1,11 +1,11 @@
-/* Eight language versions of the product page. These are not translations of
+/* Nine language versions of the product page. These are not translations of
    one text: Italian carries the original "radio from home" positioning for
    people from Messina living away; the other languages present the app as
    live Italian radio for the car. */
 
-export type OndeLocale = "it" | "en" | "ja" | "fr" | "de" | "es" | "pl" | "sl";
+export type OndeLocale = "it" | "en" | "ja" | "fr" | "de" | "es" | "pl" | "sl" | "el";
 
-export const ONDE_LOCALES: OndeLocale[] = ["it", "en", "ja", "fr", "de", "es", "pl", "sl"];
+export const ONDE_LOCALES: OndeLocale[] = ["it", "en", "ja", "fr", "de", "es", "pl", "sl", "el"];
 
 export const ONDE_LANG_LABELS: Record<OndeLocale, string> = {
   it: "Italiano",
@@ -16,6 +16,7 @@ export const ONDE_LANG_LABELS: Record<OndeLocale, string> = {
   es: "Español",
   pl: "Polski",
   sl: "Slovenščina",
+  el: "Ελληνικά",
 };
 
 export const ONDE_LANG_STORAGE_KEY = "onde-lang";
@@ -88,6 +89,7 @@ export const ONDE_OG_LOCALES: Record<OndeLocale, string> = {
   es: "es_ES",
   pl: "pl_PL",
   sl: "sl_SI",
+  el: "el_GR",
 };
 
 export const ONDE_EN_IT_LANGUAGE_ALTERNATES = {
@@ -503,6 +505,53 @@ export const ONDE_STRINGS: Record<OndeLocale, OndeStrings> = {
       {
         src: "/lab/onde-shot-onair.jpg",
         alt: "Aplikacija Onde dallo Stretto — seznam postaj, ki ta hip oddajajo",
+      },
+    ],
+  },
+
+  el: {
+    metaTitle: "Onde dallo Stretto — ιταλικό ραδιόφωνο ζωντανά, στο αυτοκίνητό σας",
+    metaDescription:
+      "Το Onde dallo Stretto φέρνει το αληθινό ιταλικό ραδιόφωνο στο αυτοκίνητό σας: η μουσική, οι φωνές, ο παλμός της Ιταλίας — ζωντανά και χωρίς φίλτρα. Γυρίστε τον επιλογέα σε μια πραγματική μπάντα FM, σταθείτε σε μια συχνότητα και ακούστε. Ένα προϊόν της LUTHOR Lab.",
+    ogTitle: "Onde dallo Stretto — οι ραδιοφωνικοί σταθμοί της Σικελίας και της Καλαβρίας",
+    ogDescription: "Βαρεθήκατε τις ίδιες playlist; Περάστε στο ραδιόφωνο!",
+    kicker: "LUTHOR Lab",
+    lede: "Ιταλικό ραδιόφωνο ζωντανά, στο αυτοκίνητό σας.",
+    subhead: "Γυρίστε τον επιλογέα. Η Ιταλία ακούγεται.",
+    lead: "Το Onde dallo Stretto φέρνει το αληθινό ιταλικό ραδιόφωνο στο ταμπλό σας: η μουσική, οι φωνές, η ζεστασιά της Ιταλίας — ζωντανά και χωρίς φίλτρα. Γυρίστε τον επιλογέα σε μια πραγματική μπάντα FM, σταθείτε σε μια συχνότητα και ακούστε. Χωρίς playlist, χωρίς αλγορίθμους: μόνο το ραδιόφωνο όπως παίζει στην Ιταλία, αυτή τη στιγμή.",
+    features: [
+      "Μια πραγματική μπάντα FM: γυρίστε, συντονιστείτε, ακούστε",
+      "Φτιαγμένη για το αυτοκίνητο: CarPlay, χειριστήρια στο τιμόνι, έξι προεπιλογές",
+      "Δωρεάν. Χωρίς διαφημίσεις, χωρίς λογαριασμό.",
+    ],
+    shotsLabel: "Στιγμιότυπα οθόνης της εφαρμογής",
+    storeLabel: "Κατεβάστε την εφαρμογή",
+    getApple: "Διαθέσιμο στο",
+    getGoogle: "Διαθέσιμο στο",
+    soonApple: "Έρχεται σύντομα στο",
+    storeHint: "διαθέσιμη σε App Store και Google Play",
+    phoneRadioAlt:
+      "Το Onde dallo Stretto σε iPhone σε οριζόντια θέση, με την τηλεσκοπική κεραία ενός ραδιοφώνου και τον χάρτη του Πορθμού στο φόντο",
+    noteBefore: "Το Onde dallo Stretto είναι ένα προϊόν της LUTHOR Lab.",
+    supportLabel: "Υποστήριξη",
+    privacyLabel: "Απόρρητο και όροι χρήσης",
+    privacyHref: "/onde-dallo-stretto/privacy",
+    iconAlt: "Εικονίδιο της εφαρμογής Onde dallo Stretto",
+    carplayAlt: "Το Onde dallo Stretto στο Apple CarPlay",
+    skylineAlt:
+      "Η γραμμή του ορίζοντα του Onde dallo Stretto — τα μνημεία του Πορθμού πάνω από την κλίμακα FM με την κεχριμπαρένια βελόνα",
+    shots: [
+      {
+        src: "/lab/onde-shot-dial.jpg",
+        alt: "Η εφαρμογή Onde dallo Stretto — συντονισμένη στους 106.8 FM, SEGNALE BLU",
+      },
+      {
+        src: "/lab/onde-shot-tuning.jpg",
+        alt: "Η εφαρμογή Onde dallo Stretto — ο επιλογέας στους 88.4 FM, ONDE UNO, προεπιλογή 1",
+      },
+      {
+        src: "/lab/onde-shot-onair.jpg",
+        alt: "Η εφαρμογή Onde dallo Stretto — η λίστα των σταθμών που εκπέμπουν αυτή τη στιγμή",
       },
     ],
   },
