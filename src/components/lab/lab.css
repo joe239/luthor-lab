@@ -1111,8 +1111,9 @@ a.onde-lang:hover {
 
 .onde-carplay {
   margin-top: 28px;
-  max-width: 720px;
-  margin-inline: auto;
+  /* Stessa colonna di testo e skyline: bordo sinistro condiviso, niente centratura. */
+  max-width: 62ch;
+  font-size: 16px;
   background: transparent;
   border: none;
   outline: none;
@@ -1134,7 +1135,7 @@ a.onde-lang:hover {
 }
 
 .lab-root--onde .onde-copy-sections .onde-carplay {
-  max-width: min(100%, 720px);
+  max-width: min(100%, 62ch);
 }
 
 /* Screenshot band — a deeper black, frames on the preset surface. */
