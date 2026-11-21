@@ -1,11 +1,11 @@
-/* Fifteen language versions of the product page. These are not translations of
+/* Sixteen language versions of the product page. These are not translations of
    one text: Italian carries the original "radio from home" positioning for
    people from Messina living away; the other languages present the app as
    live Italian radio for the car. */
 
-export type OndeLocale = "it" | "en" | "ja" | "fr" | "de" | "es" | "pl" | "sl" | "el" | "pt" | "ro" | "hu" | "cs" | "sk" | "hr";
+export type OndeLocale = "it" | "en" | "ja" | "fr" | "de" | "es" | "pl" | "sl" | "el" | "pt" | "ro" | "hu" | "cs" | "sk" | "hr" | "zh";
 
-export const ONDE_LOCALES: OndeLocale[] = ["it", "en", "ja", "fr", "de", "es", "pl", "sl", "el", "pt", "ro", "hu", "cs", "sk", "hr"];
+export const ONDE_LOCALES: OndeLocale[] = ["it", "en", "ja", "fr", "de", "es", "pl", "sl", "el", "pt", "ro", "hu", "cs", "sk", "hr", "zh"];
 
 export const ONDE_LANG_LABELS: Record<OndeLocale, string> = {
   it: "Italiano",
@@ -23,6 +23,7 @@ export const ONDE_LANG_LABELS: Record<OndeLocale, string> = {
   cs: "Čeština",
   sk: "Slovenčina",
   hr: "Hrvatski",
+  zh: "中文",
 };
 
 export const ONDE_LANG_STORAGE_KEY = "onde-lang";
@@ -102,6 +103,7 @@ export const ONDE_OG_LOCALES: Record<OndeLocale, string> = {
   cs: "cs_CZ",
   sk: "sk_SK",
   hr: "hr_HR",
+  zh: "zh_CN",
 };
 
 export const ONDE_EN_IT_LANGUAGE_ALTERNATES = {
@@ -846,6 +848,53 @@ export const ONDE_STRINGS: Record<OndeLocale, OndeStrings> = {
       {
         src: "/lab/onde-shot-onair.jpg",
         alt: "Aplikacija Onde dallo Stretto — popis postaja koje upravo emitiraju",
+      },
+    ],
+  },
+
+  zh: {
+    metaTitle: "Onde dallo Stretto — 意大利电台直播，就在你的车里",
+    metaDescription:
+      "Onde dallo Stretto 把真正的意大利电台带进你的车里：音乐、人声、意大利的气息——实时直播，原汁原味。在真实的 FM 频段上转动旋钮，停在一个频率上，静静聆听。LUTHOR Lab 出品。",
+    ogTitle: "Onde dallo Stretto — 西西里与卡拉布里亚的电台",
+    ogDescription: "听腻了千篇一律的歌单？换回电台吧！",
+    kicker: "LUTHOR Lab",
+    lede: "意大利电台直播，就在你的车里。",
+    subhead: "转动旋钮，意大利就在耳边。",
+    lead: "Onde dallo Stretto 把真正的意大利电台带上你的仪表盘：音乐、人声、意大利的温度——实时直播，原汁原味。在真实的 FM 频段上转动旋钮，停在一个频率上，静静聆听。没有歌单，没有算法：只有此刻正在意大利播放的电台。",
+    features: [
+      "真实的 FM 频段：转动、调谐、聆听",
+      "为驾驶而生：CarPlay、方向盘控制、六个预设电台",
+      "完全免费。无广告，无需账号。",
+    ],
+    shotsLabel: "应用截图",
+    storeLabel: "下载应用",
+    getApple: "立即下载",
+    getGoogle: "立即获取",
+    soonApple: "即将登陆",
+    storeHint: "现已上架 App Store 和 Google Play",
+    phoneRadioAlt:
+      "横置 iPhone 上的 Onde dallo Stretto，带着收音机的伸缩天线，背景是海峡的地图",
+    noteBefore: "Onde dallo Stretto 是 LUTHOR Lab 的产品。",
+    supportLabel: "支持",
+    privacyLabel: "隐私与使用条款",
+    privacyHref: "/onde-dallo-stretto/privacy",
+    iconAlt: "Onde dallo Stretto 应用图标",
+    carplayAlt: "Apple CarPlay 上的 Onde dallo Stretto",
+    skylineAlt:
+      "Onde dallo Stretto 的天际线——海峡的地标矗立在 FM 刻度上方，琥珀色指针",
+    shots: [
+      {
+        src: "/lab/onde-shot-dial.jpg",
+        alt: "Onde dallo Stretto 应用——调至 106.8 FM，SEGNALE BLU",
+      },
+      {
+        src: "/lab/onde-shot-tuning.jpg",
+        alt: "Onde dallo Stretto 应用——旋钮停在 88.4 FM，ONDE UNO，预设 1",
+      },
+      {
+        src: "/lab/onde-shot-onair.jpg",
+        alt: "Onde dallo Stretto 应用——正在播出的电台列表",
       },
     ],
   },
