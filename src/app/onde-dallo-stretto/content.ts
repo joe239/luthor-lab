@@ -1,11 +1,11 @@
-/* Sixteen language versions of the product page. These are not translations of
+/* Seventeen language versions of the product page. These are not translations of
    one text: Italian carries the original "radio from home" positioning for
    people from Messina living away; the other languages present the app as
    live Italian radio for the car. */
 
-export type OndeLocale = "it" | "en" | "ja" | "fr" | "de" | "es" | "pl" | "sl" | "el" | "pt" | "ro" | "hu" | "cs" | "sk" | "hr" | "zh";
+export type OndeLocale = "it" | "en" | "ja" | "fr" | "de" | "es" | "pl" | "sl" | "el" | "pt" | "ro" | "hu" | "cs" | "sk" | "hr" | "zh" | "nl";
 
-export const ONDE_LOCALES: OndeLocale[] = ["it", "en", "ja", "fr", "de", "es", "pl", "sl", "el", "pt", "ro", "hu", "cs", "sk", "hr", "zh"];
+export const ONDE_LOCALES: OndeLocale[] = ["it", "en", "ja", "fr", "de", "es", "pl", "sl", "el", "pt", "ro", "hu", "cs", "sk", "hr", "zh", "nl"];
 
 export const ONDE_LANG_LABELS: Record<OndeLocale, string> = {
   it: "Italiano",
@@ -24,6 +24,7 @@ export const ONDE_LANG_LABELS: Record<OndeLocale, string> = {
   sk: "Slovenčina",
   hr: "Hrvatski",
   zh: "中文",
+  nl: "Nederlands",
 };
 
 export const ONDE_LANG_STORAGE_KEY = "onde-lang";
@@ -104,6 +105,7 @@ export const ONDE_OG_LOCALES: Record<OndeLocale, string> = {
   sk: "sk_SK",
   hr: "hr_HR",
   zh: "zh_CN",
+  nl: "nl_NL",
 };
 
 export const ONDE_EN_IT_LANGUAGE_ALTERNATES = {
@@ -895,6 +897,53 @@ export const ONDE_STRINGS: Record<OndeLocale, OndeStrings> = {
       {
         src: "/lab/onde-shot-onair.jpg",
         alt: "Onde dallo Stretto 应用——正在播出的电台列表",
+      },
+    ],
+  },
+
+  nl: {
+    metaTitle: "Onde dallo Stretto — Italiaanse radio live, in je auto",
+    metaDescription:
+      "Onde dallo Stretto brengt echte Italiaanse radio naar je auto: de muziek, de stemmen, de sfeer van Italië — live en ongefilterd. Draai aan de knop over een echte FM-band, stop op een frequentie en luister. Een product van LUTHOR Lab.",
+    ogTitle: "Onde dallo Stretto — de radiozenders van Sicilië en Calabrië",
+    ogDescription: "De altijd dezelfde playlists beu? Schakel over op de radio!",
+    kicker: "LUTHOR Lab",
+    lede: "Italiaanse radio live, in je auto.",
+    subhead: "Draai aan de knop. Italië komt door.",
+    lead: "Onde dallo Stretto brengt echte Italiaanse radio naar je dashboard: de muziek, de stemmen, de warmte van Italië — live en ongefilterd. Draai aan de knop over een echte FM-band, stop op een frequentie en luister. Geen playlists, geen algoritmes: alleen radio zoals die nu in Italië klinkt.",
+    features: [
+      "Een echte FM-band: draaien, afstemmen, luisteren",
+      "Gemaakt voor de auto: CarPlay, stuurbediening, zes voorkeuzezenders",
+      "Gratis. Geen reclame, geen account.",
+    ],
+    shotsLabel: "Schermafbeeldingen van de app",
+    storeLabel: "Download de app",
+    getApple: "Download in de",
+    getGoogle: "Ontdek het op",
+    soonApple: "Binnenkort in de",
+    storeHint: "beschikbaar in de App Store en op Google Play",
+    phoneRadioAlt:
+      "Onde dallo Stretto op een liggende iPhone, met de telescoopantenne van een radio en de kaart van de Straat op de achtergrond",
+    noteBefore: "Onde dallo Stretto is een product van LUTHOR Lab.",
+    supportLabel: "Ondersteuning",
+    privacyLabel: "Privacy en gebruiksvoorwaarden",
+    privacyHref: "/onde-dallo-stretto/privacy",
+    iconAlt: "Pictogram van de app Onde dallo Stretto",
+    carplayAlt: "Onde dallo Stretto op Apple CarPlay",
+    skylineAlt:
+      "De skyline van Onde dallo Stretto — de monumenten van de Straat boven de FM-schaal met de amberkleurige naald",
+    shots: [
+      {
+        src: "/lab/onde-shot-dial.jpg",
+        alt: "De app Onde dallo Stretto — afgestemd op 106.8 FM, SEGNALE BLU",
+      },
+      {
+        src: "/lab/onde-shot-tuning.jpg",
+        alt: "De app Onde dallo Stretto — de knop op 88.4 FM, ONDE UNO, voorkeuze 1",
+      },
+      {
+        src: "/lab/onde-shot-onair.jpg",
+        alt: "De app Onde dallo Stretto — de lijst van zenders die nu uitzenden",
       },
     ],
   },
