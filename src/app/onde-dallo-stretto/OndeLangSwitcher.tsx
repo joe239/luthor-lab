@@ -18,6 +18,14 @@ export default function OndeLangSwitcher({
   const rootRef = useRef<HTMLDivElement>(null);
   const listId = useId();
 
+  /* Current language first, the rest alphabetically by their own name. */
+  const ordered: OndeLocale[] = [
+    current,
+    ...ONDE_LOCALES.filter((code) => code !== current).sort((a, b) =>
+      ONDE_LANG_LABELS[a].localeCompare(ONDE_LANG_LABELS[b], "en"),
+    ),
+  ];
+
   useEffect(() => {
     if (!open) return;
 
@@ -63,7 +71,7 @@ export default function OndeLangSwitcher({
           role="listbox"
           aria-label="Language"
         >
-          {ONDE_LOCALES.map((code) => (
+          {ordered.map((code) => (
             <li key={code} role="option" aria-selected={code === current}>
               {code === current ? (
                 <span className="onde-lang onde-lang--active">
