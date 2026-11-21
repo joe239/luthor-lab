@@ -144,6 +144,15 @@ export default function OndeProduct({ locale }: { locale: OndeLocale }) {
 
         <section className="lab-section" aria-label={t.storeLabel}>
           <div className="lab-wrap">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              className="onde-phone-radio"
+              src="/lab/onde-phone-radio.webp"
+              alt={t.phoneRadioAlt}
+              width={1794}
+              height={876}
+              loading="lazy"
+            />
             <p className="onde-store-hint">{t.storeHint}</p>
             <div className="lab-store">
               <AppStoreBadge
