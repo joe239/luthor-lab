@@ -27,6 +27,36 @@ function richText(text: string): ReactNode {
   });
 }
 
+function StoreButtons({ getApple, getGoogle }: { getApple: string; getGoogle: string }) {
+  return (
+    <>
+      <AppStoreBadge storeUrl={ONDE_APP_STORE_URL} downloadLabel={getApple} />
+      <a
+        className="lab-store-btn"
+        href={ONDE_GOOGLE_PLAY_URL}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <svg
+          className="lab-store-btn-icon"
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+          focusable="false"
+        >
+          <path
+            fill="#ebe8de"
+            d="M5.2 2.1A1.6 1.6 0 0 0 2.8 3.5v17a1.6 1.6 0 0 0 2.4 1.4l15.2-8.5a1.6 1.6 0 0 0 0-2.8L5.2 2.1Z"
+          />
+        </svg>
+        <span className="lab-store-btn-text">
+          <small>{getGoogle}</small>
+          <strong>Google Play</strong>
+        </span>
+      </a>
+    </>
+  );
+}
+
 function CarplayShot({ alt }: { alt: string }) {
   return (
     <div className="onde-carplay">
@@ -77,6 +107,9 @@ export default function OndeProduct({ locale }: { locale: OndeLocale }) {
               width={1536}
               height={620}
             />
+            <div className="onde-skyline-store">
+              <StoreButtons getApple={t.getApple} getGoogle={t.getGoogle} />
+            </div>
           </div>
         </header>
 
@@ -155,32 +188,7 @@ export default function OndeProduct({ locale }: { locale: OndeLocale }) {
             />
             <p className="onde-store-hint">{t.storeHint}</p>
             <div className="lab-store">
-              <AppStoreBadge
-                storeUrl={ONDE_APP_STORE_URL}
-                downloadLabel={t.getApple}
-              />
-              <a
-                className="lab-store-btn"
-                href={ONDE_GOOGLE_PLAY_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg
-                  className="lab-store-btn-icon"
-                  viewBox="0 0 24 24"
-                  aria-hidden="true"
-                  focusable="false"
-                >
-                  <path
-                    fill="#ebe8de"
-                    d="M5.2 2.1A1.6 1.6 0 0 0 2.8 3.5v17a1.6 1.6 0 0 0 2.4 1.4l15.2-8.5a1.6 1.6 0 0 0 0-2.8L5.2 2.1Z"
-                  />
-                </svg>
-                <span className="lab-store-btn-text">
-                  <small>{t.getGoogle}</small>
-                  <strong>Google Play</strong>
-                </span>
-              </a>
+              <StoreButtons getApple={t.getApple} getGoogle={t.getGoogle} />
             </div>
           </div>
         </section>

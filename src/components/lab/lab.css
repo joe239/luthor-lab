@@ -1045,6 +1045,41 @@ a.onde-lang:hover {
   }
 }
 
+/* Badge store sotto lo skyline: stessa colonna, come in fondo pagina. */
+.onde-skyline-store {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 640px) {
+  .onde-skyline-store {
+    gap: 10px;
+  }
+
+  .onde-skyline-store .lab-store-btn {
+    flex: 1;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 12px;
+  }
+
+  .onde-skyline-store .lab-store-btn-text small,
+  .onde-skyline-store .lab-store-btn-text strong {
+    white-space: nowrap;
+  }
+
+  .onde-skyline-store .lab-store-btn-text strong {
+    font-size: 14px;
+  }
+
+  .onde-skyline-store .lab-store-btn-icon {
+    width: 20px;
+  }
+}
+
 /* Skyline della schermata Informazioni: scala FM completa, fondo #131415
    come la pagina — nessuna cornice, si fonde col fondo. */
 
@@ -1190,9 +1225,25 @@ a.onde-lang:hover {
   margin-top: 16px;
 }
 
+/* Badge in stile skyline: solo tratto chiaro su fondo trasparente,
+   voce mono come la scala FM. */
 .lab-root--onde .lab-store-btn {
-  background: var(--onde-surface);
-  border: 1px solid var(--onde-line);
+  background: transparent;
+  border: 1px solid rgba(235, 232, 222, 0.45);
+  box-shadow: none;
+}
+
+.lab-root--onde a.lab-store-btn:hover {
+  background: transparent;
+  color: inherit;
+  border-color: var(--onde-amber);
+  box-shadow: none;
+}
+
+.lab-root--onde .lab-store-btn-text strong {
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 500;
+  letter-spacing: 0.03em;
 }
 
 .lab-root--onde .lab-store-btn--soon {
