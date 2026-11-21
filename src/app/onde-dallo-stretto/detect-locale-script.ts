@@ -25,6 +25,7 @@ export const ONDE_DETECT_LOCALE_SCRIPT = `(function () {
     else if (nav.indexOf("sl") === 0) chosen = "sl";
     else if (nav.indexOf("el") === 0) chosen = "el";
     else if (nav.indexOf("pt") === 0) chosen = "pt";
+    else if (nav.indexOf("ro") === 0) chosen = "ro";
     else chosen = "en";
   }
   location.replace("/onde-dallo-stretto/" + chosen);
