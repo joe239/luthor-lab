@@ -101,7 +101,6 @@ export const ONDE_STRINGS: Record<OndeLocale, OndeStrings> = {
     lede: "Le radio di casa, anche quando sei lontano",
     subhead: "",
     lead: [
-      "Sei all'estero e ti manca ascoltare in auto le radio siciliane e calabresi?",
       "**Onde dallo Stretto** ricrea l'esperienza di una vera autoradio anni '90: niente liste infinite, ma una scala FM da esplorare frequenza per frequenza, con ogni emittente nella sua posizione reale e il classico fruscio tra una stazione e l'altra.",
     ],
     features: [],

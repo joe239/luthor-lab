@@ -1225,25 +1225,9 @@ a.onde-lang:hover {
   margin-top: 16px;
 }
 
-/* Badge in stile skyline: solo tratto chiaro su fondo trasparente,
-   voce mono come la scala FM. */
 .lab-root--onde .lab-store-btn {
-  background: transparent;
-  border: 1px solid rgba(235, 232, 222, 0.45);
-  box-shadow: none;
-}
-
-.lab-root--onde a.lab-store-btn:hover {
-  background: transparent;
-  color: inherit;
-  border-color: var(--onde-amber);
-  box-shadow: none;
-}
-
-.lab-root--onde .lab-store-btn-text strong {
-  font-family: "JetBrains Mono", monospace;
-  font-weight: 500;
-  letter-spacing: 0.03em;
+  background: var(--onde-surface);
+  border: 1px solid var(--onde-line);
 }
 
 .lab-root--onde .lab-store-btn--soon {
