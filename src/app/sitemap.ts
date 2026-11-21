@@ -25,6 +25,7 @@ const PUBLIC_ROUTES = [
   "/onde-dallo-stretto/hu",
   "/onde-dallo-stretto/cs",
   "/onde-dallo-stretto/sk",
+  "/onde-dallo-stretto/hr",
   "/onde-dallo-stretto/privacy",
   "/onde-dallo-stretto/it/privacy",
   "/riskpro",

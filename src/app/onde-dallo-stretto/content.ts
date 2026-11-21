@@ -1,11 +1,11 @@
-/* Fourteen language versions of the product page. These are not translations of
+/* Fifteen language versions of the product page. These are not translations of
    one text: Italian carries the original "radio from home" positioning for
    people from Messina living away; the other languages present the app as
    live Italian radio for the car. */
 
-export type OndeLocale = "it" | "en" | "ja" | "fr" | "de" | "es" | "pl" | "sl" | "el" | "pt" | "ro" | "hu" | "cs" | "sk";
+export type OndeLocale = "it" | "en" | "ja" | "fr" | "de" | "es" | "pl" | "sl" | "el" | "pt" | "ro" | "hu" | "cs" | "sk" | "hr";
 
-export const ONDE_LOCALES: OndeLocale[] = ["it", "en", "ja", "fr", "de", "es", "pl", "sl", "el", "pt", "ro", "hu", "cs", "sk"];
+export const ONDE_LOCALES: OndeLocale[] = ["it", "en", "ja", "fr", "de", "es", "pl", "sl", "el", "pt", "ro", "hu", "cs", "sk", "hr"];
 
 export const ONDE_LANG_LABELS: Record<OndeLocale, string> = {
   it: "Italiano",
@@ -22,6 +22,7 @@ export const ONDE_LANG_LABELS: Record<OndeLocale, string> = {
   hu: "Magyar",
   cs: "Čeština",
   sk: "Slovenčina",
+  hr: "Hrvatski",
 };
 
 export const ONDE_LANG_STORAGE_KEY = "onde-lang";
@@ -100,6 +101,7 @@ export const ONDE_OG_LOCALES: Record<OndeLocale, string> = {
   hu: "hu_HU",
   cs: "cs_CZ",
   sk: "sk_SK",
+  hr: "hr_HR",
 };
 
 export const ONDE_EN_IT_LANGUAGE_ALTERNATES = {
@@ -797,6 +799,53 @@ export const ONDE_STRINGS: Record<OndeLocale, OndeStrings> = {
       {
         src: "/lab/onde-shot-onair.jpg",
         alt: "Aplikácia Onde dallo Stretto — zoznam staníc, ktoré práve vysielajú",
+      },
+    ],
+  },
+
+  hr: {
+    metaTitle: "Onde dallo Stretto — talijanski radio uživo, u vašem autu",
+    metaDescription:
+      "Onde dallo Stretto donosi pravi talijanski radio u vaš auto: glazba, glasovi, duh Italije — uživo i bez filtara. Okrećite gumb po pravom FM pojasu, zaustavite se na frekvenciji i slušajte. Proizvod LUTHOR Laba.",
+    ogTitle: "Onde dallo Stretto — radijske postaje Sicilije i Kalabrije",
+    ogDescription: "Dosta vam je uvijek istih playlista? Prebacite se na radio!",
+    kicker: "LUTHOR Lab",
+    lede: "Talijanski radio uživo, u vašem autu.",
+    subhead: "Okrenite gumb. Italija se javlja.",
+    lead: "Onde dallo Stretto donosi pravi talijanski radio na vašu kontrolnu ploču: glazba, glasovi, toplina Italije — uživo i bez filtara. Okrećite gumb po pravom FM pojasu, zaustavite se na frekvenciji i slušajte. Bez playlista, bez algoritama: samo radio kakav upravo svira u Italiji.",
+    features: [
+      "Pravi FM pojas: okrenite, ugodite, slušajte",
+      "Stvorena za auto: CarPlay, komande na volanu, šest memoriranih postaja",
+      "Besplatna. Bez reklama, bez računa.",
+    ],
+    shotsLabel: "Snimke zaslona aplikacije",
+    storeLabel: "Preuzmite aplikaciju",
+    getApple: "Preuzmite iz",
+    getGoogle: "Dostupno na",
+    soonApple: "Uskoro u",
+    storeHint: "dostupna u App Storeu i na Google Playu",
+    phoneRadioAlt:
+      "Onde dallo Stretto na iPhoneu u vodoravnom položaju, s teleskopskom antenom radija i kartom Tjesnaca u pozadini",
+    noteBefore: "Onde dallo Stretto proizvod je LUTHOR Laba.",
+    supportLabel: "Podrška",
+    privacyLabel: "Privatnost i uvjeti korištenja",
+    privacyHref: "/onde-dallo-stretto/privacy",
+    iconAlt: "Ikona aplikacije Onde dallo Stretto",
+    carplayAlt: "Onde dallo Stretto na Apple CarPlayu",
+    skylineAlt:
+      "Panorama Onde dallo Stretto — znamenitosti Tjesnaca iznad FM skale s jantarnom kazaljkom",
+    shots: [
+      {
+        src: "/lab/onde-shot-dial.jpg",
+        alt: "Aplikacija Onde dallo Stretto — namještena na 106.8 FM, SEGNALE BLU",
+      },
+      {
+        src: "/lab/onde-shot-tuning.jpg",
+        alt: "Aplikacija Onde dallo Stretto — gumb na 88.4 FM, ONDE UNO, memorija 1",
+      },
+      {
+        src: "/lab/onde-shot-onair.jpg",
+        alt: "Aplikacija Onde dallo Stretto — popis postaja koje upravo emitiraju",
       },
     ],
   },
