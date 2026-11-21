@@ -1117,6 +1117,9 @@ a.onde-lang:hover {
   max-width: 62ch;
   font-size: 16px;
   height: auto;
+  /* Aria sopra la mappa: la scena scende e il blocco di chiusura
+     respira tra la banda screenshot e il footer. */
+  margin-top: 64px;
   margin-bottom: 44px;
   /* Il render è trasparente: la vignetta serve solo a sfumare la mappa
      dove il canvas la taglia sul bordo. */
