@@ -107,6 +107,7 @@ export default function OndeProduct({ locale }: { locale: OndeLocale }) {
               width={1536}
               height={620}
             />
+            <p className="onde-store-hint onde-store-hint--hero">{t.storeHint}</p>
             <div className="onde-skyline-store">
               <StoreButtons getApple={t.getApple} getGoogle={t.getGoogle} />
             </div>

@@ -1046,8 +1046,12 @@ a.onde-lang:hover {
 }
 
 /* Badge store sotto lo skyline: stessa colonna, come in fondo pagina. */
-.onde-skyline-store {
+.onde-store-hint--hero {
   margin-top: 30px;
+}
+
+.onde-skyline-store {
+  margin-top: 16px;
   display: flex;
   align-items: center;
   gap: 14px;
