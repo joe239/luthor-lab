@@ -1,11 +1,11 @@
-/* Eleven language versions of the product page. These are not translations of
+/* Twelve language versions of the product page. These are not translations of
    one text: Italian carries the original "radio from home" positioning for
    people from Messina living away; the other languages present the app as
    live Italian radio for the car. */
 
-export type OndeLocale = "it" | "en" | "ja" | "fr" | "de" | "es" | "pl" | "sl" | "el" | "pt" | "ro";
+export type OndeLocale = "it" | "en" | "ja" | "fr" | "de" | "es" | "pl" | "sl" | "el" | "pt" | "ro" | "hu";
 
-export const ONDE_LOCALES: OndeLocale[] = ["it", "en", "ja", "fr", "de", "es", "pl", "sl", "el", "pt", "ro"];
+export const ONDE_LOCALES: OndeLocale[] = ["it", "en", "ja", "fr", "de", "es", "pl", "sl", "el", "pt", "ro", "hu"];
 
 export const ONDE_LANG_LABELS: Record<OndeLocale, string> = {
   it: "Italiano",
@@ -19,6 +19,7 @@ export const ONDE_LANG_LABELS: Record<OndeLocale, string> = {
   el: "Ελληνικά",
   pt: "Português",
   ro: "Română",
+  hu: "Magyar",
 };
 
 export const ONDE_LANG_STORAGE_KEY = "onde-lang";
@@ -94,6 +95,7 @@ export const ONDE_OG_LOCALES: Record<OndeLocale, string> = {
   el: "el_GR",
   pt: "pt_PT",
   ro: "ro_RO",
+  hu: "hu_HU",
 };
 
 export const ONDE_EN_IT_LANGUAGE_ALTERNATES = {
@@ -650,6 +652,53 @@ export const ONDE_STRINGS: Record<OndeLocale, OndeStrings> = {
       {
         src: "/lab/onde-shot-onair.jpg",
         alt: "Aplicația Onde dallo Stretto — lista posturilor aflate în emisie chiar acum",
+      },
+    ],
+  },
+
+  hu: {
+    metaTitle: "Onde dallo Stretto — élő olasz rádió az autódban",
+    metaDescription:
+      "Az Onde dallo Stretto az igazi olasz rádiót hozza el az autódba: a zene, a hangok, Olaszország hangulata — élőben és szűrők nélkül. Tekerd a gombot egy igazi FM-sávon, állj meg egy frekvencián, és hallgasd. A LUTHOR Lab terméke.",
+    ogTitle: "Onde dallo Stretto — Szicília és Calabria rádiói",
+    ogDescription: "Eleged van a szokásos lejátszási listákból? Válts rádióra!",
+    kicker: "LUTHOR Lab",
+    lede: "Élő olasz rádió, az autódban.",
+    subhead: "Tekerd a gombot. Olaszország megszólal.",
+    lead: "Az Onde dallo Stretto az igazi olasz rádiót hozza a műszerfaladra: a zene, a hangok, Olaszország melege — élőben és szűrők nélkül. Tekerd a gombot egy igazi FM-sávon, állj meg egy frekvencián, és hallgasd. Nincsenek lejátszási listák, nincsenek algoritmusok: csak a rádió, ahogy épp most szól Olaszországban.",
+    features: [
+      "Igazi FM-sáv: tekerd, hangold, hallgasd",
+      "Autóra tervezve: CarPlay, kormányról vezérelhető, hat tárolt állomás",
+      "Ingyenes. Reklám és fiók nélkül.",
+    ],
+    shotsLabel: "Képernyőképek az alkalmazásból",
+    storeLabel: "Az alkalmazás letöltése",
+    getApple: "Letöltés innen:",
+    getGoogle: "Szerezd meg:",
+    soonApple: "Hamarosan itt:",
+    storeHint: "elérhető az App Store-ban és a Google Playen",
+    phoneRadioAlt:
+      "Az Onde dallo Stretto egy fektetett iPhone-on, egy rádió teleszkópos antennájával és a Szoros térképével a háttérben",
+    noteBefore: "Az Onde dallo Stretto a LUTHOR Lab terméke.",
+    supportLabel: "Támogatás",
+    privacyLabel: "Adatvédelem és felhasználási feltételek",
+    privacyHref: "/onde-dallo-stretto/privacy",
+    iconAlt: "Az Onde dallo Stretto alkalmazás ikonja",
+    carplayAlt: "Az Onde dallo Stretto Apple CarPlay-en",
+    skylineAlt:
+      "Az Onde dallo Stretto látképe — a Szoros nevezetességei az FM-skála fölött, borostyán mutatóval",
+    shots: [
+      {
+        src: "/lab/onde-shot-dial.jpg",
+        alt: "Az Onde dallo Stretto alkalmazás — 106.8 FM-re hangolva, SEGNALE BLU",
+      },
+      {
+        src: "/lab/onde-shot-tuning.jpg",
+        alt: "Az Onde dallo Stretto alkalmazás — a gomb 88.4 FM-en, ONDE UNO, 1-es tárolt állomás",
+      },
+      {
+        src: "/lab/onde-shot-onair.jpg",
+        alt: "Az Onde dallo Stretto alkalmazás — az éppen adásban lévő állomások listája",
       },
     ],
   },
