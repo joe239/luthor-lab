@@ -1126,6 +1126,8 @@ a.onde-lang:hover {
 
 .onde-carplay {
   margin-top: 28px;
+  /* Uno spazio in più prima del titolo della sezione successiva. */
+  margin-bottom: 28px;
   /* Stessa colonna di testo e skyline: bordo sinistro condiviso, niente centratura. */
   max-width: 62ch;
   font-size: 16px;
