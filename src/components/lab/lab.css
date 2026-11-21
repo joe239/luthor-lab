@@ -901,32 +901,6 @@ a.lab-store-btn:hover {
   max-width: 42ch;
 }
 
-/* Hero store link: stessa voce mono del resto dei kicker, discreta,
-   porta ai badge in fondo pagina. */
-.onde-hero-store {
-  margin: 22px 0 0;
-}
-
-.onde-hero-store a {
-  font-family: "JetBrains Mono", monospace;
-  font-size: 11px;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--onde-amber);
-  text-decoration: none;
-  border-bottom: 1px solid rgba(255, 164, 50, 0.35);
-  padding-bottom: 3px;
-  transition: border-color 0.15s ease;
-}
-
-.onde-hero-store a:hover {
-  border-bottom-color: var(--onde-amber);
-}
-
-#onde-store {
-  scroll-margin-top: 24px;
-}
-
 .onde-features {
   margin: 28px 0 0;
   padding: 0;
@@ -1063,11 +1037,67 @@ a.onde-lang:hover {
   box-shadow: 0 18px 44px rgba(0, 0, 0, 0.5);
 }
 
+/* Icona + badge store impilati nella colonna destra dell'hero. */
+.onde-hero-side {
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.onde-hero-badges {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 @media (max-width: 640px) {
   .onde-app-icon {
     width: 72px;
     height: 72px;
     border-radius: 17px;
+  }
+
+  /* Su mobile l'icona resta accanto al titolo e i badge scendono
+     a tutta larghezza sotto il testo dell'hero. */
+  .onde-hero-wrap {
+    flex-wrap: wrap;
+  }
+
+  .onde-hero-copy {
+    flex: 1 1 0%;
+  }
+
+  .onde-hero-side {
+    display: contents;
+  }
+
+  .onde-hero-badges {
+    width: 100%;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .onde-hero-badges .lab-store-btn {
+    flex: 1;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 12px;
+  }
+
+  .onde-hero-badges .lab-store-btn-text small,
+  .onde-hero-badges .lab-store-btn-text strong {
+    white-space: nowrap;
+  }
+
+  .onde-hero-badges .lab-store-btn-text strong {
+    font-size: 14px;
+  }
+
+  .onde-hero-badges .lab-store-btn-icon {
+    width: 20px;
   }
 }
 
