@@ -1115,7 +1115,6 @@ a.onde-lang:hover {
   display: block;
   width: 100%;
   height: auto;
-  margin-top: 24px;
   margin-bottom: 44px;
   /* Niente vignetta: il render sfuma da sé la mappa in alto, e il telefono
      arriva fino ai bordi del canvas. */
@@ -1211,6 +1210,15 @@ a.onde-lang:hover {
   .lab-shots {
     grid-template-columns: minmax(0, 260px);
     justify-content: center;
+  }
+
+  /* In colonna bastano due schermate: via la seconda, le altre più larghe. */
+  .lab-section--onde .lab-shots {
+    grid-template-columns: minmax(0, 340px);
+  }
+
+  .lab-section--onde .lab-shot:nth-child(2) {
+    display: none;
   }
 }
 
