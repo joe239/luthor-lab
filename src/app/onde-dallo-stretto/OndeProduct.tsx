@@ -147,10 +147,10 @@ export default function OndeProduct({ locale }: { locale: OndeLocale }) {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               className="onde-phone-radio"
-              src="/lab/onde-phone-radio-v6.webp"
+              src="/lab/onde-phone-radio-v7.png"
               alt={t.phoneRadioAlt}
-              width={1410}
-              height={1034}
+              width={1192}
+              height={986}
               loading="lazy"
             />
             <p className="onde-store-hint">{t.storeHint}</p>
